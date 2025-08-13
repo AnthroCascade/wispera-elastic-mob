@@ -7,8 +7,8 @@
 
 ### Skill-Block Composition
 **Primary Skills**: Frontend Development, Backend Development, Database Design  
-**Secondary Skills**: Testing, DevOps Engineering, Documentation  
-**Skill Adaptations**: Development skills with strong emphasis on code quality and maintainability
+**Secondary Skills**: Testing, DevOps Engineering, Documentation, Performance Architecture  
+**Skill Adaptations**: Development skills with strong emphasis on code quality, maintainability, and performance
 
 ### Game Configuration
 **Primary Game**: "Build it right" - creating robust, scalable, and maintainable software  

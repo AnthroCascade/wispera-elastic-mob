@@ -74,3 +74,23 @@ The first working system will be the tool that builds itself - a satisfyingly re
 For deeper technical and conceptual details about the system architecture, multi-game optimization strategies, and implementation approaches, see **[deeper architecture.md](deeper%20architecture.md)**.
 
 This document explores the sophisticated game-theoretic foundations, semantic pattern matching mechanisms, and the recursive bootstrap strategy that makes this system uniquely powerful.
+
+### Current Status & Audit
+
+For a comprehensive assessment of the current Elastic-Mob implementation status, including identified deficiencies, inconsistencies, and recommended action items, see **[current audit.md](current%20audit.md)**.
+
+This document provides:
+- Detailed analysis of skill block and ASS composition
+- Identification of missing components and template inconsistencies
+- Strategic recommendations for system completion
+- Prioritized action plan for moving forward
+
+### Technology & Implementation
+
+For critical analysis of current technology choices and specific recommendations for implementing Elastic-Mob, see **[architecture_critique.md](architecture_critique.md)**.
+
+This document provides:
+- Assessment of current Rails backend and Flutter frontend
+- Technology recommendations for Elastic-Mob implementation
+- Recommended hybrid architecture approach
+- Implementation strategy and phase planning

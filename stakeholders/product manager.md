@@ -7,8 +7,8 @@
 
 ### Skill-Block Composition
 **Primary Skills**: Product Management, Requirements Analysis, Business Strategy  
-**Secondary Skills**: User Experience, Communication, Market Analysis  
-**Skill Adaptations**: Product Management with strong emphasis on value delivery and stakeholder management
+**Secondary Skills**: User Experience, Communication, Market Analysis, Agreement Recognition  
+**Skill Adaptations**: Product Management with strong emphasis on value delivery, stakeholder management, and decision clarity
 
 ### Game Configuration
 **Primary Game**: "Deliver value" - ensuring every feature and decision contributes to business and user success  

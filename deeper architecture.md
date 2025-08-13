@@ -76,3 +76,27 @@ Given these insights, the bootstrap process might follow this sequence:
 This isn't just "no-code" - it's **"conversation-as-code"**. The system treats structured dialogue as the primary programming language, with AI agents as specialized compilers that transform conversations into working systems.
 
 The recursive bootstrap isn't just clever - it's the perfect proof of concept. If the system can build itself through agent conversations, it validates the entire approach.
+
+### Human Participation Through Proxy ASSes
+
+The system supports human participation through **user proxy ASSes** that represent human availability and authority without predefined skill blocks:
+
+#### **Proxy ASS Design Principles**
+- **No skill blocks**: Users naturally embody expertise when they intervene
+- **Availability signaling**: Indicate when human input might be valuable
+- **Authority mapping**: Define decision-making power in different domains
+- **Intelligent polling**: Mob identifies optimal moments for human involvement
+
+#### **Human-Agent Collaboration Model**
+- **Emergent expertise**: Human judgment emerges without predefined constraints
+- **Authority hierarchy**: User proxy ASSes can override agent decisions
+- **Learning integration**: System learns optimal timing for human involvement
+- **Conflict resolution**: Human proxy ASSes can break deadlocks between agent ASSes
+
+#### **Multi-Game Integration**
+User proxy ASSes participate in the multi-game optimization:
+- **Human authority game**: Maintaining decision-making control in critical domains
+- **Learning game**: Improving system behavior through human interventions
+- **Quality assurance game**: Providing final approval and validation gates
+
+This creates a **hybrid intelligence system** where human judgment and AI capabilities work together, with humans maintaining authority while agents handle routine optimization.

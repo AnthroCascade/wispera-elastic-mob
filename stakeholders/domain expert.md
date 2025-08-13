@@ -7,8 +7,8 @@
 
 ### Skill-Block Composition
 **Primary Skills**: Requirements Analysis, Business Strategy, Communication  
-**Secondary Skills**: Product Management, User Experience, Documentation  
-**Skill Adaptations**: Requirements Analysis with strong emphasis on domain-specific edge cases and business rules
+**Secondary Skills**: Product Management, User Experience, Documentation, Agreement Recognition  
+**Skill Adaptations**: Requirements Analysis with strong emphasis on domain-specific edge cases, business rules, and decision clarity
 
 ### Game Configuration
 **Primary Game**: "Build the right system" - ensuring the solution solves the actual problem  

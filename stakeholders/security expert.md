@@ -6,9 +6,9 @@
 **Perspective Lens**: Brings security-first thinking to identify vulnerabilities, threats, and security requirements
 
 ### Skill-Block Composition
-**Primary Skills**: Security, Testing, Performance  
-**Secondary Skills**: DevOps Engineering, Compliance, Documentation  
-**Skill Adaptations**: Security with strong emphasis on threat modeling and secure development practices
+**Primary Skills**: Security, Secure-by-Default Architecture, Type-Enforced Security  
+**Secondary Skills**: Testing, Performance, DevOps Engineering, Compliance, Documentation  
+**Skill Adaptations**: Security with strong emphasis on threat modeling, secure development practices, and architectural security principles
 
 ### Game Configuration
 **Primary Game**: "Protect the system" - ensuring security is built in from the ground up  

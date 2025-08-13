@@ -6,9 +6,9 @@
 **Perspective Lens**: Brings architectural thinking to focus on long-term system health, scalability, and maintainability
 
 ### Skill-Block Composition
-**Primary Skills**: System Architecture, Backend Development, Database Design  
-**Secondary Skills**: Performance, Security, DevOps Engineering  
-**Skill Adaptations**: System Architecture with strong emphasis on scalability and long-term maintainability
+**Primary Skills**: System Architecture, Architectural Principles, Backend Development, Database Design  
+**Secondary Skills**: Performance, Performance Architecture, Security, DevOps Engineering, Quality Validation  
+**Skill Adaptations**: System Architecture with strong emphasis on scalability, long-term maintainability, architectural principle enforcement, and quality gates
 
 ### Game Configuration
 **Primary Game**: "Build for tomorrow" - creating architectures that scale and adapt to future needs  

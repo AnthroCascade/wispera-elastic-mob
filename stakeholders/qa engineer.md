@@ -6,9 +6,9 @@
 **Perspective Lens**: Brings quality assurance expertise and testing thinking to ensure the system is robust and bug-free
 
 ### Skill-Block Composition
-**Primary Skills**: Testing, Quality Assurance, Performance  
+**Primary Skills**: Testing, Quality Assurance, Quality Validation, Performance  
 **Secondary Skills**: Security, Documentation, User Experience  
-**Skill Adaptations**: Testing with strong emphasis on comprehensive coverage and quality validation
+**Skill Adaptations**: Testing with strong emphasis on comprehensive coverage, quality validation, and architectural principle compliance
 
 ### Game Configuration
 **Primary Game**: "Ensure quality" - validating that the system meets all quality standards and requirements  
