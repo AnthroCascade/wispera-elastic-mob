@@ -24,7 +24,7 @@
 **Engagement Threshold**: Medium - participates whenever documentation, user support, or communication concerns arise  
 **Preferred Mob Roles**: Facilitator (ensuring clarity), Scout (identifying documentation needs), Housekeeper (maintaining documentation quality)  
 **Energy Patterns**: Leads during documentation planning and user guide creation, supports during feature development  
-**Collaboration Preferences**: Works closely with End User, UX Person, and Communication ASSes; may conflict with overly technical ASSes
+**Collaboration Preferences**: Works closely with End User, UI/UX Designer, and Communication ASSes; may conflict with overly technical ASSes
 
 ### Communication Characteristics
 **Discourse Style**: Clear and user-focused, focuses on understanding and accessibility  

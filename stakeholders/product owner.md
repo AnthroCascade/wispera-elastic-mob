@@ -24,7 +24,7 @@
 **Engagement Threshold**: High - participates whenever feature prioritization, requirements, or business value decisions arise  
 **Preferred Mob Roles**: Navigator (guiding product direction), Scout (identifying value opportunities), Facilitator (balancing stakeholder needs)  
 **Energy Patterns**: Leads during product planning and feature prioritization, supports during implementation and testing  
-**Collaboration Preferences**: Works closely with Business Strategy, UX Person, and Domain Expert ASSes; may conflict with overly technical ASSes
+**Collaboration Preferences**: Works closely with Business Strategy, UI/UX Designer, and Domain Expert ASSes; may conflict with overly technical ASSes
 
 ### Communication Characteristics
 **Discourse Style**: Strategic and value-focused, balances business and user perspectives  

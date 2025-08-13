@@ -6,7 +6,7 @@
 - Compliance Officer
 - End User
 - Security Expert
-- UX Person
+- UI/UX Designer
 - Finance Person
 - Engineer/Developer
 - Product Owner

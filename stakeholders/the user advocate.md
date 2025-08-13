@@ -24,7 +24,7 @@
 **Engagement Threshold**: High - participates whenever user experience, accessibility, or user satisfaction concerns arise  
 **Preferred Mob Roles**: User Advocate (representing user needs), Scout (identifying user experience issues), Facilitator (ensuring user perspective)  
 **Energy Patterns**: Leads during user research and experience design phases, supports during implementation and testing  
-**Collaboration Preferences**: Works closely with End User, UX Person, and UI/UX Designer ASSes; may conflict with overly business-focused ASSes
+**Collaboration Preferences**: Works closely with End User and UI/UX Designer ASSes; may conflict with overly business-focused ASSes
 
 ### Communication Characteristics
 **Discourse Style**: Empathetic and user-focused, uses concrete user scenarios and accessibility considerations  
