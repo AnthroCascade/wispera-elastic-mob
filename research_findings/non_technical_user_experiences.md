@@ -38,6 +38,24 @@ This document serves as a curated knowledge base for tracking successful pattern
 - **Success Factors**: Clear problem boundaries, incremental validation, celebration of small wins
 - **Common Use Cases**: Business processes, workflow automation, reporting systems
 
+### **Vision + Execution Partnership**
+- **Description**: User provides detailed vision and specifications, LLM provides code execution
+- **Success Factors**: Clear product vision, detailed specifications, iterative refinement
+- **Common Use Cases**: Complex applications, novel features, AI/ML systems
+- **Key Insight**: "You provide the vision, the LLM provides the code" - LLMs excel at execution but cannot imagine the product
+
+### **Documentation-First Development**
+- **Description**: Users create detailed specifications before coding, maintain documentation throughout
+- **Success Factors**: Comprehensive specs, continuous documentation updates, hand-off documents
+- **Common Use Cases**: Long-term projects, team handoffs, complex integrations
+- **Key Insight**: LLMs don't have memory, need explicit documentation for continuity
+
+### **Checks and Balances System**
+- **Description**: Users develop systematic processes to maintain quality and keep LLMs on track
+- **Success Factors**: Quality gates, validation checkpoints, process documentation
+- **Common Use Cases**: Complex projects, quality-critical applications, long development cycles
+- **Key Insight**: Build quality maintenance into the process, not as an afterthought
+
 ## **Script Collections**
 
 ### **Initial Setup Scripts**
@@ -59,6 +77,30 @@ This document serves as a curated knowledge base for tracking successful pattern
 - **Purpose**: Ensure solutions meet requirements and work correctly
 - **Key Elements**: Test scenarios, success criteria, edge cases, user acceptance
 - **Example Template**: "Please test this solution with [scenarios] and verify it [requirements]. Also check [edge cases]."
+
+### **Vision Specification Scripts**
+- **Purpose**: Establish comprehensive product vision and technical specifications
+- **Key Elements**: Product goals, user stories, technical requirements, integration points
+- **Example Template**: "I want to build [product] that [core functionality]. Users should be able to [user actions]. The app needs to [technical requirements] and integrate with [systems]."
+- **Source**: Designer building Group Table app
+- **Success Factors**: Detailed specifications, clear user stories, technical constraints defined
+- **Key Insight**: LLMs need explicit, detailed specifications to execute effectively
+
+### **Documentation Maintenance Scripts**
+- **Purpose**: Keep project documentation current and LLM-accessible
+- **Key Elements**: Current state, changes made, integration points, future requirements
+- **Example Template**: "Please update the project specification to reflect [changes made]. Include [new features], [modified functionality], and [integration details] for future development."
+- **Source**: Designer building Group Table app
+- **Success Factors**: Continuous updates, hand-off documents, LLM-optimized format
+- **Key Insight**: Documentation must be maintained for LLM continuity across sessions
+
+### **Quality Assurance Scripts**
+- **Purpose**: Maintain code quality and prevent feature drift
+- **Key Elements**: Quality criteria, validation steps, error checking, performance requirements
+- **Example Template**: "Please review this code for [quality criteria] and ensure it [validation requirements]. Check for [common issues] and verify [performance standards]."
+- **Source**: Designer building Group Table app
+- **Success Factors**: Systematic quality checks, clear criteria, iterative improvement
+- **Key Insight**: Quality must be built into the process, not added after completion
 
 ## **Success Stories**
 
@@ -84,12 +126,36 @@ This document serves as a curated knowledge base for tracking successful pattern
 - **Context Loss**: LLM forgetting important constraints or requirements
 - **Quality Compromise**: Accepting poor solutions to move forward
 
+### **LLM-Specific Failure Patterns**
+- **Hallucination Drift**: LLM making up features or functionality to appease user
+- **Memory Loss**: LLM forgetting context from previous sessions
+- **Vision Gap**: LLM unable to imagine novel features or concepts
+- **Specification Ambiguity**: Unclear requirements leading to scattered implementation
+- **Feature Sprawl**: Building non-essential features before core functionality
+- **Source**: Designer building Group Table app
+- **Frequency**: Common in complex projects with novel features
+- **User Impact**: Wasted development time, poor user experience, launch delays
+- **Root Causes**: Insufficient specification detail, lack of quality gates, scope management issues
+- **Recovery Strategies**: Clear specifications, quality checkpoints, feature prioritization
+- **Prevention**: Document everything, maintain quality gates, focus on core value first
+
 ### **Recovery Strategies**
 - **Reset and Refocus**: Clear the conversation, restate core objectives
 - **Incremental Validation**: Test each piece before moving to the next
 - **External Validation**: Get human feedback on intermediate results
 - **Tool Simplification**: Reduce to essential tools and processes
 - **Documentation**: Keep clear records of decisions and constraints
+
+### **LLM-Specific Recovery Strategies**
+- **Specification Reset**: Rewrite project specifications with current state and goals
+- **Quality Gate Implementation**: Build systematic quality checks into the process
+- **Feature Prioritization**: Focus on core functionality before nice-to-have features
+- **Documentation Continuity**: Maintain comprehensive project documentation across sessions
+- **User Testing Integration**: Test with real users early and often
+- **Source**: Designer building Group Table app
+- **Success Rate**: High when implemented systematically
+- **Key Insight**: "Protect the ugly baby" - early versions need protection from premature criticism
+- **Implementation**: Build quality gates, maintain documentation, prioritize core value
 
 ## **Tool Combinations**
 
@@ -127,6 +193,28 @@ This document serves as a curated knowledge base for tracking successful pattern
 - **Success Patterns**: Architecture planning, testing strategies, documentation
 - **Common Projects**: Full-stack applications, complex integrations, scalable systems
 
+### **LLM Collaboration Learning Progression**
+- **Novice Phase (0-2 weeks)**:
+  - **Capabilities**: Basic LLM prompting, simple feature requests
+  - **Challenges**: Terminal fear, unclear specifications, unrealistic expectations
+  - **Success Patterns**: Start with clear vision, document everything, accept uncertainty
+  - **Breakthrough**: Understanding that "You provide the vision, the LLM provides the code"
+  - **Source**: Designer building Group Table app
+
+- **Intermediate Phase (2-8 weeks)**:
+  - **Capabilities**: Systematic documentation, quality gates, iterative refinement
+  - **Challenges**: Maintaining quality, preventing feature drift, managing scope
+  - **Success Patterns**: Build checks and balances, maintain documentation, focus on core value
+  - **Breakthrough**: Developing systematic quality maintenance processes
+  - **Source**: Designer building Group Table app
+
+- **Advanced Phase (8+ weeks)**:
+  - **Capabilities**: Complex project management, user testing integration, launch preparation
+  - **Challenges**: Balancing features vs. launch, user feedback integration, quality vs. speed
+  - **Success Patterns**: User testing early, iterate based on feedback, protect core functionality
+  - **Breakthrough**: Understanding that users need sandbox mode before social features
+  - **Source**: Designer building Group Table app
+
 ## **Research Sources**
 
 ### **Platforms to Monitor**
@@ -152,12 +240,48 @@ This document serves as a curated knowledge base for tracking successful pattern
 - **Intervention Triggers**: When should the system request human input?
 - **Learning Integration**: How can user decisions improve agent behavior?
 
+### **LLM Collaboration User Proxy ASS Design**
+- **Pattern Recognition**: 
+  - Detect when users are building novel features (LLMs struggle with these)
+  - Identify specification ambiguity or insufficient detail
+  - Recognize quality drift or feature sprawl
+  - Source**: Designer building Group Table app
+
+- **Intervention Timing**: 
+  - When specifications lack detail or clarity
+  - When building novel features without clear breakdown
+  - When quality gates are being bypassed
+  - When feature scope is expanding beyond core value
+  - Source**: Designer building Group Table app
+
+- **Authority Mapping**: 
+  - Users maintain authority over product vision and specifications
+  - Users control quality criteria and validation requirements
+  - Users decide feature priorities and launch timing
+  - LLMs handle code execution and technical implementation
+  - Source**: Designer building Group Table app
+
+- **Learning Integration**: 
+  - System learns user's quality preferences and standards
+  - System adapts to user's documentation style and requirements
+  - System remembers successful specification patterns
+  - System suggests quality gates based on user's domain expertise
+  - Source**: Designer building Group Table app
+
 ### **Intervention Mechanisms**
 - **Process Guidance**: Help users follow successful patterns
 - **Tool Selection**: Recommend appropriate tools for their level
 - **Scope Management**: Help break down complex problems
 - **Quality Gates**: Ensure solutions meet user needs and standards
 - **Learning Acceleration**: Help users progress through learning phases
+
+### **LLM Collaboration Intervention Mechanisms**
+- **Specification Guidance**: Help users create detailed, LLM-accessible specifications
+- **Quality Gate Implementation**: Assist in building systematic quality maintenance processes
+- **Feature Prioritization**: Help users focus on core functionality before nice-to-have features
+- **Documentation Continuity**: Ensure project documentation remains current and accessible
+- **User Testing Integration**: Guide users to test with real users early and often
+- **Source**: Designer building Group Table app
 
 ## **Curation Process**
 

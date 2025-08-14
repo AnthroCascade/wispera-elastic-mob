@@ -99,9 +99,12 @@ This document provides:
 
 For research into non-technical user experiences with LLM-guided software development, see our research knowledge base:
 
-- **[non_technical_user_experiences.md](docs/non_technical_user_experiences.md)** - Curated knowledge base of successful patterns, processes, and user experiences
-- **[research_findings.md](docs/research_findings.md)** - Raw research data, case studies, and specific findings
-- **[research_process_guide.md](docs/research_process_guide.md)** - Practical guide for conducting research and gathering user experience data
+- **[non_technical_user_experiences.md](research_findings/non_technical_user_experiences.md)** - Curated knowledge base of successful patterns, processes, and user experiences
+- **[research_findings/](research_findings/)** - Directory containing individual case studies and synthesized insights
+  - **[README.md](research_findings/README.md)** - Directory overview and case study template
+  - **[research_distillation.md](research_findings/research_distillation.md)** - Synthesized insights and actionable recommendations
+  - **[case_study_001_designer_group_table.md](research_findings/case_study_001_designer_group_table.md)** - Designer building AI/ML app with LLMs
+- **[research_process_guide.md](research_findings/research_process_guide.md)** - Practical guide for conducting research and gathering user experience data
 
 These documents provide:
 - Successful process patterns and methodologies
@@ -110,6 +113,14 @@ These documents provide:
 - Tool combinations and learning curves
 - Research methodology and platform strategies
 - Integration opportunities with elastic-mob design
+
+### Reference Materials
+
+For external reference materials and market analysis, see **[reference_materials/](reference_materials/)**:
+
+- **Market Analysis**: Competitive landscape and market context
+- **Stakeholder Analysis**: External research on ASS applications
+- **Context Documents**: Background information for development decisions
 
 ### Technology & Implementation
 

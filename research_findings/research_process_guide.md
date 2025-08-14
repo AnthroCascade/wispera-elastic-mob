@@ -2,7 +2,7 @@
 
 ## **Purpose**
 
-This guide provides practical steps for conducting research into non-technical user experiences with LLM-guided software development. Use this alongside [non_technical_user_experiences.md](non_technical_user_experiences.md) and [research_findings.md](research_findings.md) to systematically gather and analyze user experiences.
+This guide provides practical steps for conducting research into non-technical user experiences with LLM-guided software development. Use this alongside [non_technical_user_experiences.md](non_technical_user_experiences.md) and the [research_findings/](research_findings/) directory to systematically gather and analyze user experiences.
 
 ## **Research Workflow**
 
