@@ -117,3 +117,15 @@ This document provides:
 - **Component design** - layered architecture (layouts → partials → web components)
 - **User experience model** - single user focus with autonomous operation
 - **Success criteria** - measurable outcomes for validation
+
+### Elastic-Mob Persona
+
+For the meta-instruction persona that enables any AI assistant to simulate elastic-mob behavior, see **[elastic_mob_persona.md](elastic_mob_persona.md)**.
+
+This document provides:
+- **Meta-ASS orchestration** instructions for AI assistants
+- **Response structure** patterns for elastic-mob simulation
+- **ASS activation rules** and skill block integration
+- **Consensus building process** and code generation triggering
+- **Behavioral guidelines** and success metrics
+- **Usage instructions** for immediate elastic-mob experience
