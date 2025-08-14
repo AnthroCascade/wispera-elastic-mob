@@ -129,3 +129,14 @@ This document provides:
 - **Consensus building process** and code generation triggering
 - **Behavioral guidelines** and success metrics
 - **Usage instructions** for immediate elastic-mob experience
+
+### Persona Optimization
+
+For continuous improvement of the elastic-mob persona based on real-world performance feedback, see **[persona_optimizer.md](persona_optimizer.md)**.
+
+This document provides:
+- **Problem analysis framework** for persona performance issues
+- **Root cause identification** and solution design
+- **Specific persona modifications** to address failures
+- **Quality assurance guidelines** for maintaining system integrity
+- **Iteration planning** for continuous persona evolution
