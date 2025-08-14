@@ -104,3 +104,16 @@ This document provides:
 - Technology recommendations for Elastic-Mob implementation
 - Recommended hybrid architecture approach
 - Implementation strategy and phase planning
+
+### Implementation Approach
+
+For our agreed implementation strategy and technical architecture, see **[implementation_approach.md](implementation_approach.md)**.
+
+This document provides:
+- **Agreed architecture** - integrated engine within in-concert
+- **Frontend architecture** - plain JS + web components with holonic design
+- **Implementation phases** - 3-phase development plan (6-8 weeks)
+- **Technical details** - user isolation, git integration, LLM service access
+- **Component design** - layered architecture (layouts → partials → web components)
+- **User experience model** - single user focus with autonomous operation
+- **Success criteria** - measurable outcomes for validation
