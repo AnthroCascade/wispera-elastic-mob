@@ -95,6 +95,22 @@ This document provides:
 - Strategic recommendations for system completion
 - Prioritized action plan for moving forward
 
+### Research & User Experience
+
+For research into non-technical user experiences with LLM-guided software development, see our research knowledge base:
+
+- **[non_technical_user_experiences.md](docs/non_technical_user_experiences.md)** - Curated knowledge base of successful patterns, processes, and user experiences
+- **[research_findings.md](docs/research_findings.md)** - Raw research data, case studies, and specific findings
+- **[research_process_guide.md](docs/research_process_guide.md)** - Practical guide for conducting research and gathering user experience data
+
+These documents provide:
+- Successful process patterns and methodologies
+- Curated prompt scripts and templates
+- Case studies and failure analysis
+- Tool combinations and learning curves
+- Research methodology and platform strategies
+- Integration opportunities with elastic-mob design
+
 ### Technology & Implementation
 
 For critical analysis of current technology choices and specific recommendations for implementing Elastic-Mob, see **[architecture_critique.md](architecture_critique.md)**.
