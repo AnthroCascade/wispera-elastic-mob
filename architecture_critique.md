@@ -75,35 +75,31 @@ class ASS
 end
 ```
 
-### **Frontend: Svelte/SvelteKit (Top Recommendation)**
+### **Frontend: Plain JavaScript + Web Components (Agreed Approach)**
 
-**Why Svelte is ideal for Elastic-Mob:**
-- **Web-native**: Built for the web, not adapted to it
-- **Real-time ready**: Excellent WebSocket and SSE support
-- **Lightweight**: Faster than React/Vue for simple interfaces
-- **Rapid development**: Hot reload + instant web deployment
-- **Reactive by design**: Perfect for real-time mob updates
+**Why Plain JS + Web Components is ideal for Elastic-Mob:**
+- **Holonic design**: Every component is both system and object
+- **Real-time ready**: Direct DOM manipulation for immediate updates
+- **No framework overhead**: Zero build step, edit and refresh
+- **Component isolation**: Self-contained, testable features
+- **Native browser support**: No polyfills or build tooling needed
 
-**Example of mob interface in Svelte:**
-```svelte
-<script>
-  import { onMount } from 'svelte';
-  import { mobStore } from './stores/mob.js';
+**Example of mob interface in Web Components:**
+```javascript
+class MobSession extends HTMLElement {
+  constructor() {
+    super();
+    this.attachShadow({ mode: 'open' });
+    this.websocket = new WebSocket('ws://localhost:3000/cable');
+    this.websocket.onmessage = (event) => this.updateDisplay(JSON.parse(event.data));
+  }
   
-  let activeAgents = [];
-  
-  onMount(() => {
-    mobStore.subscribe(mob => {
-      activeAgents = mob.activeAgents;
-    });
-  });
-</script>
-
-<div class="mob-container">
-  {#each activeAgents as agent}
-    <AgentComponent {agent} />
-  {/each}
-</div>
+  updateDisplay(data) {
+    // Direct DOM manipulation - no state management complexity
+    this.shadowRoot.querySelector('.status').textContent = data.status;
+    this.shadowRoot.querySelector('.agents').innerHTML = this.renderAgents(data.agents);
+  }
+}
 ```
 
 ### **Alternative Frontend Options**
@@ -120,7 +116,7 @@ end
 - **Composition API**: Similar to Flutter's widget composition
 - **SSR capabilities**: Better SEO and initial load performance
 
-## **Recommended Architecture: Hybrid Approach**
+## **Recommended Architecture: Integrated Engine Approach (Agreed)**
 
 ### **Layer 1: Rails Backend (Foundation)**
 - Keep existing Assistant/Thread/Run infrastructure
@@ -128,21 +124,19 @@ end
 - Use ActionCable for real-time mob coordination
 - Leverage existing authentication and persistence
 
-### **Layer 2: Dedicated Elastic-Mob Service (New)**
-- **Separate service process** (not Rails request cycle)
-- **Event-driven architecture** for agent coordination
-- **High-speed polling** for semantic pattern matching
+### **Layer 2: Elastic-Mob Engine (Integrated within in-concert)**
+- **Integrated engine** (not separate microservice)
+- **Direct access** to existing LLM services and models
 - **Agent lifecycle management** and mob role rotation
-- **WebSocket server** for real-time mob updates
+- **WebSocket integration** via existing ActionCable
 - **Code generation engine** for converting conversations to executable code
-- **Language server integration** for syntax validation and autocompletion
-- **Code execution environment** with Docker containers for safety
-- **Git integration service** for version control and conversation tracking
+- **Git integration** for conversation-driven version control
+- **User isolation** and mob-space management
 
-### **Layer 3: Svelte Frontend (Interface)**
+### **Layer 3: Plain JS + Web Components Frontend (Interface)**
 - **Mob activity visualization** showing agent participation and progress
 - **Observer dashboard** for monitoring mob work without participation
-- **Real-time updates** via WebSocket connection to Elastic-Mob service
+- **Real-time updates** via WebSocket connection to in-concert
 - **Configuration interface** for ASSes and skill blocks
 - **Code preview and editing** for generated code
 - **Live execution results** showing code output and errors
@@ -162,22 +156,16 @@ end
 ## **Why This Architecture Serves Elastic-Mob Best**
 
 1. **Metaprogramming**: Ruby excels at creating the dynamic ASS and skill block systems
-2. **Real-time performance**: Svelte handles the high-frequency updates needed for mob coordination
+2. **Real-time performance**: Web Components with direct DOM manipulation handle high-frequency updates
 3. **Developer experience**: You can focus on the agent logic, not framework complexity
-4. **Evolution path**: Both can grow with the system as it becomes more sophisticated
+4. **Integration simplicity**: Direct access to existing in-concert services without API overhead
+5. **Holonic design**: Web Components naturally support the system-and-object architecture
 
 ## **Implementation Strategy**
 
-1. **Phase 1**: Add Elastic-Mob models to Rails (Mob, Agent, ASS, SkillBlock)
-2. **Phase 2**: Build dedicated Elastic-Mob service with WebSocket API
-3. **Phase 3**: Implement code generation engine with template system and validation
-4. **Phase 4**: Add Git integration service for conversation-driven version control
-5. **Phase 5**: Build Svelte frontend for observer dashboard and mob visualization
-6. **Phase 6**: Integrate with existing Assistant/Thread infrastructure
-7. **Phase 7**: Add code execution environment with Docker containers and testing
-8. **Phase 8**: Implement high-speed agent communication and autonomous coordination
-9. **Phase 9**: Add user intervention capabilities and emergency halt system
-10. **Phase 10**: Implement user proxy ASSes and intelligent polling for human input
+**For detailed implementation phases and technical specifications, see [implementation_approach.md](implementation_approach.md).**
+
+This document focuses on technology analysis and architectural recommendations. The implementation approach document contains the complete 3-phase plan with specific deliverables, technical details, and implementation guidance.
 
 ## **Key Insight**
 

@@ -5,6 +5,8 @@
 ### **Core Design Principle**
 Elastic-mob will be implemented as an **integrated engine within in-concert** rather than a separate microservice. This approach prioritizes simplicity and direct access to existing infrastructure while maintaining clear separation of concerns.
 
+**Note**: This document contains the complete implementation strategy. For current status and readiness assessment, see [current_audit.md](current_audit.md). For technology analysis and recommendations, see [architecture_critique.md](architecture_critique.md).
+
 ### **Architecture Overview**
 ```
 Elastic-Mob Frontend (Plain JS + Web Components) → Elastic-Mob Engine (within in-concert) → Existing in-concert models/services
@@ -251,3 +253,18 @@ class MobSession extends HTMLElement {
 ---
 
 **Note**: This approach prioritizes **proving that elastic-mobbing can work** over architectural complexity. We can evolve to more sophisticated patterns (gateways, event buses, microservices) once the core functionality is validated and stable.
+
+## **Related Documents**
+
+### **Current Status & Foundation**
+- **[current_audit.md](current_audit.md)** - Complete assessment of current system status and readiness
+- **[deeper architecture.md](deeper%20architecture.md)** - Conceptual foundations and game theory
+
+### **Persona System**
+- **[elastic_mob_persona.md](elastic_mob_persona.md)** - Meta-instruction system for AI assistants
+- **[persona_optimizer.md](persona_optimizer.md)** - Continuous improvement framework
+- **[meta_ass_architecture.md](meta_ass_architecture.md)** - Self-improvement design principles
+
+### **Technology & Integration**
+- **[architecture_critique.md](architecture_critique.md)** - Technology assessment and recommendations
+- **[copilot_integration_spec.md](copilot_integration_spec.md)** - Integration requirements and patterns
