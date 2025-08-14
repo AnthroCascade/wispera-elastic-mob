@@ -6,6 +6,16 @@
 
 We're creating a no-code system that captures and facilitates the conversations that birth systems into existence. Rather than asking users to learn visual programming, they engage in natural language conversations with specialized AI agents that collaboratively build working software.
 
+## System Foundation
+
+For complete understanding of the elastic-mob system architecture, implementation approach, and current state, see the **[system_foundation/](system_foundation/)** directory. These documents provide the essential context for all development decisions:
+
+- **[architecture_critique.md](system_foundation/architecture_critique.md)** - Technology assessment and implementation recommendations
+- **[implementation_approach.md](system_foundation/implementation_approach.md)** - Agreed architecture and development phases
+- **[elastic_mob_persona.md](system_foundation/elastic_mob_persona.md)** - Meta-instruction persona for AI assistants
+- **[current audit.md](system_foundation/current_audit.md)** - Implementation status and action items
+- **[deeper architecture.md](system_foundation/deeper_architecture.md)** - Advanced architectural concepts
+
 ## Foundation: Skill-Blocks
 
 The system is built on **skill-blocks** - atomic units of expertise that can be composed into agent-stakeholders. We currently have **37 skill blocks** organized into families:
@@ -124,7 +134,7 @@ For external reference materials and market analysis, see **[reference_materials
 
 ### Technology & Implementation
 
-For critical analysis of current technology choices and specific recommendations for implementing Elastic-Mob, see **[architecture_critique.md](architecture_critique.md)**.
+For critical analysis of current technology choices and specific recommendations for implementing Elastic-Mob, see **[architecture_critique.md](system_foundation/architecture_critique.md)**.
 
 This document provides:
 - Assessment of current Rails backend and Flutter frontend
@@ -134,7 +144,7 @@ This document provides:
 
 ### Implementation Approach
 
-For our agreed implementation strategy and technical architecture, see **[implementation_approach.md](implementation_approach.md)**.
+For our agreed implementation strategy and technical architecture, see **[implementation_approach.md](system_foundation/implementation_approach.md)**.
 
 This document provides:
 - **Agreed architecture** - integrated engine within in-concert
@@ -147,7 +157,7 @@ This document provides:
 
 ### Elastic-Mob Persona
 
-For the meta-instruction persona that enables any AI assistant to simulate elastic-mob behavior, see **[elastic_mob_persona.md](elastic_mob_persona.md)**.
+For the meta-instruction persona that enables any AI assistant to simulate elastic-mob behavior, see **[elastic_mob_persona.md](system_foundation/elastic_mob_persona.md)**.
 
 This document provides:
 - **Meta-ASS orchestration** instructions for AI assistants
@@ -159,7 +169,7 @@ This document provides:
 
 ### Persona Optimization
 
-For continuous improvement of the elastic-mob persona based on real-world performance feedback, see **[persona_optimizer.md](persona_optimizer.md)**.
+For continuous improvement of the elastic-mob persona based on real-world performance feedback, see **[persona_optimizer.md](system_foundation/persona_optimizer.md)**.
 
 This document provides:
 - **Problem analysis framework** for persona performance issues
@@ -170,7 +180,7 @@ This document provides:
 
 ### Meta-ASS Architecture
 
-For analysis of self-improvement capabilities and the balance between self-awareness and system stability, see **[meta_ass_architecture.md](meta_ass_architecture.md)**.
+For analysis of self-improvement capabilities and the balance between self-awareness and system stability, see **[meta_ass_architecture.md](system_foundation/meta_ass_architecture.md)**.
 
 This document provides:
 - **Meta-ASS vs. external orchestrator** analysis and trade-offs
