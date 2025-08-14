@@ -140,3 +140,14 @@ This document provides:
 - **Specific persona modifications** to address failures
 - **Quality assurance guidelines** for maintaining system integrity
 - **Iteration planning** for continuous persona evolution
+
+### Meta-ASS Architecture
+
+For analysis of self-improvement capabilities and the balance between self-awareness and system stability, see **[meta_ass_architecture.md](meta_ass_architecture.md)**.
+
+This document provides:
+- **Meta-ASS vs. external orchestrator** analysis and trade-offs
+- **Hybrid approach** for self-awareness without circular complexity
+- **Layered meta-architecture** design principles
+- **Implementation strategy** for emergent optimization
+- **Stability considerations** for evolving systems
