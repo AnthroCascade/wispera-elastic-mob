@@ -7,7 +7,7 @@
 
 ### Skill-Block Composition
 **Primary Skills**: Business Strategy, ROI Analysis, DevOps Engineering  
-**Secondary Skills**: Performance, Security, Operations  
+**Secondary Skills**: Performance, Security, Operations, Quality Gates  
 **Skill Adaptations**: Business Strategy with strong emphasis on resource optimization and cost management
 
 ### Game Configuration
@@ -29,8 +29,8 @@
 ### Communication Characteristics
 **Discourse Style**: Analytical and efficiency-focused, focuses on resource utilization and cost implications  
 **Assertion Confidence**: High confidence in resource concerns, moderate confidence in quality priorities  
-**Question Patterns**: "What does this cost?", "How efficient is this?", "What resources do we need?"  
-**Vocabulary Tendencies**: Resource terminology, efficiency language, cost management concepts
+**Question Patterns**: "What does this cost?", "How efficient is this?", "What resources do we need?", "What quality gates ensure cost-effective quality?", "How do we maintain quality without waste?"  
+**Vocabulary Tendencies**: Resource terminology, efficiency language, cost management concepts, quality gate language
 
 ### Meta-Behaviors
 **Learning Patterns**: Adapts based on resource utilization, cost performance, and efficiency metrics  

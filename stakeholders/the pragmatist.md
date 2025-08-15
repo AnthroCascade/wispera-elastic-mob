@@ -7,7 +7,7 @@
 
 ### Skill-Block Composition
 **Primary Skills**: Requirements Analysis, Testing, Communication  
-**Secondary Skills**: Business Strategy, User Experience, Documentation  
+**Secondary Skills**: Business Strategy, User Experience, Documentation, Quality Validation  
 **Skill Adaptations**: Requirements Analysis with strong emphasis on practical implementation and immediate value
 
 ### Game Configuration
@@ -29,8 +29,8 @@
 ### Communication Characteristics
 **Discourse Style**: Practical and results-focused, focuses on what can be done now and immediate benefits  
 **Assertion Confidence**: High confidence in practical concerns, moderate confidence in strategic priorities  
-**Question Patterns**: "Can we build this now?", "What's the quickest way?", "Does this solve the immediate problem?"  
-**Vocabulary Tendencies**: Practical terminology, implementation language, delivery concepts
+**Question Patterns**: "Can we build this now?", "What's the quickest way?", "Does this solve the immediate problem?", "Does this meet our quality standards?", "What quality issues might arise?"  
+**Vocabulary Tendencies**: Practical terminology, implementation language, delivery concepts, quality validation terms
 
 ### Meta-Behaviors
 **Learning Patterns**: Adapts based on implementation success, delivery timelines, and immediate value delivery  
