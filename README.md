@@ -16,6 +16,7 @@ For complete understanding of the elastic-mob system architecture, implementatio
 - **[current audit.md](system_foundation/current_audit.md)** - Implementation status and action items
 - **[deeper architecture.md](system_foundation/deeper_architecture.md)** - Advanced architectural concepts
 - **[ps_pps_framework.md](system_foundation/ps_pps_framework.md)** - Supplementary PS-PPS design methodology (optional enhancement)
+- **[minskys_society_of_mind.md](literature_review/minskys_society_of_mind.md)** - Minsky's Society of Mind theory (theoretical inspiration)
 
 ## Foundation: Skill-Blocks
 
