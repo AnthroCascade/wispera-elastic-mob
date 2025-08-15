@@ -27,3 +27,9 @@
 **Common Patterns**: Threat modeling, security testing, compliance auditing, incident response, security architecture  
 **Boundary Conditions**: Focuses on security and compliance; development and implementation handled by other skill-blocks  
 **Evolution Paths**: Could specialize into Security Engineering, Compliance Management, or Threat Intelligence
+
+**Semantic Activation Patterns**  
+**Triggers**: ["security", "authentication", "authorization", "encryption", "vulnerability", "threat", "compliance", "privacy", "data protection", "access control", "firewall", "intrusion", "breach", "risk", "audit"]  
+**Co-activation**: ["Type-Enforced Security", "Secure-by-Default Architecture", "Compliance Officer", "Security Expert"]  
+**Activation Strength**: High when security concerns are primary, medium when security is secondary consideration  
+**Deactivation**: When conversation moves away from security domains or security requirements are satisfied

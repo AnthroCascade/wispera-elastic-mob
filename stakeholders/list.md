@@ -33,3 +33,11 @@ We moved away from fixed role definitions toward **composable ASSes built from s
 - Startup scenarios (agents wearing multiple hats)
 - Enterprise scenarios (highly specialized agents)
 - Custom compositions for specific project types
+
+### Enhanced ASS Specifications
+All ASSes now include **emergent participation patterns** for semantic resonance:
+- **Activation Thresholds** - Relevance scores that determine when ASSes participate
+- **Participation Styles** - How ASSes emerge and engage in conversations
+- **Collaboration Patterns** - Natural interaction with other relevant ASSes
+- **Exit Conditions** - When ASSes disengage from conversations
+- **Conflict Resolution** - How ASSes handle disagreements with other perspectives

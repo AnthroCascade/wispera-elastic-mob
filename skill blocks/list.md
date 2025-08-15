@@ -58,3 +58,6 @@
 - **Quality Gates is new** - Added based on case study insights about systematic quality maintenance
 - **Enhanced existing blocks** - Quality Validation, Documentation, and Process Facilitation have been enhanced with case study learnings
 - **Pattern recognition** - Several skill blocks now include pattern recognition capabilities for specification guidance and quality drift prevention
+- **Semantic Resonance** - New skill block for enabling skill block activation through conversation content
+- **Static Runtime Approach** - All skill blocks use predefined activation patterns for semantic resonance
+- **Semantic Activation Patterns** - Each skill block includes triggers, co-activation, and activation strength for pattern matching

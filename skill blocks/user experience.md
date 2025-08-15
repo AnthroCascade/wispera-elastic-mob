@@ -27,3 +27,9 @@
 **Common Patterns**: User personas, user journey maps, usability testing protocols, accessibility guidelines, user feedback analysis  
 **Boundary Conditions**: Focuses on user experience and interaction design; visual design and technical implementation handled by other skill-blocks  
 **Evolution Paths**: Could specialize into Accessibility Engineering, User Research, or Interaction Design
+
+**Semantic Activation Patterns**  
+**Triggers**: ["user experience", "usability", "accessibility", "user interface", "user journey", "user research", "user testing", "user feedback", "user needs", "user satisfaction", "interaction design", "user-centered", "user-friendly", "intuitive", "delightful"]  
+**Co-activation**: ["UI Design", "Accessibility", "Information Architecture", "Frontend Developer", "UI/UX Designer"]  
+**Activation Strength**: High when UX concerns are primary, medium when UX is secondary consideration  
+**Deactivation**: When conversation moves away from user experience domains or UX requirements are satisfied
