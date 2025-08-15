@@ -11,6 +11,16 @@ The system isn't just facilitating conversation - it's **orchestrating a multi-p
 
 The conversations become a negotiation space where these games interact, creating natural checks and balances.
 
+### **Supplementary Enhancement: PS-PPS Framework Integration**
+
+The system's holonic architecture naturally supports the **PS-PPS Framework** (Purpose, Scope, Participations, Patterns, Semantics) as an optional enhancement. This recursive investigation methodology could enhance skill block behavior and stakeholder coordination by providing:
+
+- **Recursive Investigation**: Systematic exploration from system to component level
+- **Authentic Pattern Recognition**: Distinguishing true Alexandrian patterns from simplified abstractions
+- **Formal Expression**: Design by Contract integration for behavioral specification
+
+See [ps_pps_framework.md](ps_pps_framework.md) for detailed implementation approach.
+
 ### Semantic Pattern Matching as Summons
 
 The intelligent matching mechanism is particularly elegant - rather than rigid role assignments, skill-blocks are **summoned by semantic resonance**. When a conversation touches on "user authentication," multiple skill-blocks might activate:

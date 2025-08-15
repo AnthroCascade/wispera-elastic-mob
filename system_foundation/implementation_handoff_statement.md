@@ -27,6 +27,9 @@ This document serves as the critical hand-off between the research/planning phas
 - **Static Participation Rules**: ASS behavior patterns are predefined and applied uniformly
 - **Iterative Refinement**: Updates happen through design process, not runtime execution
 
+### **Supplementary Design Methodology: PS-PPS Framework**
+The implementation may optionally incorporate the **PS-PPS Framework** (Purpose, Scope, Participations, Patterns, Semantics) as a supplementary design methodology. This recursive, holonic approach to software investigation aligns with elastic-mob's architectural principles and could enhance skill block behavior and stakeholder coordination. See [ps_pps_framework.md](ps_pps_framework.md) for details.
+
 ### **Implementation Benefits**
 - **Simpler Architecture**: No complex dynamic creation mechanisms
 - **Predictable Behavior**: Static patterns ensure consistent system behavior

@@ -15,6 +15,7 @@ For complete understanding of the elastic-mob system architecture, implementatio
 - **[elastic_mob_persona.md](system_foundation/elastic_mob_persona.md)** - Meta-instruction persona for AI assistants
 - **[current audit.md](system_foundation/current_audit.md)** - Implementation status and action items
 - **[deeper architecture.md](system_foundation/deeper_architecture.md)** - Advanced architectural concepts
+- **[ps_pps_framework.md](system_foundation/ps_pps_framework.md)** - Supplementary PS-PPS design methodology (optional enhancement)
 
 ## Foundation: Skill-Blocks
 

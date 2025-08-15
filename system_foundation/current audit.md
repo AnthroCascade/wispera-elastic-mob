@@ -6,6 +6,8 @@
 **Status**: ✅ **FOUNDATION COMPLETE**  
 **Next Phase**: Implementation and Testing
 
+**Note**: PS-PPS Framework has been added as supplementary design methodology for potential enhancement. See [ps_pps_framework.md](ps_pps_framework.md) for details.
+
 ## **✅ What's Been Accomplished**
 
 ### **1. Foundation Completion (COMPLETED)**
