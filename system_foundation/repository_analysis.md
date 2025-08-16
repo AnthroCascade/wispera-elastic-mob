@@ -40,7 +40,7 @@ In-concert is a collaborative platform for designing, building, testing, sharing
 - `instructions`: Combined instructions from persona, audience, and conduct
 
 **Integration Value**: 
-- **Perfect foundation** for elastic-mob agent-stakeholders
+- **Perfect foundation** for elastic-mob Mobsters
 - **Existing persona system** can be extended for skill blocks
 - **Tool resources** can be mapped to skill block capabilities
 - **Instructions** can incorporate elastic-mob coordination logic

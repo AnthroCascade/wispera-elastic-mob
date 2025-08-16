@@ -1,4 +1,4 @@
-## Compliance Officer - Agent-Stakeholder Specification (ASS)
+## Compliance Officer - Mobster Specification
 
 ### Identity & Purpose
 **Role Name**: Compliance Officer  

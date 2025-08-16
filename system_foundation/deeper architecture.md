@@ -45,7 +45,7 @@ Given these insights, the bootstrap process follows this sequence:
 
 1. **Phase 0: Foundation Complete** ✅
    - 37 skill blocks covering all development domains
-   - 25 agent-stakeholders with proper composition
+   - 25 Mobsters with proper composition
    - Template compliance and integration quality achieved
 
 2. **Phase 1: Persona System Ready** ✅

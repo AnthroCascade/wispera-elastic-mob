@@ -1,10 +1,22 @@
-# wispera-agents
-
-# Elastic Mob Programming for No-Code Software Development
+# Elastic-Mob
 
 ## Core Vision
 
 We're creating a no-code system that captures and facilitates the conversations that birth systems into existence. Rather than asking users to learn visual programming, they engage in natural language conversations with specialized AI agents that collaboratively build working software.
+
+## What is a Mobster?
+
+**Mobster** is the core entity in the Elastic-Mob system. Each Mobster is:
+
+- **An AI Agent**: Possesses AI capabilities and can process information, make decisions, and take actions
+- **A Stakeholder**: Represents a specific stakeholder perspective (e.g., Security Expert, UX Designer, Product Owner)
+- **A Unified Entity**: Not separate "agent" and "stakeholder" - but one entity that plays both roles simultaneously
+
+**Etymology**: "Mobster" combines:
+- **Mob**: The collaborative, emergent team that forms around problems
+- **-ster**: Suffix meaning "one who does/is" (like "gangster", "mobster")
+
+**Composition**: Each Mobster is built from multiple skill blocks that define their capabilities and expertise areas.
 
 ## System Foundation
 
@@ -20,7 +32,7 @@ For complete understanding of the elastic-mob system architecture, implementatio
 
 ## Foundation: Skill-Blocks
 
-The system is built on **skill-blocks** - atomic units of expertise that can be composed into agent-stakeholders. We currently have **37 skill blocks** organized into families:
+The system is built on **skill-blocks** - atomic units of expertise that can be composed into Mobsters. We currently have **37 skill blocks** organized into families:
 
 - **Technical Creation** (Frontend, Backend, Database, DevOps, Mobile, Integration...)
 - **Design & Experience** (UX, UI, Information Architecture, Accessibility...)
@@ -38,17 +50,17 @@ Each skill-block:
 - Understands what outputs it's responsible for
 - Can evaluate quality within its domain
 
-## Agent-Stakeholder Specifications (ASSes)
+## Mobster Specifications
 
-ASSes are composed of collections of skill-blocks, representing the different roles and perspectives needed in software development. Unlike traditional roles, ASSes can be dynamically composed based on project needs.
+As defined above, Mobsters are AI agents that also represent stakeholder perspectives. They are composed of collections of skill-blocks, representing the different roles and perspectives needed in software development. Unlike traditional roles, Mobsters can be dynamically composed based on project needs.
 
-Critically, each ASS plays different "games" at different levels - from tactical ("make this function work") to strategic ("build sustainable competitive advantage"). These games have different time horizons, success metrics, and optimization targets.
+Critically, each Mobster plays different "games" at different levels - from tactical ("make this function work") to strategic ("build sustainable competitive advantage"). These games have different time horizons, success metrics, and optimization targets.
 
 ## The Process: Elastic Mob Programming
 
 The development process uses an adaptive mob programming approach where:
 
-1. **All ASSes are always present** but engage dynamically based on relevance
+1. **All Mobsters are always present** but engage dynamically based on relevance
 2. **Mob roles rotate** semi-randomly:
    - Driver (implementing)
    - Navigator (directing)
@@ -56,7 +68,7 @@ The development process uses an adaptive mob programming approach where:
    - Scout (looking ahead)
    - Housekeeper (maintaining quality)
 
-3. **Participation is stake-based** - ASSes engage more when the conversation touches their skill-blocks' domains
+3. **Participation is stake-based** - Mobsters engage more when the conversation touches their skill-blocks' domains
 
 4. **The mob is elastic** - expanding during complex architectural decisions, contracting during routine implementation
 
@@ -68,7 +80,7 @@ The development process uses an adaptive mob programming approach where:
 
 2. **Holonic Output**: Each iteration produces working software that is complete and valuable at its own level, not merely a step toward the final product.
 
-3. **Conversation as Specification**: The natural language exchanges between ASSes become the living specification, preserving the multidimensional nature of system requirements.
+3. **Conversation as Specification**: The natural language exchanges between Mobsters become the living specification, preserving the multidimensional nature of system requirements.
 
 4. **Parallel Games**: Multiple optimization games run simultaneously - Security plays "protect the system" while UX plays "delight the user" - creating natural tension and balance.
 
@@ -76,7 +88,7 @@ The development process uses an adaptive mob programming approach where:
 
 ## Bootstrap Strategy
 
-We've completed the **foundation phase** with a comprehensive set of 37 skill blocks and 25 agent-stakeholders. The system now includes:
+We've completed the **foundation phase** with a comprehensive set of 37 skill blocks and 25 Mobsters. The system now includes:
 
 1. **Complete skill block coverage** across all major development domains
 2. **AI-powered code generation** system that preserves architectural principles
@@ -85,7 +97,7 @@ We've completed the **foundation phase** with a comprehensive set of 37 skill bl
 
 **Current Status**: Foundation complete, ready for implementation and testing.
 
-**Next Phase**: Building the actual Elastic-Mob system using the skill blocks and ASSes we've designed.
+**Next Phase**: Building the actual Elastic-Mob system using the skill blocks and Mobsters we've designed.
 
 The first working system will be the tool that builds itself - a satisfyingly recursive beginning that proves the concept while creating the platform.
 

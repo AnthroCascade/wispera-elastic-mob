@@ -29,15 +29,15 @@
 - The Resource Guardian (cares about "can we afford to build and run it?")
 
 ### Important Note
-We moved away from fixed role definitions toward **composable ASSes built from skill-blocks**. The idea is that agent-stakeholders would be dynamically composed from skill-block collections based on project needs, rather than having rigid predefined roles. This allows for:
+We moved away from fixed role definitions toward **composable Mobsters built from skill-blocks**. The idea is that Mobsters would be dynamically composed from skill-block collections based on project needs, rather than having rigid predefined roles. This allows for:
 - Startup scenarios (agents wearing multiple hats)
 - Enterprise scenarios (highly specialized agents)
 - Custom compositions for specific project types
 
-### Enhanced ASS Specifications
-All ASSes now include **emergent participation patterns** for semantic resonance:
-- **Activation Thresholds** - Relevance scores that determine when ASSes participate
-- **Participation Styles** - How ASSes emerge and engage in conversations
-- **Collaboration Patterns** - Natural interaction with other relevant ASSes
-- **Exit Conditions** - When ASSes disengage from conversations
-- **Conflict Resolution** - How ASSes handle disagreements with other perspectives
+### Enhanced Mobster Specifications
+All Mobsters now include **emergent participation patterns** for semantic resonance:
+- **Activation Thresholds** - Relevance scores that determine when Mobsters participate
+- **Participation Styles** - How Mobsters emerge and engage in conversations
+- **Collaboration Patterns** - Natural interaction with other relevant Mobsters
+- **Exit Conditions** - When Mobsters disengage from conversations
+- **Conflict Resolution** - How Mobsters handle disagreements with other perspectives

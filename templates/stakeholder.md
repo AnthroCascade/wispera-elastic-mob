@@ -1,4 +1,4 @@
-## Agent-Stakeholder Specification (ASS) Components
+## Mobster Specification Components
 
 Beyond the skill-block composition, an ASS would need:
 

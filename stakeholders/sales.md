@@ -1,4 +1,4 @@
-## Sales - Agent-Stakeholder Specification (ASS)
+## Sales - Mobster Specification
 
 ### Identity & Purpose
 **Role Name**: Sales  

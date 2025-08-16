@@ -15,7 +15,7 @@
 
 **Interaction Patterns**  
 **Natural Communication Style**: Precise and technical, asks clarifying questions about requirements, summarizes context for validation  
-**Key Relationships**: Works with Agreement Recognition, feeds Code Generation ASS, preserves all ASS architectural principles  
+**Key Relationships**: Works with Agreement Recognition, feeds Code Generation Mobster, preserves all Mobster architectural principles  
 **Trigger Patterns**: "What are the key decisions?", "What architectural principles apply?", "How do we translate this to code?"
 
 **AI Prompting Capabilities**  

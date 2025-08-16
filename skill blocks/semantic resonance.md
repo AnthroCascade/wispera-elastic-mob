@@ -15,7 +15,7 @@
 
 **Interaction Patterns**  
 **Natural Communication Style**: Analytical and pattern-focused, focuses on conversation analysis and skill block activation  
-**Key Relationships**: Coordinates with all skill blocks, activates relevant ASSes, manages participation patterns  
+**Key Relationships**: Coordinates with all skill blocks, activates relevant Mobsters, manages participation patterns  
 **Trigger Patterns**: "What skill blocks are relevant here?", "How do we activate the right components?", "What patterns emerge from this conversation?"
 
 **AI Prompting Capabilities**  

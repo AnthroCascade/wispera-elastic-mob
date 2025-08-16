@@ -54,7 +54,7 @@
 - **Context Translation** - Context adaptation, requirement translation, domain mapping
 
 ### Important Notes
-- **Skill blocks are composable** - Multiple skill blocks can be combined to create specialized ASSes
+- **Skill blocks are composable** - Multiple skill blocks can be combined to create specialized Mobsters
 - **Quality Gates is new** - Added based on case study insights about systematic quality maintenance
 - **Enhanced existing blocks** - Quality Validation, Documentation, and Process Facilitation have been enhanced with case study learnings
 - **Pattern recognition** - Several skill blocks now include pattern recognition capabilities for specification guidance and quality drift prevention
