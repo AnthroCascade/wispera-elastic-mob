@@ -28,7 +28,7 @@ This document outlines the implementation plan for building elastic-mob as an in
 
 ### **Step 2: Persona System Testing**
 - **Test elastic-mob persona** with real technical questions
-- **Validate ASS coordination** and consensus building
+- **Validate mobster coordination** and consensus building
 - **Identify any gaps** in skill block coverage
 - **Refine persona** based on real-world performance
 
@@ -69,7 +69,7 @@ end
 - **No dynamic creation** - everything is predefined and loaded once
 
 ### **Step 3: Basic Emergent Participation**
-- **Static participation rules** for each ASS
+- **Static participation rules** for each mobster
 - **Activation thresholds** based on relevance scores
 - **Simple collaboration patterns** (who talks to whom)
 

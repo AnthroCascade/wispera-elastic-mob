@@ -109,7 +109,7 @@ This document synthesizes insights from all case studies in the research finding
 
 ## **Elastic-Mob Design Recommendations**
 
-### **1. User Proxy ASS Design**
+### **1. User Proxy Mobster Design**
 
 #### **Core Capabilities Required**
 - **Pattern Recognition**: Detect when users are building novel features or experiencing quality drift
@@ -155,7 +155,7 @@ This document synthesizes insights from all case studies in the research finding
 ## **Implementation Priorities**
 
 ### **Phase 1: Core Capabilities (Weeks 1-4)**
-- [ ] **User Proxy ASS Design**: Basic pattern recognition and intervention capabilities
+- [ ] **User Proxy Mobster Design**: Basic pattern recognition and intervention capabilities
 - [ ] **Specification Guidance**: Help users create detailed, LLM-accessible specifications
 - [ ] **Quality Gate Suggestion**: Recommend quality processes and validation criteria
 - [ ] **Documentation Support**: Help maintain comprehensive project documentation

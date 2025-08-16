@@ -4,7 +4,7 @@
 
 This literature review establishes elastic-mob as a valid and significant research area within the broader field of emergent artificial intelligence systems. By synthesizing foundational theories from cognitive science, artificial intelligence, systems theory, and multi-agent systems, this document demonstrates that elastic-mob addresses critical gaps in current AI research while building upon well-established theoretical foundations.
 
-**Research Positioning**: Elastic-mob represents a novel approach to creating emergent intelligence through semantic resonance and autonomous stakeholder simulation (ASS) coordination, positioned at the intersection of cognitive architecture, multi-agent systems, and emergent behavior research.
+**Research Positioning**: Elastic-mob represents a novel approach to creating emergent intelligence through semantic resonance and autonomous mobster coordination, positioned at the intersection of cognitive architecture, multi-agent systems, and emergent behavior research.
 
 **Theoretical Foundation**: The system is inspired by Minsky's Society of Mind theory and grounded in emergent computation principles and game-theoretic coordination mechanisms, providing a robust theoretical basis for research validation.
 
@@ -55,7 +55,7 @@ This literature review establishes elastic-mob as a valid and significant resear
 - **Swarm Intelligence**: Collective behavior emerging from simple agent rules
 
 **Relevance to Elastic-Mob**:
-- ASSes function as autonomous agents with independent decision-making
+- Mobsters function as autonomous agents with independent decision-making
 - Coordination emerges through conversation context and semantic relevance
 - Environmental cues (conversation content) trigger natural coordination patterns
 - Collective intelligence emerges from stakeholder interaction dynamics
@@ -136,7 +136,7 @@ This literature review establishes elastic-mob as a valid and significant resear
 
 **Theoretical Significance**: Introduces a new paradigm for AI system coordination that moves beyond rule-based activation to semantic-driven emergence.
 
-### 3.2 Autonomous Stakeholder Simulation (ASS)
+### 3.2 Autonomous Mobster Coordination
 
 **Innovation**: Stakeholders are simulated as autonomous agents that coordinate through natural interaction patterns.
 
@@ -248,7 +248,7 @@ This literature review establishes elastic-mob as a valid and significant resear
 - Activation correlates with conversation relevance
 
 **Emergent Participation Validation**:
-- ASSes emerge based on conversation needs
+- Mobsters emerge based on conversation needs
 - Participation patterns vary naturally with content
 - No consistent go-to patterns or ritualistic behavior
 - System self-organizes without external direction

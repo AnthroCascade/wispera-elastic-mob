@@ -8,6 +8,8 @@ Skill blocks are the fundamental building blocks that define the capabilities an
 
 The complete, detailed definitions of all skill blocks are now maintained in the **in-concert repository** under `app/services/elastic_mob/definitions/skill_blocks/`.
 
+**📋 [Skill Block Template](templates/skill%20block.md)** - Template for creating new skill block specifications
+
 ### Core Development Skills
 - **Frontend Development** - Client-side development, UI components, user interface implementation
 - **Backend Development** - Server-side development, API implementation, business logic

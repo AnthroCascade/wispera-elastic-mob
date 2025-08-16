@@ -60,7 +60,7 @@ Each case study follows a consistent structure:
 - Learning progression, breakthrough moments, emotional journey
 
 ## **Integration with Elastic-Mob Design**
-- User proxy ASS implications, intervention mechanism requirements
+- User proxy mobster implications, intervention mechanism requirements
 
 ## **Action Items for Elastic-Mob**
 - Immediate, short-term, and long-term implementation priorities
@@ -110,7 +110,7 @@ Each case study follows a consistent structure:
 
 ## **Integration with Elastic-Mob**
 
-### **User Proxy ASS Design**
+### **User Proxy Mobster Design**
 - **Pattern Recognition**: Use discovered patterns to trigger user involvement
 - **Intervention Timing**: Apply research findings about when users need help
 - **Authority Mapping**: Use success patterns to determine decision boundaries

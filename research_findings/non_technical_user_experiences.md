@@ -2,7 +2,7 @@
 
 ## **Purpose**
 
-This document serves as a curated knowledge base for tracking successful patterns, processes, and experiences of non-technical users building software using LLMs. This knowledge will inform our elastic-mob user proxy ASS design and intervention mechanisms.
+This document serves as a curated knowledge base for tracking successful patterns, processes, and experiences of non-technical users building software using LLMs. This knowledge will inform our elastic-mob user proxy mobster design and intervention mechanisms.
 
 ## **Document Structure**
 
@@ -234,13 +234,13 @@ This document serves as a curated knowledge base for tracking successful pattern
 
 ## **Integration with Elastic-Mob**
 
-### **User Proxy ASS Design**
+### **User Proxy Mobster Design**
 - **Availability Patterns**: When are users most likely to need intervention?
 - **Authority Mapping**: What decisions should users make vs. agents?
 - **Intervention Triggers**: When should the system request human input?
 - **Learning Integration**: How can user decisions improve agent behavior?
 
-### **LLM Collaboration User Proxy ASS Design**
+### **LLM Collaboration User Proxy Mobster Design**
 - **Pattern Recognition**: 
   - Detect when users are building novel features (LLMs struggle with these)
   - Identify specification ambiguity or insufficient detail

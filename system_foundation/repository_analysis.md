@@ -101,7 +101,7 @@ In-concert is a collaborative platform for designing, building, testing, sharing
 
 #### **Pack Model**
 - **Purpose**: Groups related assets (assistants, personas, prompts)
-- **Integration**: Can organize elastic-mob skill blocks and ASSes
+- **Integration**: Can organize elastic-mob skill blocks and mobsters
 
 ## **Real-Time Communication Infrastructure**
 
@@ -181,7 +181,7 @@ In-concert is a collaborative platform for designing, building, testing, sharing
 ### **1. Asset Management Pattern**
 - **Packs**: Group related elastic-mob components
 - **Personas**: Extend for skill block definitions
-- **Audiences**: Extend for ASS specifications
+- **Audiences**: Extend for mobster specifications
 - **Prompts**: Extend for coordination instructions
 
 ### **2. Participation Pattern**

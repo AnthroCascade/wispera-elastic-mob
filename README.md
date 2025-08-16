@@ -9,8 +9,8 @@ We're creating a no-code system that captures and facilitates the conversations 
 **Mobster** is the core entity in the Elastic-Mob system. Each Mobster is:
 
 - **An AI Agent**: Possesses AI capabilities and can process information, make decisions, and take actions
-- **A Stakeholder**: Represents a specific stakeholder perspective (e.g., Security Expert, UX Designer, Product Owner)
-- **A Unified Entity**: Not separate "agent" and "stakeholder" - but one entity that plays both roles simultaneously
+- **A Perspective**: Represents a specific development perspective (e.g., Security Expert, UX Designer, Product Owner)
+- **A Unified Entity**: Not separate "agent" and "perspective" - but one entity that plays both roles simultaneously
 
 **Etymology**: "Mobster" combines:
 - **Mob**: The collaborative, emergent team that forms around problems
@@ -54,7 +54,10 @@ Each skill-block:
 
 ## Mobster Specifications
 
-As defined above, Mobsters are AI agents that also represent stakeholder perspectives. They are composed of collections of skill-blocks, representing the different roles and perspectives needed in software development. Unlike traditional roles, Mobsters can be dynamically composed based on project needs.
+As defined above, Mobsters are AI agents that also represent development perspectives. They are composed of collections of skill-blocks, representing the different roles and perspectives needed in software development. Unlike traditional roles, Mobsters can be dynamically composed based on project needs.
+
+**📋 [Mobster Template](templates/mobster.md)** - Complete template for defining new mobster specifications
+**📋 [Skill Block Template](templates/skill%20block.md)** - Complete template for defining new skill block specifications
 
 > **👥 [Complete Mobster Overview](mobsters%20overview.md)** - Comprehensive list and categorization of all mobsters
 
@@ -125,7 +128,7 @@ This document explores the sophisticated game-theoretic foundations, semantic pa
 For a comprehensive assessment of the current Elastic-Mob implementation status, including identified deficiencies, inconsistencies, and recommended action items, see **[current audit.md](current%20audit.md)**.
 
 This document provides:
-- Detailed analysis of skill block and ASS composition
+- Detailed analysis of skill block and mobster composition
 - Identification of missing components and template inconsistencies
 - Strategic recommendations for system completion
 - Prioritized action plan for moving forward
@@ -154,7 +157,7 @@ These documents provide:
 For external reference materials and market analysis, see **[reference_materials/](reference_materials/)**:
 
 - **Market Analysis**: Competitive landscape and market context
-- **Stakeholder Analysis**: External research on ASS applications
+- **Mobster Analysis**: External research on mobster applications
 - **Context Documents**: Background information for development decisions
 
 ### Technology & Implementation
@@ -185,9 +188,9 @@ This document provides:
 For the meta-instruction persona that enables any AI assistant to simulate elastic-mob behavior, see **[elastic_mob_persona.md](system_foundation/elastic_mob_persona.md)**.
 
 This document provides:
-- **Meta-ASS orchestration** instructions for AI assistants
+- **Meta-mobster orchestration** instructions for AI assistants
 - **Response structure** patterns for elastic-mob simulation
-- **ASS activation rules** and skill block integration
+- **Mobster activation rules** and skill block integration
 - **Consensus building process** and code generation triggering
 - **Behavioral guidelines** and success metrics
 - **Usage instructions** for immediate elastic-mob experience
@@ -203,12 +206,12 @@ This document provides:
 - **Quality assurance guidelines** for maintaining system integrity
 - **Iteration planning** for continuous persona evolution
 
-### Meta-ASS Architecture
+### Meta-Mobster Architecture
 
-For analysis of self-improvement capabilities and the balance between self-awareness and system stability, see **[meta_ass_architecture.md](system_foundation/meta_ass_architecture.md)**.
+For analysis of self-improvement capabilities and the balance between self-awareness and system stability, see **[meta_mobster_architecture.md](system_foundation/meta_mobster_architecture.md)**.
 
 This document provides:
-- **Meta-ASS vs. external orchestrator** analysis and trade-offs
+- **Meta-mobster vs. external orchestrator** analysis and trade-offs
 - **Hybrid approach** for self-awareness without circular complexity
 - **Layered meta-architecture** design principles
 - **Implementation strategy** for emergent optimization

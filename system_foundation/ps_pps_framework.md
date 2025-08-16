@@ -37,7 +37,7 @@ The **PS-PPS Framework** (Purpose, Scope, Participations, Patterns, Semantics) i
 
 **P - Participations**: Holon composition at appropriate level
 - Packages, classes, mixins, functions
-- Skill blocks, ASSes, semantic resonance
+- Skill blocks, mobsters, semantic resonance
 - Appropriate to exploration level
 
 **P - Patterns**: Recognition of authentic patterns
@@ -87,12 +87,12 @@ The **PS-PPS Framework** (Purpose, Scope, Participations, Patterns, Semantics) i
 - Patterns: What authentic patterns does this resemble?
 - Semantics: How can this be formally expressed?
 
-### **2. ASS Coordination Enhancement**
+### **2. Mobster Coordination Enhancement**
 **Current**: Game-theoretic coordination
 **PS-PPS Enhancement**: Formal coordination contracts
-- Purpose: Why should these ASSes coordinate?
+- Purpose: Why should these mobsters coordinate?
 - Scope: What are the coordination boundaries?
-- Participations: How do ASSes compose their coordination?
+- Participations: How do mobsters compose their coordination?
 - Patterns: What coordination patterns are authentic?
 - Semantics: How can coordination be formally specified?
 
@@ -117,7 +117,7 @@ The **PS-PPS Framework** (Purpose, Scope, Participations, Patterns, Semantics) i
 
 ### **Phase 2: Optional Enhancement**
 - Implement PS-PPS investigation in select skill blocks
-- Add PS-PPS methodology to ASS coordination
+- Add PS-PPS methodology to mobster coordination
 - Evaluate benefits and performance impact
 - Gather feedback on usefulness
 

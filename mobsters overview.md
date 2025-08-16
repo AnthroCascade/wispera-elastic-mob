@@ -53,3 +53,5 @@ All Mobsters now include **emergent participation patterns** for semantic resona
 ## For Detailed Definitions
 
 See the in-concert repository at `app/services/elastic_mob/definitions/mobsters/` for complete specifications of each mobster.
+
+**📋 [Mobster Template](templates/mobster.md)** - Template for creating new mobster specifications

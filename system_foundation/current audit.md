@@ -10,6 +10,8 @@
 
 **📋 Repository Structure**: Detailed skill block and mobster specifications are now maintained in the **in-concert repository** under `app/services/elastic_mob/definitions/`. See [skill blocks overview.md](../skill%20blocks%20overview.md) and [mobsters overview.md](../mobsters%20overview.md) for comprehensive overviews.
 
+**📋 Templates**: Use [skill block template](../templates/skill%20block.md) and [mobster template](../templates/mobster.md) for creating new specifications.
+
 ## **✅ What's Been Accomplished**
 
 ### **1. Foundation Completion (COMPLETED)**
@@ -19,7 +21,7 @@
 - **Missing skill blocks** created and integrated
 
 ### **2. New Skill Blocks Added (COMPLETED)**
-- ✅ **Testing** - Most critical, referenced by 15+ ASSes
+- ✅ **Testing** - Most critical, referenced by 15+ mobsters
 - ✅ **Mobile Development** - Mobile app development expertise
 - ✅ **Integration** - System integration and API design
 - ✅ **Project Planning** - Project management and coordination
@@ -33,13 +35,13 @@
 - ✅ **Quality Validation** - Ensures generated code meets principles
 
 ### **4. Code Generation System (COMPLETED)**
-- ✅ **Code Generation ASS** - Coordinates all code generation activities
+- ✅ **Code Generation Mobster** - Coordinates all code generation activities
 - ✅ **Agreement Recognition** - Identifies when mob reaches consensus
 - ✅ **Context Translation** - Converts decisions to code generation context
 - ✅ **Generation Triggering** - Initiates code generation when ready
 - ✅ **Quality Validation** - Ensures generated code meets principles
 
-### **5. ASS Consolidation (COMPLETED)**
+### **5. Mobster Consolidation (COMPLETED)**
 - ✅ **UX Person consolidated into UI/UX Designer**
 - ✅ **All references updated** to use consolidated role
 - ✅ **Specialized roles maintained** (Backend Developer, Frontend Developer, Engineer/Developer)
@@ -57,15 +59,15 @@
 - **Architectural Principles**: Secure-by-Default, Type-Enforced Security, Performance Architecture ✅
 - **Code Generation**: Agreement Recognition, Context Translation, Generation Triggering, Quality Validation ✅
 
-### **ASS Composition: 100% Complete**
+### **Mobster Composition: 100% Complete**
 - **25 Mobsters** with proper skill block composition
 - **All skill block references** resolved and consistent
 - **No duplicate roles** remaining
 - **Clear collaboration patterns** established
 
 ### **Template Compliance: 100% Complete**
-- **All skill blocks** follow the established template format
-- **All ASSes** follow the established template format
+- **All skill blocks** follow the established template format (see [skill block.md](../templates/skill%20block.md))
+- **All Mobsters** follow the established template format (see [mobster.md](../templates/mobster.md))
 - **Consistent formatting** across all artifacts
 - **No template violations** remaining
 
@@ -76,20 +78,20 @@
 - Each skill block knows its domain, can prompt AI systems, and evaluate quality
 - Clear boundaries and evolution paths defined
 
-### **2. Integrated ASS System**
+### **2. Integrated Mobster System**
 - 25 Mobsters representing all development perspectives
 - Dynamic composition based on project needs
 - Multi-game optimization with different time horizons and success metrics
 
 ### **3. AI-Powered Code Generation**
-- Agreement recognition across multiple ASSes
+- Agreement recognition across multiple mobsters
 - Context translation preserving architectural principles
 - Quality validation ensuring principle compliance
 - Coordinated generation workflow
 
 ### **4. Architectural Principle Enforcement**
 - Security, performance, and quality principles declared at specification time
-- Principles integrated into all relevant ASSes
+- Principles integrated into all relevant mobsters
 - Quality gates built into the generation process
 
 ### **5. Implementation Architecture Defined**
@@ -101,14 +103,14 @@
 ### **6. Persona System Ready**
 - **Elastic-mob persona**: See [elastic_mob_persona.md](elastic_mob_persona.md) for complete system
 - **Persona optimizer**: See [persona_optimizer.md](persona_optimizer.md) for optimization framework
-- **Meta-ASS architecture**: See [meta_ass_architecture.md](meta_ass_architecture.md) for self-improvement design
+- **Meta-mobster architecture**: See [meta_mobster_architecture.md](meta_mobster_architecture.md) for self-improvement design
 - **Repository context**: See [elastic_mob_persona.md](elastic_mob_persona.md) for initialization requirements
 
 ## **📋 Next Phase Recommendations**
 
 ### **Phase 1: Persona System Testing (Weeks 1-2)**
 1. **Test elastic-mob persona** with real technical questions
-2. **Validate ASS coordination** and consensus building
+2. **Validate Mobster coordination** and consensus building
 3. **Test code generation** from mob conversations
 4. **Identify persona optimization opportunities**
 
@@ -139,7 +141,7 @@
 - Security → Application Security, Infrastructure Security, Compliance Security
 - Testing → Test Automation, Performance Testing, Security Testing
 
-### **ASS Evolution**
+### **Mobster Evolution**
 - New specialized roles can be composed from existing skill blocks
 - Skill blocks can be enhanced with new capabilities
 - System can adapt to new development methodologies and technologies

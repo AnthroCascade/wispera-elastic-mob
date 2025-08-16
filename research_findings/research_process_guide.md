@@ -234,7 +234,7 @@ This guide provides practical steps for conducting research into non-technical u
 
 ## **Integration with Elastic-Mob**
 
-### **User Proxy ASS Design**
+### **User Proxy Mobster Design**
 - **Pattern Recognition**: Use discovered patterns to trigger user involvement
 - **Intervention Timing**: Apply research findings about when users need help
 - **Authority Mapping**: Use success patterns to determine decision boundaries
