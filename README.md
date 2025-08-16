@@ -34,6 +34,8 @@ For complete understanding of the elastic-mob system architecture, implementatio
 
 The system is built on **skill-blocks** - atomic units of expertise that can be composed into Mobsters. We currently have **37 skill blocks** organized into families:
 
+> **📋 [Complete Skill Block Overview](skill%20blocks%20overview.md)** - Comprehensive list and categorization of all skill blocks
+
 - **Technical Creation** (Frontend, Backend, Database, DevOps, Mobile, Integration...)
 - **Design & Experience** (UX, UI, Information Architecture, Accessibility...)
 - **Quality & Reliability** (Testing, Security, Performance, Monitoring...)
@@ -53,6 +55,8 @@ Each skill-block:
 ## Mobster Specifications
 
 As defined above, Mobsters are AI agents that also represent stakeholder perspectives. They are composed of collections of skill-blocks, representing the different roles and perspectives needed in software development. Unlike traditional roles, Mobsters can be dynamically composed based on project needs.
+
+> **👥 [Complete Mobster Overview](mobsters%20overview.md)** - Comprehensive list and categorization of all mobsters
 
 Critically, each Mobster plays different "games" at different levels - from tactical ("make this function work") to strategic ("build sustainable competitive advantage"). These games have different time horizons, success metrics, and optimization targets.
 
@@ -104,6 +108,13 @@ The first working system will be the tool that builds itself - a satisfyingly re
 ---
 
 ## Further Reading
+
+### Core Definitions & Specifications
+
+> **📚 [Skill Blocks Overview](skill%20blocks%20overview.md)** - Complete categorization and overview of all 37 skill blocks
+> **👥 [Mobsters Overview](mobsters%20overview.md)** - Complete list and categorization of all mobsters
+
+> **💡 Note**: Detailed specifications for skill blocks and mobsters are now maintained in the **in-concert repository** under `app/services/elastic_mob/definitions/` for implementation use.
 
 For deeper technical and conceptual details about the system architecture, multi-game optimization strategies, and implementation approaches, see **[deeper architecture.md](deeper%20architecture.md)**.
 

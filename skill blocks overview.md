@@ -1,4 +1,12 @@
-## Skill Blocks Available in Elastic-Mob
+# Skill Blocks - Overview
+
+## What Are Skill Blocks?
+
+Skill blocks are the fundamental building blocks that define the capabilities and behaviors of mobsters in the elastic-mob system. Each skill block represents a specific domain of expertise or capability that can be combined with others to create specialized mobsters.
+
+## Current Skill Blocks
+
+The complete, detailed definitions of all skill blocks are now maintained in the **in-concert repository** under `app/services/elastic_mob/definitions/skill_blocks/`.
 
 ### Core Development Skills
 - **Frontend Development** - Client-side development, UI components, user interface implementation
@@ -52,12 +60,16 @@
 - **Agreement Recognition** - Consensus building, agreement detection, conflict resolution
 - **Generation Triggering** - Code generation initiation, generation control, generation management
 - **Context Translation** - Context adaptation, requirement translation, domain mapping
+- **Semantic Resonance** - Skill block activation through conversation content analysis
 
-### Important Notes
+## Important Notes
+
 - **Skill blocks are composable** - Multiple skill blocks can be combined to create specialized Mobsters
-- **Quality Gates is new** - Added based on case study insights about systematic quality maintenance
-- **Enhanced existing blocks** - Quality Validation, Documentation, and Process Facilitation have been enhanced with case study learnings
-- **Pattern recognition** - Several skill blocks now include pattern recognition capabilities for specification guidance and quality drift prevention
-- **Semantic Resonance** - New skill block for enabling skill block activation through conversation content
+- **Single source of truth** - Detailed definitions are maintained in the in-concert repository
+- **Pattern recognition** - Several skill blocks include pattern recognition capabilities for specification guidance and quality drift prevention
 - **Static Runtime Approach** - All skill blocks use predefined activation patterns for semantic resonance
 - **Semantic Activation Patterns** - Each skill block includes triggers, co-activation, and activation strength for pattern matching
+
+## For Detailed Definitions
+
+See the in-concert repository at `app/services/elastic_mob/definitions/skill_blocks/` for complete specifications of each skill block.

@@ -8,6 +8,8 @@
 
 **Note**: PS-PPS Framework has been added as supplementary design methodology for potential enhancement. See [ps_pps_framework.md](ps_pps_framework.md) for details.
 
+**📋 Repository Structure**: Detailed skill block and mobster specifications are now maintained in the **in-concert repository** under `app/services/elastic_mob/definitions/`. See [skill blocks overview.md](../skill%20blocks%20overview.md) and [mobsters overview.md](../mobsters%20overview.md) for comprehensive overviews.
+
 ## **✅ What's Been Accomplished**
 
 ### **1. Foundation Completion (COMPLETED)**

@@ -7,6 +7,8 @@ Elastic-mob will be implemented as an **integrated engine within in-concert** ra
 
 **Note**: This document contains the complete implementation strategy. For current status and readiness assessment, see [current_audit.md](current_audit.md). For technology analysis and recommendations, see [architecture_critique.md](architecture_critique.md).
 
+**📋 Implementation Resources**: The detailed skill block and mobster specifications that will be implemented are maintained in the **in-concert repository** under `app/services/elastic_mob/definitions/`. See [skill blocks overview.md](../skill%20blocks%20overview.md) and [mobsters overview.md](../mobsters%20overview.md) for comprehensive overviews.
+
 ### **Architecture Overview**
 ```
 Elastic-Mob Frontend (Plain JS + Web Components) → Elastic-Mob Engine (within in-concert) → Existing in-concert models/services
