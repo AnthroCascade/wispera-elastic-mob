@@ -32,7 +32,7 @@ For complete understanding of the elastic-mob system architecture, implementatio
 
 ## Foundation: Skill-Blocks
 
-The system is built on **skill-blocks** - atomic units of expertise that can be composed into Mobsters. We currently have **37 skill blocks** organized into families:
+The system is built on **skill-blocks** - atomic units of expertise that can be composed into Mobsters. We currently have **38 skill blocks** organized into families:
 
 > **📋 [Complete Skill Block Overview](skill%20blocks%20overview.md)** - Comprehensive list and categorization of all skill blocks
 
@@ -44,6 +44,7 @@ The system is built on **skill-blocks** - atomic units of expertise that can be 
 - **Business & Strategy** (Market Analysis, Pricing, Sales Enablement, ROI Analysis...)
 - **Architectural Principles** (Secure-by-Default, Type-Enforced Security, Performance Architecture...)
 - **Code Generation** (Agreement Recognition, Context Translation, Generation Triggering, Quality Validation)
+- **Architectural Enforcement** (Type Safety, Behavioral Contracts, Responsibility-Driven Design, Stability)
 
 Each skill-block:
 - Knows its domain of expertise
@@ -51,6 +52,7 @@ Each skill-block:
 - Recognizes patterns in conversations relevant to its domain
 - Understands what outputs it's responsible for
 - Can evaluate quality within its domain
+- **Incorporates opionated guidance principles** for architectural enforcement and stability
 
 ## Mobster Specifications
 
@@ -62,6 +64,8 @@ As defined above, Mobsters are AI agents that also represent development perspec
 > **👥 [Complete Mobster Overview](stakeholders%20overview.md)** - Comprehensive list and categorization of all mobsters
 
 Critically, each Mobster plays different "games" at different levels - from tactical ("make this function work") to strategic ("build sustainable competitive advantage"). These games have different time horizons, success metrics, and optimization targets.
+
+**New Mobsters incorporate opinionated guidance principles** for architectural enforcement, stability, and fierce conversations, ensuring the system maintains architectural integrity through opinionated design decisions.
 
 ## The Process: Elastic Mob Programming
 
@@ -93,14 +97,17 @@ The development process uses an adaptive mob programming approach where:
 
 5. **AI-Powered Code Generation**: When the mob reaches consensus, specialized skill blocks automatically translate architectural decisions into code generation context, ensuring that all principles are preserved in the final implementation.
 
+6. **Architectural Enforcement**: New mobsters maintain architectural integrity through fierce conversations, type safety, and behavioral contracts, incorporating opinionated guidance principles for stability and consistency.
+
 ## Bootstrap Strategy
 
-We've completed the **foundation phase** with a comprehensive set of **37 skill blocks** and **25 Mobsters**. The system now includes:
+We've completed the **foundation phase** with a comprehensive set of **38 skill blocks** and **26 Mobsters**. The system now includes:
 
-1. **Complete skill block coverage** across all major development domains
+1. **Complete skill block coverage** across all development domains
 2. **AI-powered code generation** system that preserves architectural principles
 3. **Integrated architectural principles** (security, performance, quality) declared at specification time
 4. **Coordinated mob conversation** system with process facilitation and agreement recognition
+5. **Opinionated guidance integration** for architectural enforcement, type safety, and stability
 
 **Current Status**: Foundation complete, ready for implementation and testing.
 

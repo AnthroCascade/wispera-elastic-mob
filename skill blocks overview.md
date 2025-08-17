@@ -33,6 +33,7 @@ The complete, detailed definitions of all skill blocks are now maintained in the
 - **Type-Enforced Security** - Type safety, security through types, compile-time security
 - **Secure-by-Default Architecture** - Security-first design, secure defaults, security architecture
 - **Architectural Principles** - Overall system design principles, architectural patterns
+- **Architectural Enforcement** - Maintaining architectural integrity and enforcing design principles through fierce conversations and type-safe implementations
 
 ### Process & Facilitation
 - **Process Facilitation** - Conversation management, decision frameworks, mob dynamics
@@ -91,7 +92,8 @@ The complete, detailed definitions of all skill blocks are now maintained in the
 - **Enhanced capabilities** - Several skill blocks have been enhanced with authentication, responsive design, and stakeholder experience expertise
 - **Technology preferences** - Component Architecture emphasizes plain JavaScript + Web Components, avoiding frameworks, with agnostic design system approach
 - **Skill-based naming** - All skill blocks are now named for their actual capabilities rather than roles, eliminating naming confusion
-- **Current total**: 37 skill blocks covering all major development domains
+- **Opinionated guidance integration** - New skill blocks incorporate opinionated app guidance principles for architectural enforcement, type safety, and stability
+- **Current total**: 38 skill blocks covering all major development domains
 
 ## For Detailed Definitions
 

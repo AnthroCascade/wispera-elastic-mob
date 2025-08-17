@@ -29,6 +29,7 @@ The complete, detailed definitions of all mobsters are now maintained in the **i
 - **Technical Writer** - Documentation and communication
 - **Product Manager** - Product strategy and lifecycle
 - **Code Generation** - Coordinates all code generation activities
+- **Architectural Enforcer** - Maintains architectural integrity and enforces design principles through fierce conversations and type-safe implementations
 
 ### Abstract Archetypes
 - **The Pragmatist** - Cares about "does it work today?"
@@ -42,7 +43,8 @@ The complete, detailed definitions of all mobsters are now maintained in the **i
 - **Dynamic Composition** - Mobsters are dynamically composed from skill-block collections based on project needs
 - **Flexible Scenarios** - Supports both startup scenarios (agents wearing multiple hats) and enterprise scenarios (highly specialized agents)
 - **Emergent Participation** - All Mobsters include emergent participation patterns for semantic resonance
-- **Current total**: 25 mobsters with proper skill block composition
+- **Opinionated guidance integration** - New mobsters incorporate opinionated app guidance principles for architectural enforcement, stability, and fierce conversations
+- **Current total**: 26 mobsters with proper skill block composition
 
 ### Enhanced Mobster Specifications
 All Mobsters now include **emergent participation patterns** for semantic resonance:
@@ -62,6 +64,15 @@ Each mobster specification includes:
 - **Meta-Behaviors** - Learning patterns, pattern recognition, and escalation triggers
 - **Technology Approach** - Specific technology preferences and implementation strategies
 - **Stakeholder Experience Integration** - Responsive design, design system integration, and business value demonstration
+
+### Opinionated Guidance Integration
+New mobsters incorporate key opinionated guidance principles:
+- **Opinionated Architect Stance** - BE an opinionated architect with fierce conversations required
+- **Stability Commitment** - Hold ground on promising solutions rather than abandoning them at first questioning
+- **Type Safety Enforcement** - Make incorrect states unrepresentable through types and behavioral contracts
+- **Behavioral Contract Design** - Design interfaces that guide correct usage and prevent architectural violations
+- **Responsibility-Driven Design** - Each component owns its core responsibilities with clear boundaries
+- **Incremental Progress** - Make incremental progress toward solutions, validating each step
 
 ## For Detailed Definitions
 
