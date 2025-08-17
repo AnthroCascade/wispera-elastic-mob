@@ -1,0 +1,693 @@
+**USER**: I'd like to modify this prompt so that I can use it with my application. 
+
+**ASSISTANT**: I'll help you modify this prompt for your specific application. To make it most useful for you, I need to know a few things about your project:
+
+1. **What type of application are you building?** (e.g., web app, mobile app, desktop app)
+2. **What tech stack are you using?** (e.g., React, Next.js, Vue, Angular for frontend; Node.js, Python, etc. for backend)
+3. **Do you already have Supabase set up in your project?**
+4. **Are there any specific authentication requirements?** (e.g., email instead of username, additional social providers, multi-factor authentication)
+5. **What's your current project structure?** (e.g., monorepo, separate frontend/backend, specific folder structure)
+
+Once you provide these details, I can customize the prompt to be more specific to your needs. For example, I could:
+
+- Add specific code examples for your tech stack
+- Include file paths where authentication logic should be implemented
+- Reference your existing project structure and naming conventions
+- Add specific UI component requirements if you're using a particular design system
+- Include integration steps with your existing codebase
+
+Would you like to share these details so I can create a more tailored prompt for your application?
+
+**USER**: 1.  It is an app that should be responsive across different device types from web to mobile to desktop.  However, it is not going to be native. 
+2.  We are using React and Vite with Supabase for the backend.  We are using bolt.new as our builder. 
+3.  We already have Supabase setup for this project.  
+4.  I would specifically like to wire up the visual authentication components we already have in place.  The authentication options our UI supports are magic links or social (google, facebook, reddit, X).  We have sign-up and authentication flows visually that we want to wire to supabase.  In addition there are specific elements of schema we want to support.  I am providing the schema file below.  
+5.  The project structure will be known to the bolt.new, I am looking for a prompt to specifically capture the requirements for authentication that I can then use in a bolt chat. 
+
+**ASSISTANT**: Based on your requirements, here's a modified prompt specifically tailored for your React/Vite/Supabase application that you can use in bolt.new:
+
+```
+=== DEVELOPER PERSONA ===
+You are an experienced React developer specializing in Supabase authentication implementations. You have deep knowledge of React hooks, Vite configuration, and Supabase Auth APIs. You understand responsive design principles and can create authentication flows that work seamlessly across web, mobile, and desktop browsers.
+
+=== TASK: Wire Up Existing Authentication UI Components with Supabase ===
+
+### Context
+We have a React/Vite application with Supabase already configured. The visual authentication components are already built and styled. Your task is to connect these existing UI components to Supabase Auth functionality.
+
+### Authentication Methods to Implement
+
+1. **Magic Link Authentication:**
+   - Wire up the existing email input and submit button to send magic links via Supabase
+   - Handle the magic link callback/redirect flow
+   - Show appropriate loading and success/error states using existing UI components
+
+2. **Social Authentication:**
+   - Connect existing social auth buttons to Supabase OAuth providers:
+     - Google
+     - Facebook
+     - Reddit
+     - X (Twitter)
+   - Configure OAuth redirects and handle callbacks
+   - Ensure proper error handling for cancelled/failed social logins
+
+### Existing UI Flows to Connect
+
+1. **Sign-Up Flow:**
+   - Connect form validation to Supabase auth requirements
+   - Create user profile in database upon successful registration
+   - Handle duplicate email/user errors gracefully
+
+2. **Sign-In Flow:**
+   - Implement authentication state management
+   - Handle "remember me" functionality if present in UI
+   - Manage redirect after successful login
+
+### Schema Integration Requirements
+[Note: Insert your schema file details here]
+
+### Technical Requirements
+
+1. **State Management:**
+   - Use React Context or existing state management for auth state
+   - Persist authentication state across page refreshes
+   - Handle token refresh automatically
+
+2. **Responsive Behavior:**
+   - Ensure authentication flows work on all viewport sizes
+   - Handle mobile-specific considerations (e.g., keyboard behavior, touch interactions)
+   - Test social auth redirects on mobile browsers
+
+3. **Security Best Practices:**
+   - Implement proper CORS configuration for social auth
+   - Set up secure redirect URLs in Supabase dashboard
+   - Handle auth errors without exposing sensitive information
+
+4. **User Experience:**
+   - Show loading states during authentication processes
+   - Provide clear error messages for common issues
+   - Implement smooth transitions between auth states
+
+### Implementation Checklist
+
+- [ ] Configure Supabase Auth providers in dashboard
+- [ ] Set up environment variables for auth configuration
+- [ ] Create auth context/hooks for reusable authentication logic
+- [ ] Wire up magic link sign-in/sign-up
+- [ ] Implement social auth for all four providers
+- [ ] Handle post-authentication user profile creation
+- [ ] Add auth state persistence
+- [ ] Implement sign-out functionality
+- [ ] Test on multiple devices and browsers
+- [ ] Handle edge cases (network errors, invalid tokens, etc.)
+
+### Code Structure Expectations
+
+- Keep authentication logic separated in dedicated hooks/utilities
+- Use TypeScript interfaces for auth-related data if TypeScript is enabled
+- Follow existing project patterns for API calls and error handling
+- Ensure all auth-related environment variables are properly typed and validated
+
+Please implement this authentication system by connecting the existing UI components to Supabase, ensuring a smooth and secure authentication experience across all device types.
+```
+
+To use this effectively, you should:
+
+1. **Add your schema details** where indicated - this will help the AI understand your specific database structure and user profile requirements
+
+2. **Specify any existing component names or paths** if you want the AI to reference specific files
+
+3. **Include any custom requirements** like specific redirect URLs or additional user metadata you want to capture
+
+Would you like me to adjust any part of this prompt or add more specific details about any authentication aspect?
+
+**USER**: If I provide you with example SQL from a project where I had setup Auth and an example of a JSON token can you synthesize it further into the prompt?
+
+**ASSISTANT**: Absolutely! That would be very helpful. Please share:
+
+1. The SQL schema/setup from your previous auth project
+2. An example JSON token structure
+
+With those examples, I can make the prompt much more specific by:
+- Including the exact database schema requirements
+- Specifying the token structure and claims that need to be handled
+- Adding specific fields that need to be captured during authentication
+- Detailing any custom user metadata or profile requirements
+- Including any specific database triggers or RLS policies that should be implemented
+
+This will make the prompt much more actionable for bolt.new, as it will have concrete implementation details rather than generic requirements.
+
+Please paste the SQL and JSON token example, and I'll integrate them into a more detailed prompt.
+
+**USER**: ## SQL Schema ##
+
+-- SQL Script to recreate authentication-related schema elements
+
+-- Set search path to public schema
+SET search_path = public;
+
+-- Drop existing tables and types if they exist to ensure a clean recreation
+-- Order matters due to foreign key constraints, so drop tables first
+DROP TABLE IF EXISTS user_profiles CASCADE;
+DROP TABLE IF EXISTS role_permissions CASCADE;
+DROP TABLE IF EXISTS organization_users CASCADE;
+DROP TABLE IF EXISTS subscriptions CASCADE;
+DROP TABLE IF EXISTS user_roles CASCADE;
+DROP TABLE IF EXISTS user_org_tenants CASCADE;
+DROP TABLE IF EXISTS user_subscriptions CASCADE;
+DROP TABLE IF EXISTS auth_settings CASCADE;
+DROP TABLE IF EXISTS supabase_config CASCADE;
+
+-- Drop ENUM types
+DROP TYPE IF EXISTS public.app_permission;
+DROP TYPE IF EXISTS public.app_role;
+
+-- Drop trigger functions (if they exist and are not used by other parts)
+-- Note: The actual function bodies are not provided in the schema JSON.
+-- You will need to provide the correct SQL for these functions.
+DROP FUNCTION IF EXISTS public.update_user_metadata_on_role_change CASCADE;
+DROP FUNCTION IF EXISTS public.update_updated_at_column CASCADE;
+
+
+-- 1. Create ENUM types
+CREATE TYPE public.app_permission AS ENUM (
+    'app.promptManagement',
+    'app.thoughtStream'
+    'app.learn',
+    'app.console',
+    'app.api'
+);
+
+CREATE TYPE public.app_role AS ENUM (
+    'admin',
+    'user',
+    'guest'
+);
+
+-- 2. Create Tables
+
+-- Table: role_permissions
+CREATE TABLE public.role_permissions (
+    id bigint NOT NULL,
+    role public.app_role NOT NULL,
+    permission public.app_permission NOT NULL,
+    created_at timestamp with time zone DEFAULT now() NOT NULL,
+    updated_at timestamp with time zone DEFAULT now() NOT NULL
+);
+COMMENT ON TABLE public.role_permissions IS 'Application permissions for each role.';
+
+-- Table: user_profiles
+CREATE TABLE public.user_profiles (
+    id uuid NOT NULL,
+    email text NOT NULL,
+    name text,
+    created_at timestamp with time zone DEFAULT now(),
+    wispera_handle text NOT NULL
+);
+
+-- Table: organization_users
+CREATE TABLE public.organization_users (
+    id bigint NOT NULL,
+    user_id uuid NOT NULL,
+    organization_id uuid NOT NULL,
+    role text NOT NULL,
+    created_at timestamp with time zone DEFAULT now() NOT NULL,
+    updated_at timestamp with time zone DEFAULT now() NOT NULL
+);
+
+-- Table: subscriptions
+CREATE TABLE public.subscriptions (
+    id bigint NOT NULL,
+    user_id uuid NOT NULL,
+    status text NOT NULL,
+    plan_id text NOT NULL,
+    current_period_start timestamp with time zone NOT NULL,
+    current_period_end timestamp with time zone NOT NULL,
+    created_at timestamp with time zone DEFAULT now() NOT NULL,
+    updated_at timestamp with time zone DEFAULT now() NOT NULL
+);
+
+-- Table: user_roles
+CREATE TABLE public.user_roles (
+    id bigint NOT NULL,
+    user_id uuid NOT NULL,
+    role public.app_role NOT NULL,
+    created_at timestamp with time zone DEFAULT now() NOT NULL,
+    updated_at timestamp with time zone DEFAULT now() NOT NULL
+);
+COMMENT ON TABLE public.user_roles IS 'Application roles for each user.';
+
+-- Table: user_org_tenants
+CREATE TABLE public.user_org_tenants (
+    id bigint NOT NULL,
+    user_id uuid NOT NULL,
+    is_tenant_user boolean DEFAULT false NOT NULL,
+    created_at timestamp with time zone DEFAULT now() NOT NULL,
+    updated_at timestamp with time zone DEFAULT now() NOT NULL
+);
+COMMENT ON TABLE public.user_org_tenants IS 'Stores whether a user is an organization tenant user';
+
+-- Table: user_subscriptions
+CREATE TABLE public.user_subscriptions (
+    id bigint NOT NULL,
+    user_id uuid NOT NULL,
+    has_active_subscription boolean DEFAULT false NOT NULL,
+    plan_type text DEFAULT 'One Time Purchase'::text NOT NULL,
+    subscription_id text,
+    created_at timestamp with time zone DEFAULT now() NOT NULL,
+    updated_at timestamp with time zone DEFAULT now() NOT NULL
+);
+COMMENT ON TABLE public.user_subscriptions IS 'Stores user subscription status and details';
+
+-- Table: auth_settings
+CREATE TABLE public.auth_settings (
+    id bigint NOT NULL,
+    custom_issuer text DEFAULT 'https://thoughtstream.wispera.ai'::text NOT NULL,
+    created_at timestamp with time zone DEFAULT now() NOT NULL,
+    updated_at timestamp with time zone DEFAULT now() NOT NULL
+);
+COMMENT ON TABLE public.auth_settings IS 'Stores authentication settings like custom issuer';
+
+-- Table: supabase_config
+CREATE TABLE public.supabase_config (
+    key text NOT NULL,
+    value text NOT NULL,
+    created_at timestamp with time zone DEFAULT now(),
+    updated_at timestamp with time zone DEFAULT now()
+);
+
+
+-- 3. Add Primary Key and Unique Constraints
+
+ALTER TABLE public.role_permissions ADD CONSTRAINT role_permissions_pkey PRIMARY KEY (id);
+ALTER TABLE public.role_permissions ADD CONSTRAINT role_permissions_role_permission_key UNIQUE (role, permission);
+
+ALTER TABLE public.user_profiles ADD CONSTRAINT user_profiles_pkey PRIMARY KEY (id);
+ALTER TABLE public.user_profiles ADD CONSTRAINT user_profiles_email_key UNIQUE (email);
+ALTER TABLE public.user_profiles ADD CONSTRAINT user_profiles_wispera_handle_key UNIQUE (wispera_handle);
+
+ALTER TABLE public.organization_users ADD CONSTRAINT organization_users_pkey PRIMARY KEY (id);
+
+ALTER TABLE public.subscriptions ADD CONSTRAINT subscriptions_pkey PRIMARY KEY (id);
+
+ALTER TABLE public.user_roles ADD CONSTRAINT user_roles_pkey PRIMARY KEY (id);
+ALTER TABLE public.user_roles ADD CONSTRAINT user_roles_user_id_role_key UNIQUE (user_id, role);
+
+ALTER TABLE public.user_org_tenants ADD CONSTRAINT user_org_tenants_pkey PRIMARY KEY (id);
+ALTER TABLE public.user_org_tenants ADD CONSTRAINT user_org_tenants_user_id_key UNIQUE (user_id);
+
+ALTER TABLE public.user_subscriptions ADD CONSTRAINT user_subscriptions_pkey PRIMARY KEY (id);
+ALTER TABLE public.user_subscriptions ADD CONSTRAINT user_subscriptions_user_id_key UNIQUE (user_id);
+
+ALTER TABLE public.auth_settings ADD CONSTRAINT auth_settings_pkey PRIMARY KEY (id);
+
+ALTER TABLE public.supabase_config ADD CONSTRAINT supabase_config_pkey PRIMARY KEY (key);
+
+
+-- 4. Add Foreign Key Constraints
+-- Note: 'users' table is typically managed by Supabase Auth directly (auth.users)
+-- and is not part of the public schema definition provided.
+-- These foreign keys assume a 'users' table with 'id' column exists.
+
+ALTER TABLE public.user_profiles ADD CONSTRAINT user_profiles_id_fkey FOREIGN KEY (id) REFERENCES auth.users(id) ON DELETE CASCADE;
+ALTER TABLE public.organization_users ADD CONSTRAINT organization_users_user_id_fkey FOREIGN KEY (user_id) REFERENCES auth.users(id) ON DELETE CASCADE;
+ALTER TABLE public.subscriptions ADD CONSTRAINT subscriptions_user_id_fkey FOREIGN KEY (user_id) REFERENCES auth.users(id) ON DELETE CASCADE;
+ALTER TABLE public.user_roles ADD CONSTRAINT user_roles_user_id_fkey FOREIGN KEY (user_id) REFERENCES auth.users(id) ON DELETE CASCADE;
+ALTER TABLE public.user_org_tenants ADD CONSTRAINT user_org_tenants_user_id_fkey FOREIGN KEY (user_id) REFERENCES auth.users(id) ON DELETE CASCADE;
+ALTER TABLE public.user_subscriptions ADD CONSTRAINT user_subscriptions_user_id_fkey FOREIGN KEY (user_id) REFERENCES auth.users(id) ON DELETE CASCADE;
+
+
+-- 5. Create Indexes
+CREATE UNIQUE INDEX role_permissions_pkey ON public.role_permissions USING btree (id);
+CREATE UNIQUE INDEX role_permissions_role_permission_key ON public.role_permissions USING btree (role, permission);
+
+CREATE INDEX idx_user_profiles_wispera_handle ON public.user_profiles USING btree (wispera_handle);
+CREATE UNIQUE INDEX user_profiles_email_key ON public.user_profiles USING btree (email);
+CREATE UNIQUE INDEX user_profiles_pkey ON public.user_profiles USING btree (id);
+CREATE UNIQUE INDEX user_profiles_wispera_handle_key ON public.user_profiles USING btree (wispera_handle);
+
+CREATE INDEX idx_organization_users_user_id ON public.organization_users USING btree (user_id);
+CREATE UNIQUE INDEX organization_users_pkey ON public.organization_users USING btree (id);
+
+CREATE INDEX idx_subscriptions_user_id ON public.subscriptions USING btree (user_id);
+CREATE UNIQUE INDEX subscriptions_pkey ON public.subscriptions USING btree (id);
+
+CREATE UNIQUE INDEX user_roles_pkey ON public.user_roles USING btree (id);
+CREATE UNIQUE INDEX user_roles_user_id_role_key ON public.user_roles USING btree (user_id, role);
+
+CREATE UNIQUE INDEX user_org_tenants_pkey ON public.user_org_tenants USING btree (id);
+CREATE UNIQUE INDEX user_org_tenants_user_id_key ON public.user_org_tenants USING btree (user_id);
+
+CREATE UNIQUE INDEX user_subscriptions_pkey ON public.user_subscriptions USING btree (id);
+CREATE UNIQUE INDEX user_subscriptions_user_id_key ON public.user_subscriptions USING btree (user_id);
+
+CREATE UNIQUE INDEX auth_settings_pkey ON public.auth_settings USING btree (id);
+
+CREATE INDEX idx_supabase_config_key ON public.supabase_config USING btree (key);
+CREATE UNIQUE INDEX supabase_config_pkey ON public.supabase_config USING btree (key);
+
+
+-- 6. Create Trigger Functions (Placeholders - you need to provide the actual function bodies)
+-- These functions are referenced by triggers on tables.
+-- You will need to define the actual logic for these functions.
+
+CREATE OR REPLACE FUNCTION public.update_user_metadata_on_role_change()
+RETURNS trigger
+LANGUAGE plpgsql
+AS $$
+BEGIN
+  -- Your function logic here.
+  -- This function is triggered on INSERT, DELETE, or UPDATE on user_roles.
+  -- It's commented in the schema as updating user metadata on role change.
+  RETURN NEW;
+END;
+$$;
+
+CREATE OR REPLACE FUNCTION public.update_updated_at_column()
+RETURNS trigger
+LANGUAGE plpgsql
+AS $$
+BEGIN
+  NEW.updated_at = now();
+  RETURN NEW;
+END;
+$$;
+
+
+-- 7. Create Triggers
+
+-- Trigger for user_roles table
+CREATE TRIGGER update_user_metadata_trigger
+AFTER INSERT OR DELETE OR UPDATE ON public.user_roles
+FOR EACH ROW EXECUTE FUNCTION public.update_user_metadata_on_role_change();
+
+-- Trigger for supabase_config table
+CREATE TRIGGER update_supabase_config_updated_at
+BEFORE UPDATE ON public.supabase_config
+FOR EACH ROW EXECUTE FUNCTION public.update_updated_at_column();
+
+
+-- Enable Row Level Security (RLS) for tables that have policies
+ALTER TABLE public.role_permissions ENABLE ROW LEVEL SECURITY;
+ALTER TABLE public.user_profiles ENABLE ROW LEVEL SECURITY;
+ALTER TABLE public.organization_users ENABLE ROW LEVEL SECURITY;
+ALTER TABLE public.subscriptions ENABLE ROW LEVEL SECURITY;
+ALTER TABLE public.user_roles ENABLE ROW LEVEL SECURITY;
+ALTER TABLE public.user_org_tenants ENABLE ROW LEVEL SECURITY;
+ALTER TABLE public.user_subscriptions ENABLE ROW LEVEL SECURITY;
+ALTER TABLE public.auth_settings ENABLE ROW LEVEL SECURITY;
+ALTER TABLE public.supabase_config ENABLE ROW LEVEL SECURITY;
+
+
+-- 8. Create Row Level Security (RLS) Policies
+
+-- Policies for role_permissions
+CREATE POLICY "Users can view role permissions" ON public.role_permissions
+AS PERMISSIVE FOR SELECT
+TO authenticated
+USING (true);
+
+-- Policies for user_profiles
+CREATE POLICY "Users can update their own profile including wispera_handle" ON public.user_profiles
+AS PERMISSIVE FOR UPDATE
+TO authenticated
+USING ((uid() = id))
+WITH CHECK ((uid() = id));
+
+CREATE POLICY "Users can update their own profile." ON public.user_profiles
+AS PERMISSIVE FOR UPDATE
+TO public
+USING ((uid() = id));
+
+CREATE POLICY "Users can view their own profile." ON public.user_profiles
+AS PERMISSIVE FOR SELECT
+TO public
+USING ((uid() = id));
+
+-- Policies for organization_users
+CREATE POLICY "Users can view their own organization memberships" ON public.organization_users
+AS PERMISSIVE FOR SELECT
+TO authenticated
+USING ((uid() = user_id));
+
+-- Policies for subscriptions
+CREATE POLICY "Allow auth admin to read subscriptions" ON public.subscriptions
+AS PERMISSIVE FOR SELECT
+TO supabase_auth_admin
+USING (true);
+
+CREATE POLICY "Users can view their own subscriptions" ON public.subscriptions
+AS PERMISSIVE FOR SELECT
+TO authenticated
+USING ((uid() = user_id));
+
+-- Policies for user_roles
+CREATE POLICY "Users can view their own roles" ON public.user_roles
+AS PERMISSIVE FOR SELECT
+TO authenticated
+USING ((uid() = user_id));
+
+-- Policies for user_org_tenants
+CREATE POLICY "Allow auth admin to read user_org_tenants" ON public.user_org_tenants
+AS PERMISSIVE FOR SELECT
+TO supabase_auth_admin
+USING (true);
+
+CREATE POLICY "Users can view their own tenant status" ON public.user_org_tenants
+AS PERMISSIVE FOR SELECT
+TO authenticated
+USING ((uid() = user_id));
+
+-- Policies for user_subscriptions
+CREATE POLICY "Users can view their own subscription status" ON public.user_subscriptions
+AS PERMISSIVE FOR SELECT
+TO authenticated
+USING ((uid() = user_id));
+
+-- Policies for auth_settings
+CREATE POLICY "Users can view auth settings" ON public.auth_settings
+AS PERMISSIVE FOR SELECT
+TO authenticated
+USING (true);
+
+-- Policies for supabase_config
+CREATE POLICY "Authenticated users can read config" ON public.supabase_config
+AS PERMISSIVE FOR SELECT
+TO authenticated
+USING (true);
+
+CREATE POLICY "Service role can read config" ON public.supabase_config
+AS PERMISSIVE FOR SELECT
+TO service_role
+USING (true);
+
+-- Grant permissions (adjust as needed for your specific roles)
+GRANT ALL ON SCHEMA public TO postgres;
+GRANT ALL ON ALL TABLES IN SCHEMA public TO postgres;
+GRANT ALL ON ALL SEQUENCES IN SCHEMA public TO postgres;
+GRANT ALL ON ALL FUNCTIONS IN SCHEMA public TO postgres;
+GRANT USAGE ON SCHEMA public TO authenticated, anon;
+GRANT SELECT ON ALL TABLES IN SCHEMA public TO authenticated, anon;
+
+## Auth Token ##
+
+{
+"https://api.wispera.ai/stripe_membership_status": false,
+"https://api.wispera.ai/subscription_user_type": "free_trial",
+"https://api.wispera.ai/trial_expiration_date": "2024-11-22T0001.258Z",
+"https://api.wispera.ai/wispera_org_tenant_user": true,
+"given_name": "Wispera",
+"family_name": "AI",
+"nickname": "hello",
+"name": "Wispera AI",
+"picture": "https://lh3.googleusercontent.com/a/ACg8ocJuyuL5iwjkBz-dgBEKJi2Q4HRILHbPy8_aY-CLfWYyAB5eAA=s96-c",
+"updated_at": "2025-07-25T1942.126Z",
+"email": "hello@wispera.ai",
+"email_verified": true,
+"iss": "https://login.wispera.ai/",
+"aud": "Aqsfar1Aak6zt1W8qrrq7w1CX7O8l1fE",
+"sub": "google-oauth2|104317615463425279740",
+"iat": 1753470345,
+"exp": 1753506345,
+"sid": "JZZ686ZiMpCVVTyxLrc23aQlXf_2IviD",
+"nonce": "QVlUVlQ1WXluUzYtenI5bDNFeVM4X3IzWExJRX41MHBTbjRfcG02WU9MTw=="
+}
+
+**ASSISTANT**: Perfect! With this SQL schema and token structure, I can create a much more comprehensive prompt. Here's the enhanced version:
+
+```
+=== DEVELOPER PERSONA ===
+You are an experienced React developer specializing in Supabase authentication implementations. You have deep knowledge of React hooks, Vite configuration, and Supabase Auth APIs. You understand responsive design principles and can create authentication flows that work seamlessly across web, mobile, and desktop browsers.
+
+=== TASK: Wire Up Existing Authentication UI Components with Supabase ===
+
+### Context
+We have a React/Vite application with Supabase already configured. The visual authentication components are already built and styled. Your task is to connect these existing UI components to Supabase Auth functionality.
+
+### Authentication Methods to Implement
+
+1. **Magic Link Authentication:**
+   - Wire up the existing email input and submit button to send magic links via Supabase
+   - Handle the magic link callback/redirect flow
+   - Show appropriate loading and success/error states using existing UI components
+
+2. **Social Authentication:**
+   - Connect existing social auth buttons to Supabase OAuth providers:
+     - Google
+     - Facebook
+     - Reddit
+     - X (Twitter)
+   - Configure OAuth redirects and handle callbacks
+   - Ensure proper error handling for cancelled/failed social logins
+
+### Database Schema Requirements
+
+The application uses the following authentication-related tables that must be populated during user registration:
+
+1. **user_profiles** - Core user information
+   - `id` (uuid) - Links to auth.users.id
+   - `email` (text, unique)
+   - `name` (text) - Extract from social provider or prompt during signup
+   - `wispera_handle` (text, unique) - Generate unique handle during registration
+   - `created_at` (timestamp)
+
+2. **user_roles** - Assign default role on registration
+   - `user_id` (uuid)
+   - `role` (app_role enum: 'admin', 'user', 'guest')
+   - Default new users to 'user' role
+
+3. **user_org_tenants** - Track organization membership
+   - `user_id` (uuid)
+   - `is_tenant_user` (boolean, default false)
+
+4. **user_subscriptions** - Initialize subscription tracking
+   - `user_id` (uuid)
+   - `has_active_subscription` (boolean, default false)
+   - `plan_type` (text, default 'One Time Purchase')
+   - `subscription_id` (text, nullable)
+
+### Custom JWT Claims Implementation
+
+Configure Supabase to include custom claims in the JWT token:
+
+```typescript
+// Expected JWT structure with custom claims
+interface CustomJWTClaims {
+  // Standard claims
+  email: string;
+  email_verified: boolean;
+  name?: string;
+  given_name?: string;
+  family_name?: string;
+  picture?: string;
+  
+  // Custom claims to implement
+  "https://api.wispera.ai/stripe_membership_status": boolean;
+  "https://api.wispera.ai/subscription_user_type": "free_trial" | "paid" | "expired";
+  "https://api.wispera.ai/trial_expiration_date": string;
+  "https://api.wispera.ai/wispera_org_tenant_user": boolean;
+}
+```
+
+### Authentication Flow Implementation
+
+1. **Sign-Up Flow:**
+   ```typescript
+   // On successful signup (magic link or social):
+   // 1. Create user_profiles entry
+   // 2. Assign default 'user' role in user_roles
+   // 3. Initialize user_org_tenants (is_tenant_user = false)
+   // 4. Initialize user_subscriptions with free trial
+   // 5. Generate unique wispera_handle
+   ```
+
+2. **Sign-In Flow:**
+   ```typescript
+   // On successful signin:
+   // 1. Check if user_profiles exists, create if missing (for social logins)
+   // 2. Update last login timestamp
+   // 3. Refresh custom JWT claims from database
+   ```
+
+3. **Handle Generation:**
+   ```typescript
+   // Generate unique wispera_handle:
+   // 1. Use email prefix or social provider name
+   // 2. Append random suffix if needed for uniqueness
+   // 3. Validate against existing handles
+   ```
+
+### Required Supabase Functions/Triggers
+
+1. **Create user profile on signup** - Database function to automatically create related records
+2. **Update JWT claims** - Function to add custom claims based on user's subscription and role data
+3. **Handle generation** - Function to generate unique handles
+
+### Implementation Checklist
+
+- [ ] Configure Supabase Auth providers (Google, Facebook, Reddit, X)
+- [ ] Set up environment variables for OAuth credentials
+- [ ] Create auth context with TypeScript interfaces
+- [ ] Implement magic link flow
+  - [ ] Send magic link
+  - [ ] Handle callback
+  - [ ] Create user profile records
+- [ ] Implement social auth for all providers
+  - [ ] Extract user info from provider
+  - [ ] Generate wispera_handle
+  - [ ] Create all required database records
+- [ ] Set up custom JWT claims
+  - [ ] Create Supabase hook for claim injection
+  - [ ] Map database values to claims
+- [ ] Handle existing user sign-ins
+  - [ ] Check for missing profile data
+  - [ ] Update relevant timestamps
+- [ ] Implement auth state persistence
+- [ ] Add comprehensive error handling
+- [ ] Test RLS policies work correctly
+
+### Security Requirements
+
+1. **Row Level Security (RLS):**
+   - Ensure all tables have RLS enabled
+   - Users can only read/update their own records
+   - Implement proper policies for each table
+
+2. **Environment Variables:**
+   ```typescript
+   // Required env vars:
+   VITE_SUPABASE_URL
+   VITE_SUPABASE_ANON_KEY
+   VITE_APP_URL // For OAuth redirects
+   ```
+
+3. **OAuth Configuration:**
+   - Configure redirect URLs for each provider
+   - Set up proper CORS settings
+   - Handle mobile browser redirects
+
+### Code Structure
+
+```typescript
+// Suggested file structure:
+// src/lib/auth/
+//   ├── supabase.ts        // Supabase client config
+//   ├── auth-context.tsx   // React context for auth state
+//   ├── auth-hooks.ts      // Custom hooks (useAuth, useUser, etc.)
+//   ├── auth-types.ts      // TypeScript interfaces
+//   └── auth-utils.ts      // Helper functions (handle generation, etc.)
+```
+
+Please implement this authentication system by connecting the existing UI components to Supabase, ensuring proper database record creation, custom JWT claims, and a smooth authentication experience across all device types.
+```
+
+This enhanced prompt now includes:
+1. Specific database schema requirements
+2. Custom JWT claim structure based on your token example
+3. Detailed implementation steps for each table
+4. Handle generation logic for the `wispera_handle` field
+5. Security considerations with RLS policies
+6. Suggested code structure
+7. TypeScript interfaces matching your JWT structure
+
+The prompt is now much more actionable for bolt.new as it has concrete requirements based on your existing schema and token structure.

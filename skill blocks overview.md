@@ -11,18 +11,18 @@ The complete, detailed definitions of all skill blocks are now maintained in the
 **📋 [Skill Block Template](templates/skill%20block.md)** - Template for creating new skill block specifications
 
 ### Core Development Skills
-- **Frontend Development** - Client-side development, UI components, user interface implementation
+- **Frontend Development** - Client-side development, UI components, user interface implementation, responsive design, design system integration, plain JavaScript + Web Components preferred
 - **Backend Development** - Server-side development, API implementation, business logic
 - **Mobile Development** - Mobile app development, platform-specific considerations
 - **System Architecture** - High-level system design, architectural patterns, system integration
-- **Database Design** - Data modeling, database architecture, data persistence strategies
+- **Database Design** - Data modeling, database architecture, data persistence strategies, multi-tenant design, RLS policies
 - **API Integration** - API design, integration patterns, external service connectivity
 
 ### Quality & Validation
 - **Quality Validation** - Code quality assessment, architectural validation, principle compliance
 - **Quality Gates** - Systematic quality maintenance, drift prevention, specification adherence
 - **Testing** - Testing strategies, quality assurance, validation approaches
-- **Security** - Security best practices, threat modeling, secure development
+- **Security** - Security best practices, threat modeling, secure development, OAuth configuration, JWT management
 - **Type-Enforced Security** - Type safety, security through types, compile-time security
 - **Secure-by-Default Architecture** - Security-first design, secure defaults, security architecture
 
@@ -31,13 +31,14 @@ The complete, detailed definitions of all skill blocks are now maintained in the
 - **Requirements Gathering** - User needs analysis, requirement specification, stakeholder communication
 - **Requirements Analysis** - Requirement validation, feasibility analysis, scope definition
 - **Project Planning** - Project structure, timeline management, resource planning
-- **Integration** - System integration, component integration, deployment integration
+- **Integration** - System integration, component integration, deployment integration, authentication flows, OAuth providers
 
 ### User Experience & Design
 - **User Experience** - User-centered design, usability, user satisfaction
 - **UI Design** - Interface design, visual design, interaction design
 - **Accessibility** - Inclusive design, accessibility standards, universal access
 - **Information Architecture** - Information structure, navigation design, content organization
+- **Stakeholder Experience** - Investor presentations, clickable prototypes, business value demonstration, responsive stakeholder interfaces
 
 ### Business & Strategy
 - **Business Strategy** - Strategic planning, business model, market positioning
@@ -50,7 +51,7 @@ The complete, detailed definitions of all skill blocks are now maintained in the
 - **Communication** - Stakeholder communication, team collaboration, information sharing
 - **Documentation** - Technical writing, specification management, session continuity
 - **Training Materials** - Learning resources, skill development, knowledge transfer
-- **Prompt Engineering** - LLM prompting strategies, prompt optimization, AI interaction
+- **Prompt Engineering** - LLM prompting strategies, prompt optimization, AI interaction, complete application specifications, stakeholder-ready prototyping
 
 ### Performance & Infrastructure
 - **Performance** - Performance optimization, efficiency, speed optimization
@@ -71,6 +72,8 @@ The complete, detailed definitions of all skill blocks are now maintained in the
 - **Pattern recognition** - Several skill blocks include pattern recognition capabilities for specification guidance and quality drift prevention
 - **Static Runtime Approach** - All skill blocks use predefined activation patterns for semantic resonance
 - **Semantic Activation Patterns** - Each skill block includes triggers, co-activation, and activation strength for pattern matching
+- **Enhanced capabilities** - Several skill blocks have been enhanced with authentication, responsive design, and stakeholder experience expertise
+- **Technology preferences** - Frontend development emphasizes plain JavaScript + Web Components, avoiding frameworks, with agnostic design system approach
 
 ## For Detailed Definitions
 
