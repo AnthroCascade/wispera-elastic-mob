@@ -36,7 +36,7 @@ The system is built on **skill-blocks** - atomic units of expertise that can be 
 
 > **📋 [Complete Skill Block Overview](skill%20blocks%20overview.md)** - Comprehensive list and categorization of all skill blocks
 
-- **Technical Creation** (Frontend, Backend, Database, DevOps, Mobile, Integration...)
+- **Technical Creation** (Component Architecture, API Design, Data Modeling, DevOps, Mobile Optimization, Service Integration...)
 - **Design & Experience** (UX, UI, Information Architecture, Accessibility...)
 - **Quality & Reliability** (Testing, Security, Performance, Monitoring...)
 - **Communication** (Documentation, Training Materials, API Docs, User Guides...)
@@ -59,7 +59,7 @@ As defined above, Mobsters are AI agents that also represent development perspec
 **📋 [Mobster Template](templates/mobster.md)** - Complete template for defining new mobster specifications
 **📋 [Skill Block Template](templates/skill%20block.md)** - Complete template for defining new skill block specifications
 
-> **👥 [Complete Mobster Overview](mobsters%20overview.md)** - Comprehensive list and categorization of all mobsters
+> **👥 [Complete Mobster Overview](stakeholders%20overview.md)** - Comprehensive list and categorization of all mobsters
 
 Critically, each Mobster plays different "games" at different levels - from tactical ("make this function work") to strategic ("build sustainable competitive advantage"). These games have different time horizons, success metrics, and optimization targets.
 
@@ -95,7 +95,7 @@ The development process uses an adaptive mob programming approach where:
 
 ## Bootstrap Strategy
 
-We've completed the **foundation phase** with a comprehensive set of 37 skill blocks and 25 Mobsters. The system now includes:
+We've completed the **foundation phase** with a comprehensive set of **37 skill blocks** and **25 Mobsters**. The system now includes:
 
 1. **Complete skill block coverage** across all major development domains
 2. **AI-powered code generation** system that preserves architectural principles
@@ -115,7 +115,7 @@ The first working system will be the tool that builds itself - a satisfyingly re
 ### Core Definitions & Specifications
 
 > **📚 [Skill Blocks Overview](skill%20blocks%20overview.md)** - Complete categorization and overview of all 37 skill blocks
-> **👥 [Mobsters Overview](mobsters%20overview.md)** - Complete list and categorization of all mobsters
+> **👥 [Mobsters Overview](stakeholders%20overview.md)** - Complete list and categorization of all mobsters
 
 > **💡 Note**: Detailed specifications for skill blocks and mobsters are now maintained in the **in-concert repository** under `app/services/elastic_mob/definitions/` for implementation use.
 

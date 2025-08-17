@@ -14,24 +14,32 @@ The complete, detailed definitions of all skill blocks are now maintained in the
 - **Frontend Development** - Client-side development, UI components, user interface implementation, responsive design, design system integration, plain JavaScript + Web Components preferred
 - **Backend Development** - Server-side development, API implementation, business logic
 - **Mobile Development** - Mobile app development, platform-specific considerations
+- **Mobile Optimization** - Mobile app development, platform-specific considerations
 - **System Architecture** - High-level system design, architectural patterns, system integration
 - **Database Design** - Data modeling, database architecture, data persistence strategies, multi-tenant design, RLS policies
+- **Data Modeling** - Data modeling, database architecture, data persistence strategies, multi-tenant design, RLS policies
+- **API Design** - API design, integration patterns, external service connectivity
 - **API Integration** - API design, integration patterns, external service connectivity
+- **Integration** - System integration, component integration, deployment integration, authentication flows, OAuth providers
+- **Component Architecture** - Client-side development, UI components, user interface implementation, responsive design, design system integration, plain JavaScript + Web Components preferred
 
 ### Quality & Validation
 - **Quality Validation** - Code quality assessment, architectural validation, principle compliance
 - **Quality Gates** - Systematic quality maintenance, drift prevention, specification adherence
+- **Quality Assurance** - Testing strategies, quality assurance, validation approaches
 - **Testing** - Testing strategies, quality assurance, validation approaches
 - **Security** - Security best practices, threat modeling, secure development, OAuth configuration, JWT management
+- **Threat Modeling** - Security best practices, threat modeling, secure development, OAuth configuration, JWT management
 - **Type-Enforced Security** - Type safety, security through types, compile-time security
 - **Secure-by-Default Architecture** - Security-first design, secure defaults, security architecture
+- **Architectural Principles** - Overall system design principles, architectural patterns
 
 ### Process & Facilitation
 - **Process Facilitation** - Conversation management, decision frameworks, mob dynamics
 - **Requirements Gathering** - User needs analysis, requirement specification, stakeholder communication
 - **Requirements Analysis** - Requirement validation, feasibility analysis, scope definition
 - **Project Planning** - Project structure, timeline management, resource planning
-- **Integration** - System integration, component integration, deployment integration, authentication flows, OAuth providers
+- **Service Integration** - System integration, component integration, deployment integration, authentication flows, OAuth providers
 
 ### User Experience & Design
 - **User Experience** - User-centered design, usability, user satisfaction
@@ -42,21 +50,29 @@ The complete, detailed definitions of all skill blocks are now maintained in the
 
 ### Business & Strategy
 - **Business Strategy** - Strategic planning, business model, market positioning
+- **Product Strategy** - Product strategy, feature prioritization, product lifecycle
 - **Product Management** - Product strategy, feature prioritization, product lifecycle
 - **Market Analysis** - Market research, competitive analysis, market trends
 - **ROI Analysis** - Return on investment, cost-benefit analysis, business value
+- **Sales Support** - Sales support, customer acquisition, revenue generation
 - **Sales Enablement** - Sales support, customer acquisition, revenue generation
 
 ### Communication & Documentation
+- **Stakeholder Communication** - Stakeholder communication, team collaboration, information sharing
 - **Communication** - Stakeholder communication, team collaboration, information sharing
+- **Technical Writing** - Technical writing, specification management, session continuity
 - **Documentation** - Technical writing, specification management, session continuity
+- **Skill Development** - Learning resources, skill development, knowledge transfer
 - **Training Materials** - Learning resources, skill development, knowledge transfer
 - **Prompt Engineering** - LLM prompting strategies, prompt optimization, AI interaction, complete application specifications, stakeholder-ready prototyping
 
 ### Performance & Infrastructure
+- **Performance Optimization** - Performance optimization, efficiency, speed optimization
 - **Performance** - Performance optimization, efficiency, speed optimization
 - **Performance Architecture** - Performance-focused design, scalability, optimization strategies
+- **System Infrastructure** - System infrastructure, deployment, operational concerns
 - **Infrastructure** - System infrastructure, deployment, operational concerns
+- **System Monitoring** - System monitoring, performance tracking, operational visibility
 - **Monitoring** - System monitoring, performance tracking, operational visibility
 
 ### Specialized Skills
@@ -73,7 +89,9 @@ The complete, detailed definitions of all skill blocks are now maintained in the
 - **Static Runtime Approach** - All skill blocks use predefined activation patterns for semantic resonance
 - **Semantic Activation Patterns** - Each skill block includes triggers, co-activation, and activation strength for pattern matching
 - **Enhanced capabilities** - Several skill blocks have been enhanced with authentication, responsive design, and stakeholder experience expertise
-- **Technology preferences** - Frontend development emphasizes plain JavaScript + Web Components, avoiding frameworks, with agnostic design system approach
+- **Technology preferences** - Component Architecture emphasizes plain JavaScript + Web Components, avoiding frameworks, with agnostic design system approach
+- **Skill-based naming** - All skill blocks are now named for their actual capabilities rather than roles, eliminating naming confusion
+- **Current total**: 37 skill blocks covering all major development domains
 
 ## For Detailed Definitions
 

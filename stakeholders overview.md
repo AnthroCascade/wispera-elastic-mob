@@ -28,6 +28,7 @@ The complete, detailed definitions of all mobsters are now maintained in the **i
 - **QA Engineer** - Quality assurance and testing
 - **Technical Writer** - Documentation and communication
 - **Product Manager** - Product strategy and lifecycle
+- **Code Generation** - Coordinates all code generation activities
 
 ### Abstract Archetypes
 - **The Pragmatist** - Cares about "does it work today?"
@@ -41,6 +42,7 @@ The complete, detailed definitions of all mobsters are now maintained in the **i
 - **Dynamic Composition** - Mobsters are dynamically composed from skill-block collections based on project needs
 - **Flexible Scenarios** - Supports both startup scenarios (agents wearing multiple hats) and enterprise scenarios (highly specialized agents)
 - **Emergent Participation** - All Mobsters include emergent participation patterns for semantic resonance
+- **Current total**: 25 mobsters with proper skill block composition
 
 ### Enhanced Mobster Specifications
 All Mobsters now include **emergent participation patterns** for semantic resonance:
@@ -49,6 +51,17 @@ All Mobsters now include **emergent participation patterns** for semantic resona
 - **Collaboration Patterns** - Natural interaction with other relevant Mobsters
 - **Exit Conditions** - When Mobsters disengage from conversations
 - **Conflict Resolution** - How Mobsters handle disagreements with other perspectives
+
+### Mobster Structure
+Each mobster specification includes:
+- **Identity & Purpose** - Core mission and perspective lens
+- **Skill-Block Composition** - Primary and secondary skills with adaptations
+- **Game Configuration** - Primary game, weights, conflict resolution, and negotiation patterns
+- **Mob Participation Dynamics** - Engagement thresholds, preferred roles, energy patterns, and collaboration preferences
+- **Communication Characteristics** - Discourse style, assertion confidence, question patterns, and vocabulary tendencies
+- **Meta-Behaviors** - Learning patterns, pattern recognition, and escalation triggers
+- **Technology Approach** - Specific technology preferences and implementation strategies
+- **Stakeholder Experience Integration** - Responsive design, design system integration, and business value demonstration
 
 ## For Detailed Definitions
 

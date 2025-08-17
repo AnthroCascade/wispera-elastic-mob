@@ -22,10 +22,10 @@ The complete, detailed definitions of all mobsters are now maintained in the **i
 - **Sales** - Customer needs and sales considerations
 - **CEO** - Strategic business perspective
 - **Sponsor** - Project sponsorship and support
-- **Frontend Developer** - Client-side development expertise
-- **Backend Developer** - Server-side development expertise
+- **Component Architecture** - Client-side development expertise
+- **API Design** - Server-side development expertise
 - **DevOps Engineer** - Operations and deployment expertise
-- **QA Engineer** - Quality assurance and testing
+- **Quality Assurance** - Quality assurance and testing
 - **Technical Writer** - Documentation and communication
 - **Product Manager** - Product strategy and lifecycle
 
