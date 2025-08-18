@@ -30,6 +30,13 @@ For complete understanding of the elastic-mob system architecture, implementatio
 - **[ps_pps_framework.md](system_foundation/ps_pps_framework.md)** - Supplementary PS-PPS design methodology (optional enhancement)
 - **[minskys_society_of_mind.md](literature_review/minskys_society_of_mind.md)** - Minsky's Society of Mind theory (theoretical inspiration)
 
+### Architecture & Implementation Planning
+
+For the latest architectural analysis and implementation roadmap, see these key documents:
+
+- **[architecture_web_vs_local_analysis.md](system_foundation/architecture_web_vs_local_analysis.md)** - Analysis of web vs. local architecture tension for internal tool use
+- **[git_integration_implementation.md](implementation_plan/git_integration_implementation.md)** - Detailed 4-week implementation plan for git integration foundation
+
 ## Foundation: Skill-Blocks
 
 The system is built on **skill-blocks** - atomic units of expertise that can be composed into Mobsters. We currently have **38 skill blocks** organized into families:
@@ -176,6 +183,14 @@ This document provides:
 - Technology recommendations for Elastic-Mob implementation
 - Recommended hybrid architecture approach
 - Implementation strategy and phase planning
+
+For the detailed implementation roadmap starting with git integration, see **[git_integration_implementation.md](implementation_plan/git_integration_implementation.md)**.
+
+This document provides:
+- 4-week phased implementation plan for git integration
+- Technical architecture with backend services and frontend components
+- Data models and integration points
+- Success criteria and risk mitigation strategies
 
 ### Implementation Approach
 
