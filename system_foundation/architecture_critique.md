@@ -120,7 +120,7 @@ class Caper extends HTMLElement {
 
 ### **Layer 1: Rails Backend (Foundation)**
 - Keep existing Assistant/Thread/Run infrastructure
-- Add new models: `Mob`, `Agent`, `SkillBlock`, `Mobsta`
+- Add new models: `Mob`, `Agent`, `Talent`, `Mobsta`
 - Use ActionCable for real-time mob coordination
 - Leverage existing authentication and persistence
 

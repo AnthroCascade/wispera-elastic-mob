@@ -169,7 +169,7 @@ end
 ```javascript
 // Atomic components (smallest units)
 customElements.define('agent-status', AgentStatus);
-customElements.define('talent', SkillBlock);
+customElements.define('talent', Talent);
 customElements.define('conversation-turn', ConversationTurn);
 
 // Composite components (compose atomic components)
