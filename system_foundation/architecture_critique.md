@@ -46,7 +46,7 @@
 ### **Backend/Elastic-Mob Service: Ruby + EventMachine/Async**
 
 **Why Ruby is ideal for Elastic-Mob:**
-- **Metaprogramming excellence**: Perfect for dynamic mobsta creation and skill block composition
+- **Metaprogramming excellence**: Perfect for dynamic mobsta creation and talent composition
 - **DSL capabilities**: Can create elegant, declarative agent definitions
 - **Rich ecosystem**: Gems for WebSockets, async processing, and AI integration
 - **Your expertise**: You already know the language deeply
@@ -137,7 +137,7 @@ class Caper extends HTMLElement {
 - **Mob activity visualization** showing agent participation and progress
 - **Observer dashboard** for monitoring mob work without participation
 - **Real-time updates** via WebSocket connection to in-concert
-- **Configuration interface** for mobstas and skill blocks
+- **Configuration interface** for mobstas and talents
 - **Code preview and editing** for generated code
 - **Live execution results** showing code output and errors
 - **Version history** for tracking code evolution through conversations
@@ -155,7 +155,7 @@ class Caper extends HTMLElement {
 
 ## **Why This Architecture Serves Elastic-Mob Best**
 
-1. **Metaprogramming**: Ruby excels at creating the dynamic mobsta and skill block systems
+1. **Metaprogramming**: Ruby excels at creating the dynamic mobsta and talent systems
 2. **Real-time performance**: Web Components with direct DOM manipulation handle high-frequency updates
 3. **Developer experience**: You can focus on the agent logic, not framework complexity
 4. **Integration simplicity**: Direct access to existing in-concert services without API overhead
@@ -183,7 +183,7 @@ The current Flutter frontend serves as a good prototype but should be replaced w
 
 ### **User Proxy Mobsta Concept**
 - **Proxy mobstas**: Represent human availability and decision-making authority
-- **No predefined skill blocks**: Users naturally embody expertise when they intervene
+- **No predefined talents**: Users naturally embody expertise when they intervene
 - **Hybrid participation**: Users can observe OR participate in the mob
 - **Authority preservation**: User proxy mobstas maintain decision-making authority
 
@@ -208,7 +208,7 @@ The current Flutter frontend serves as a good prototype but should be replaced w
 - **Quality assurance**: User proxy mobstas provide final approval for critical decisions
 
 ### **User Proxy Mobsta Design**
-- **No skill blocks**: Represents human availability and authority, not predefined expertise
+- **No talents**: Represents human availability and authority, not predefined expertise
 - **Polling mechanism**: Mob can request human input when needed
 - **Authority mapping**: Defines decision-making power in different domains
 - **Learning integration**: System learns optimal timing for human involvement
@@ -236,7 +236,7 @@ The current Flutter frontend serves as a good prototype but should be replaced w
 - **Emergency halt**: Stop the mob immediately if it's going off-track
 - **Context injection**: Add new requirements or constraints mid-conversation
 - **Direction correction**: Redirect the mob to focus on different aspects
-- **Agent activation/deactivation**: Enable or disable specific agents or skill blocks
+- **Agent activation/deactivation**: Enable or disable specific agents or talents
 - **Conversation reset**: Clear current conversation and restart with new context
 - **Manual override**: Take control temporarily to guide specific decisions
 
@@ -275,7 +275,7 @@ The current Flutter frontend serves as a good prototype but should be replaced w
 - **Directional**: Changing the focus or approach
 - **Corrective**: Fixing when mob goes off-track
 - **Preventive**: Stopping before poor decisions are made
-- **Enhancement**: Adding new agents or skill blocks mid-conversation
+- **Enhancement**: Adding new agents or talents mid-conversation
 
 ## **Critical Requirement: Dynamic Code Generation**
 

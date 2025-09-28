@@ -63,10 +63,10 @@ Layer 3: Meta-Optimization (Persona Evolution)
 
 Layer 2: Execution (Elastic-Mob System)
 ├── Regular mobstas
-├── Skill Block Activation
+├── Talent Activation
 └── Consensus Building
 
-Layer 1: Foundation (Skill Blocks & Mobstas)
+Layer 1: Foundation (Talents & Mobstas)
 ├── Domain Expertise
 ├── Behavioral Patterns
 └── Response Templates

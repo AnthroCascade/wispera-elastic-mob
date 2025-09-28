@@ -20,7 +20,7 @@ This literature review establishes elastic-mob as a valid and significant resear
 
 **Key Principles**: Agent specialization, emergent coordination, distributed intelligence, and natural activation through environmental cues.
 
-**Relevance to Elastic-Mob**: Provides theoretical foundation for distributed skill block architecture and emergent stakeholder coordination.
+**Relevance to Elastic-Mob**: Provides theoretical foundation for distributed talent architecture and emergent stakeholder coordination.
 
 **Research Validation**: Minsky's theory provides inspiration for elastic-mob's approach to distributed intelligence, while the system is grounded in practical emergent computation and game-theoretic principles.
 
@@ -242,8 +242,8 @@ This literature review establishes elastic-mob as a valid and significant resear
 ### 5.3 Success Criteria and Metrics
 
 **Semantic Resonance Validation**:
-- Natural skill block activation based on conversation content
-- Multiple skill blocks activate simultaneously when domains overlap
+- Natural talent activation based on conversation content
+- Multiple talents activate simultaneously when domains overlap
 - No manual orchestration required
 - Activation correlates with conversation relevance
 
@@ -318,7 +318,7 @@ This literature review establishes elastic-mob as a valid and significant resear
 ### 7.2 Implementation Research
 
 **Dynamic Runtime Systems**:
-- Runtime skill block creation and modification
+- Runtime talent creation and modification
 - Adaptive stakeholder behavior patterns
 - Learning and evolution of coordination mechanisms
 

@@ -32,7 +32,7 @@ We are building a conversational programming platform designed to transform natu
 
 ### **Core Components:**
 1. **32 AI Mobstas** - Specialized agent specifications (Backend Developer, Security Expert, etc.)
-2. **70 Skill Blocks** - Technical domain specifications (API design, security, frontend, etc.)
+2. **70 Talents** - Technical domain specifications (API design, security, frontend, etc.)
 3. **Semantic Resonance** - Conversation analysis and pattern matching
 4. **Code Generation** - LLM-powered working code creation
 5. **Git Integration** - Automatic repository management and commits
@@ -61,7 +61,7 @@ We are building a conversational programming platform designed to transform natu
 ### **AI Intelligence: SPECIFICATIONS DEFINED** 🧠
 **Knowledge Base:**
 - **Mobsta Specifications**: 32 specialized AI agent definitions with roles, skills, and behavioral patterns
-- **Skill Block Library**: 70 technical domain specifications covering all aspects of software development
+- **Talent Library**: 70 technical domain specifications covering all aspects of software development
 - **Coordination Framework**: Design for semantic resonance processor and multi-agent collaboration
 - **Quality Systems**: Specifications for consensus building and automated quality gates
 - **Integration Ready**: Foundation prepared for connecting specifications to LLM services

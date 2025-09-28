@@ -263,7 +263,7 @@ end
 ```
 
 ### **Incorrect Over-Engineering:**
-- ❌ `ForteDefinitionParser` extracting metadata
+- ❌ `ForteParser` extracting metadata
 - ❌ `parsed_attributes` methods
 - ❌ `role_name`, `core_mission` accessors
 - ❌ Controller endpoints for parsing

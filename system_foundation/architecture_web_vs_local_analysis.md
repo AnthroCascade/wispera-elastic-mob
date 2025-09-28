@@ -66,7 +66,7 @@ Web Interface
 │   ├── Git Integration
 │   └── Team Collaboration
 └── Knowledge Management
-    ├── Skill Block Library
+    ├── Talent Library
     ├── Mobsta Definitions
     ├── Pattern Recognition
     └── Cross-project Learning

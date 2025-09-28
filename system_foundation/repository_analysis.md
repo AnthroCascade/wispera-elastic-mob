@@ -41,8 +41,8 @@ In-concert is a collaborative platform for designing, building, testing, sharing
 
 **Integration Value**: 
 - **Perfect foundation** for elastic-mob Mobstas
-- **Existing persona system** can be extended for skill blocks
-- **Tool resources** can be mapped to skill block capabilities
+- **Existing persona system** can be extended for talents
+- **Tool resources** can be mapped to talent capabilities
 - **Instructions** can incorporate elastic-mob coordination logic
 
 #### **2. MessageThread Model** (`app/models/message_thread.rb`)
@@ -101,7 +101,7 @@ In-concert is a collaborative platform for designing, building, testing, sharing
 
 #### **Pack Model**
 - **Purpose**: Groups related assets (assistants, personas, prompts)
-- **Integration**: Can organize elastic-mob skill blocks and mobstas
+- **Integration**: Can organize elastic-mob talents and mobstas
 
 ## **Real-Time Communication Infrastructure**
 
@@ -180,7 +180,7 @@ In-concert is a collaborative platform for designing, building, testing, sharing
 
 ### **1. Asset Management Pattern**
 - **Packs**: Group related elastic-mob components
-- **Personas**: Extend for skill block definitions
+- **Personas**: Extend for talent definitions
 - **Audiences**: Extend for mobsta specifications
 - **Prompts**: Extend for coordination instructions
 

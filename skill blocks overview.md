@@ -1,14 +1,14 @@
-# Skill Blocks - Overview
+# Talents - Overview
 
-## What Are Skill Blocks?
+## What Are Talents?
 
-Skill blocks are the fundamental building blocks that define the capabilities and behaviors of mobstas in the elastic-mob system. Each skill block represents a specific domain of expertise or capability that can be combined with others to create specialized mobstas.
+Skill blocks are the fundamental building blocks that define the capabilities and behaviors of mobstas in the elastic-mob system. Each talent represents a specific domain of expertise or capability that can be combined with others to create specialized mobstas.
 
-## Current Skill Blocks
+## Current Talents
 
-The complete, detailed definitions of all skill blocks are now maintained in the **in-concert repository** under `app/services/elastic_mob/definitions/skill_blocks/`.
+The complete, detailed definitions of all talents are now maintained in the **in-concert repository** under `app/services/elastic_mob/definitions/skill_blocks/`.
 
-**📋 [Skill Block Template](templates/skill%20block.md)** - Template for creating new skill block specifications
+**📋 [Talent Template](templates/skill%20block.md)** - Template for creating new talent specifications
 
 ### Core Development Skills
 - **Frontend Development** - Client-side development, UI components, user interface implementation, responsive design, design system integration, plain JavaScript + Web Components preferred
@@ -84,17 +84,17 @@ The complete, detailed definitions of all skill blocks are now maintained in the
 
 ## Important Notes
 
-- **Skill blocks are composable** - Multiple skill blocks can be combined to create specialized Mobstas
+- **Skill blocks are composable** - Multiple talents can be combined to create specialized Mobstas
 - **Single source of truth** - Detailed definitions are maintained in the in-concert repository
-- **Pattern recognition** - Several skill blocks include pattern recognition capabilities for specification guidance and quality drift prevention
-- **Static Runtime Approach** - All skill blocks use predefined activation patterns for semantic resonance
-- **Semantic Activation Patterns** - Each skill block includes triggers, co-activation, and activation strength for pattern matching
-- **Enhanced capabilities** - Several skill blocks have been enhanced with authentication, responsive design, and stakeholder experience expertise
+- **Pattern recognition** - Several talents include pattern recognition capabilities for specification guidance and quality drift prevention
+- **Static Runtime Approach** - All talents use predefined activation patterns for semantic resonance
+- **Semantic Activation Patterns** - Each talent includes triggers, co-activation, and activation strength for pattern matching
+- **Enhanced capabilities** - Several talents have been enhanced with authentication, responsive design, and stakeholder experience expertise
 - **Technology preferences** - Component Architecture emphasizes plain JavaScript + Web Components, avoiding frameworks, with agnostic design system approach
-- **Skill-based naming** - All skill blocks are now named for their actual capabilities rather than roles, eliminating naming confusion
-- **Opinionated guidance integration** - New skill blocks incorporate opinionated app guidance principles for architectural enforcement, type safety, and stability
-- **Current total**: 38 skill blocks covering all major development domains
+- **Skill-based naming** - All talents are now named for their actual capabilities rather than roles, eliminating naming confusion
+- **Opinionated guidance integration** - New talents incorporate opinionated app guidance principles for architectural enforcement, type safety, and stability
+- **Current total**: 38 talents covering all major development domains
 
 ## For Detailed Definitions
 
-See the in-concert repository at `app/services/elastic_mob/definitions/skill_blocks/` for complete specifications of each skill block.
+See the in-concert repository at `app/services/elastic_mob/definitions/skill_blocks/` for complete specifications of each talent.

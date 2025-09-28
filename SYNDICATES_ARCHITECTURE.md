@@ -79,7 +79,7 @@ software-development-syndicate/
 │   ├── api design.md
 │   ├── database modeling.md
 │   ├── security analysis.md
-│   └── ... (70+ skill blocks)
+│   └── ... (70+ talents)
 └── README.md
 ```
 
@@ -257,7 +257,7 @@ String get repositoryStatus {
 1. **Consistent format**: Follow established markdown template
 2. **Clear roles**: Define specific responsibilities and expertise areas
 3. **Game configuration**: Specify engagement patterns and priorities
-4. **Skill blocks**: Reference existing skill block definitions
+4. **Skill blocks**: Reference existing talent definitions
 
 ### **System Integration**
 1. **Load before use**: Ensure syndicates are loaded before creating games

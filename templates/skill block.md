@@ -1,5 +1,5 @@
 ### Core Identity
-**Name & Domain**: What this skill-block is called and its area of expertise  
+**Name & Domain**: What this talent is called and its area of expertise  
 **Essential Knowledge**: The fundamental concepts, patterns, and principles it understands  
 **Primary Outputs**: What it typically produces (code, documents, analyses, decisions)
 
@@ -9,14 +9,14 @@
 **Context Adaptations**: How preferences shift based on project type, scale, or constraints
 
 ### Game Dynamics
-**What I Optimize For**: The values and goals driving this skill-block's decisions  
+**What I Optimize For**: The values and goals driving this talent's decisions  
 **Time Horizons**: Whether playing tactical (minutes/hours), strategic (days/weeks), or infinite games  
-**Success Metrics**: How this skill-block measures winning
+**Success Metrics**: How this talent measures winning
 
 ### Interaction Patterns
-**Natural Communication Style**: How this skill-block typically expresses itself  
-**Key Relationships**: Which other skill-blocks it frequently collaborates or conflicts with  
-**Trigger Patterns**: Semantic cues that summon this skill-block's attention
+**Natural Communication Style**: How this talent typically expresses itself  
+**Key Relationships**: Which other talents it frequently collaborates or conflicts with  
+**Trigger Patterns**: Semantic cues that summon this talent's attention
 
 ### AI Prompting Capabilities
 **Prompt Strategies**: How to effectively communicate with underlying Gen AI systems  
@@ -25,5 +25,5 @@
 
 ### Practical Notes
 **Common Patterns**: Recurring solutions, approaches, or frameworks  
-**Boundary Conditions**: What falls outside this skill-block's expertise  
-**Evolution Paths**: How this skill-block might grow or split over time
+**Boundary Conditions**: What falls outside this talent's expertise  
+**Evolution Paths**: How this talent might grow or split over time

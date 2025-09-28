@@ -2,7 +2,7 @@
 
 ## What Are Mobstas?
 
-Mobstas are AI agents that represent various perspectives, roles, and archetypes that participate in elastic-capers. They are composed of skill blocks and represent different viewpoints that contribute to comprehensive decision-making and problem-solving.
+Mobstas are AI agents that represent various perspectives, roles, and archetypes that participate in elastic-capers. They are composed of talents and represent different viewpoints that contribute to comprehensive decision-making and problem-solving.
 
 ## Current Mobstas
 
@@ -39,12 +39,12 @@ The complete, detailed definitions of all mobstas are now maintained in the **in
 
 ## Important Notes
 
-- **Composable Mobstas** - We moved away from fixed role definitions toward composable Mobstas built from skill-blocks
-- **Dynamic Composition** - Mobstas are dynamically composed from skill-block collections based on project needs
+- **Composable Mobstas** - We moved away from fixed role definitions toward composable Mobstas built from talents
+- **Dynamic Composition** - Mobstas are dynamically composed from talent collections based on project needs
 - **Flexible Scenarios** - Supports both startup scenarios (agents wearing multiple hats) and enterprise scenarios (highly specialized agents)
 - **Emergent Participation** - All Mobstas include emergent participation patterns for semantic resonance
 - **Opinionated guidance integration** - New mobstas incorporate opinionated app guidance principles for architectural enforcement, stability, and fierce conversations
-- **Current total**: 26 mobstas with proper skill block composition
+- **Current total**: 26 mobstas with proper talent composition
 
 ### Enhanced Mobsta Specifications
 All Mobstas now include **emergent participation patterns** for semantic resonance:

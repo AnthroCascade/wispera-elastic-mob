@@ -31,7 +31,7 @@
 ### **Step 2: Persona System Testing**
 - **Test elastic-mob persona** with real technical questions
 - **Validate mobsta coordination** and consensus building
-- **Identify any gaps** in skill block coverage
+- **Identify any gaps** in talent coverage
 - **Refine persona** based on real-world performance
 
 ### **Deliverables**
@@ -59,13 +59,13 @@ module ElasticMob
     
     def activate_skill_blocks(conversation_text)
       # Simple keyword matching initially
-      # Return array of skill block names that should activate
+      # Return array of talent names that should activate
     end
   end
 end
 ```
 
-### **Step 2: Static Skill Block Activation**
+### **Step 2: Static Talent Activation**
 - **Predefined activation patterns** loaded from configuration
 - **Simple relevance scoring** (keyword frequency, domain overlap)
 - **No dynamic creation** - everything is predefined and loaded once
@@ -107,7 +107,7 @@ end
 
 ### **Step 2: Basic Session Management**
 - **Create capers** for users
-- **Initialize with skill blocks** based on project context
+- **Initialize with talents** based on project context
 - **Simple state management** (active, paused, completed)
 
 ### **Step 3: Integration with Existing Infrastructure**
@@ -265,7 +265,7 @@ customElements.define('mob-session', class extends HTMLElement {
 
 ### **Phase 1 Prerequisites**
 - Phase 0 completed successfully
-- Static skill block patterns defined
+- Static talent patterns defined
 - Basic emergent participation rules established
 
 ### **Phase 2 Prerequisites**
@@ -337,7 +337,7 @@ customElements.define('mob-session', class extends HTMLElement {
 - **Performance Optimization**: Scaling and efficiency improvements
 
 ### **Long-term Evolution (Months 7-12)**
-- **Dynamic Skill Block Creation**: Runtime skill block evolution
+- **Dynamic Talent Creation**: Runtime talent evolution
 - **Advanced Emergent Participation**: More sophisticated coordination
 - **Enterprise Features**: Advanced security, compliance, and governance
 

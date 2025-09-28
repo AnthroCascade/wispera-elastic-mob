@@ -2,19 +2,19 @@
 
 ## **Core Integration Strategy**
 
-### **1. Enhanced Skill Blocks for Architectural Principles**
+### **1. Enhanced Talents for Architectural Principles**
 
-**Security Mobsta Enhanced Skill Blocks:**
+**Security Mobsta Enhanced Talents:**
 - **"Secure-by-Default Architecture"** - declares security principles at specification time
 - **"Type-Enforced Security"** - declares security through types, not validation
 - **"Security Quality Gates"** - declares what constitutes secure code
 
-**Performance Mobsta Enhanced Skill Blocks:**
+**Performance Mobsta Enhanced Talents:**
 - **"Performance Architecture"** - declares performance principles at specification time
 - **"Efficiency by Design"** - declares performance built-in, not added later
 - **"Performance Quality Gates"** - declares performance benchmarks
 
-**System Architecture Mobsta Enhanced Skill Blocks:**
+**System Architecture Mobsta Enhanced Talents:**
 - **"Architectural Principles"** - declares overall system design principles
 - **"Design Constraints"** - declares allowed/forbidden patterns
 - **"Quality Architecture"** - declares architectural quality standards
@@ -25,7 +25,7 @@
 **Activation**: Immediately when mob reaches consensus
 **Function**: Translates mob agreements into code generation context
 
-**Skill Blocks:**
+**Talents:**
 - **"Agreement Recognition"** - identifies when mob has reached consensus
 - **"Context Translation"** - converts conversation decisions to code context
 - **"Generation Triggering"** - initiates code generation when ready
@@ -37,7 +37,7 @@
 ```
 1. Mob discusses feature
 2. Mobstas contribute domain expertise
-3. Mobstas declare architectural principles (enhanced skill blocks)
+3. Mobstas declare architectural principles (enhanced talents)
 4. Mob reaches agreement
 5. Code Generation Mobsta recognizes agreement
 6. Code Generation Mobsta translates to context
@@ -58,9 +58,9 @@
 
 ## **Implementation Requirements**
 
-### **1. Skill Block Enhancement**
-- Add new architectural principle skill blocks to existing mobstas
-- Ensure skill blocks activate at specification time, not after decisions
+### **1. Talent Enhancement**
+- Add new architectural principle talents to existing mobstas
+- Ensure talents activate at specification time, not after decisions
 - Integrate principles into mob conversation flow
 
 ### **2. Code Generation Mobsta Creation**
@@ -94,8 +94,8 @@
 
 The copilot integration specification is now **implemented and ready for testing**:
 
-- **Enhanced skill blocks** for architectural principles are integrated
-- **Code generation mobsta** with all required skill blocks is ready
+- **Enhanced talents** for architectural principles are integrated
+- **Code generation mobsta** with all required talents is ready
 - **Integration points** are defined and accessible
 - **Copilot principles** from mindset.md and idioms.md are incorporated
 

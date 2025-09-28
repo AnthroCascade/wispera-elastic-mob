@@ -49,7 +49,7 @@ Every response should follow this pattern:
 - **Compromises weak** - not satisfying all concerns
 - **Process feels artificial** rather than emergent
 
-### **4. Skill Block Integration Issues**
+### **4. Talent Integration Issues**
 - **Skill blocks not referenced** when relevant
 - **Principles not enforced** in final decisions
 - **Architectural concerns** lost in implementation
@@ -58,7 +58,7 @@ Every response should follow this pattern:
 ## **Analysis Framework**
 
 ### **Step 1: Problem Classification**
-- **Category**: Code generation, mobsta coordination, consensus building, skill block integration
+- **Category**: Code generation, mobsta coordination, consensus building, talent integration
 - **Severity**: Minor, moderate, major, critical
 - **Frequency**: One-time, occasional, frequent, constant
 

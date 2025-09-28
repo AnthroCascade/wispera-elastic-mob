@@ -218,7 +218,7 @@ When starting new chat:
 
 **Ready for Integration**:
 - ✅ Backend: in-concert ElasticMob engine complete
-- ✅ Specs: All mobsta/skill block definitions complete
+- ✅ Specs: All mobsta/talent definitions complete
 - ✅ Framework: Mature patterns and components available
 
 **Needs Work**:

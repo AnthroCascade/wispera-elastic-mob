@@ -132,8 +132,8 @@ Elastic-mob is grounded in well-established theoretical frameworks:
 ## Success Criteria
 
 ### **Semantic Resonance Validation**
-- Natural skill block activation based on conversation content
-- Multiple skill blocks activate simultaneously when domains overlap
+- Natural talent activation based on conversation content
+- Multiple talents activate simultaneously when domains overlap
 - No manual orchestration required
 - Activation correlates with conversation relevance
 

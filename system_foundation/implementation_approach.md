@@ -7,9 +7,9 @@ Elastic-mob will be implemented as an **integrated engine within in-concert** ra
 
 **Note**: This document contains the complete implementation strategy. For current status and readiness assessment, see [current_audit.md](current_audit.md). For technology analysis and recommendations, see [architecture_critique.md](architecture_critique.md).
 
-**📋 Implementation Resources**: The detailed skill block and mobsta specifications that will be implemented are maintained in the **in-concert repository** under `app/services/elastic_mob/definitions/`. See [skill blocks overview.md](../skill%20blocks%20overview.md) and [mobstas overview.md](../mobstas%20overview.md) for comprehensive overviews.
+**📋 Implementation Resources**: The detailed talent and mobsta specifications that will be implemented are maintained in the **in-concert repository** under `app/services/elastic_mob/definitions/`. See [talents overview.md](../skill%20blocks%20overview.md) and [mobstas overview.md](../mobstas%20overview.md) for comprehensive overviews.
 
-**📋 Templates**: Use [skill block template](../templates/skill%20block.md) and [mobsta template](../templates/mobsta.md) for creating new specifications.
+**📋 Templates**: Use [talent template](../templates/skill%20block.md) and [mobsta template](../templates/mobsta.md) for creating new specifications.
 
 ### **Architecture Overview**
 ```
@@ -57,7 +57,7 @@ module ElasticMob
     
     def start_caper(context, skill_blocks)
       # Create caper
-      # Initialize agents with skill blocks
+      # Initialize agents with talents
       # Begin autonomous conversation
     end
   end
@@ -169,7 +169,7 @@ end
 ```javascript
 // Atomic components (smallest units)
 customElements.define('agent-status', AgentStatus);
-customElements.define('skill-block', SkillBlock);
+customElements.define('talent', SkillBlock);
 customElements.define('conversation-turn', ConversationTurn);
 
 // Composite components (compose atomic components)
@@ -230,7 +230,7 @@ class Caper extends HTMLElement {
 - User intervention capabilities
 
 ### **Future Enhancements**
-- Advanced agent behaviors and skill block evolution
+- Advanced agent behaviors and talent evolution
 - Multi-user collaboration features
 - Enhanced git workflow and conflict resolution
 - Performance optimization and scaling

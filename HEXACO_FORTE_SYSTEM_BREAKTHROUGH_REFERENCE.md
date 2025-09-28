@@ -58,7 +58,7 @@
 **Advantages**:
 - Addresses actual problem (behavioral inconsistency during skill execution)
 - Leverages AI behavioral flexibility advantage
-- Maintains existing skill block structure
+- Maintains existing talent structure
 - Manageable complexity
 
 **Key Questions**:
@@ -67,15 +67,15 @@
 - How to manage transitions between different optimal profiles?
 - How to prevent profile conflicts during simultaneous capabilities?
 
-### Thread B: Skill Block System Overhaul ❌ NOT RECOMMENDED
-**Focus**: Decomposing skill blocks to eliminate internal HEXACO conflicts
+### Thread B: Talent System Overhaul ❌ NOT RECOMMENDED
+**Focus**: Decomposing talents to eliminate internal HEXACO conflicts
 **Problems Identified**:
-- **Explosion of complexity**: 70 skill blocks → 300+ micro-capabilities
+- **Explosion of complexity**: 70 talents → 300+ micro-capabilities
 - **Artificial boundaries**: Real work requires integrated HEXACO application
 - **Coordination nightmare**: Managing activation/sequencing of micro-capabilities
 - **Over-engineering**: Solves wrong problem (composition vs behavioral discipline)
 
-**Critical Insight**: Problem is behavioral inconsistency during skill execution, not skill block composition.
+**Critical Insight**: Problem is behavioral inconsistency during skill execution, not talent composition.
 
 ## Architectural Principles
 
@@ -84,8 +84,8 @@
 - Switch to appropriate behavioral mode for specific capability
 - Maintain profile consistency during capability execution
 
-### 2. Integrated Skill Block Execution
-- Keep existing skill blocks as integrated capabilities
+### 2. Integrated Talent Execution
+- Keep existing talents as integrated capabilities
 - Add HEXACO behavioral discipline during execution
 - Avoid artificial decomposition into micro-capabilities
 

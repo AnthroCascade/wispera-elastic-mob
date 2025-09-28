@@ -2,9 +2,9 @@
 
 ## Overview
 
-Based on the LinkedIn post about agentic coding limitations and insights, I've created new skill blocks and mobsta specifications that address the identified gaps and opportunities in the current mobsta architecture.
+Based on the LinkedIn post about agentic coding limitations and insights, I've created new talents and mobsta specifications that address the identified gaps and opportunities in the current mobsta architecture.
 
-## New Skill Blocks Created
+## New Talents Created
 
 ### 1. Context Management
 **Purpose**: Optimizes AI context utilization and knowledge evolution across development sessions  
@@ -105,11 +105,11 @@ The new mobsta capabilities transform application building from:
 - **Context guessing** → **Optimized knowledge management**
 
 ### Integration with Existing Architecture
-All new skill blocks and mobstas integrate seamlessly with:
+All new talents and mobstas integrate seamlessly with:
 - Git-as-persistence model for knowledge evolution
 - Requirements generation approach (not direct code generation)
 - Semantic resonance for mobsta coordination
-- Composable skill block architecture
+- Composable talent architecture
 
 ## Implementation Priority
 

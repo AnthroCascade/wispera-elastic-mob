@@ -11,7 +11,7 @@
 
 **Implement HEXACO-optimized single-agent mobsta simulation that:**
 1. **Dynamically switches behavioral profiles** during mobsta perspective cycling
-2. **Applies optimal HEXACO combinations** for each skill block execution
+2. **Applies optimal HEXACO combinations** for each talent execution
 3. **Maintains behavioral consistency** during complex multi-perspective analysis
 4. **Builds foundation** for future multi-agent HEXACO optimization
 
@@ -70,9 +70,9 @@ From breakthrough analysis, HEXACO-aware behavioral switching demonstrated:
    - Specify context-sensitive profile variations
    - Create behavioral switching protocols
 
-3. **Skill Block HEXACO Analysis**
-   - Map 70 skill blocks to optimal HEXACO profiles
-   - Identify skill blocks requiring multiple HEXACO approaches
+3. **Talent HEXACO Analysis**
+   - Map 70 talents to optimal HEXACO profiles
+   - Identify talents requiring multiple HEXACO approaches
    - Design context-aware behavioral switching logic
 
 ### **Phase 2: Dynamic Switching Implementation**
@@ -132,20 +132,20 @@ Output: HEXACO profile mapping for each mobsta type
 - What HEXACO traits are implied by their roles and responsibilities?
 - Where do current specifications conflict with optimal HEXACO profiles?
 
-### **Step 2: Skill Block HEXACO Mapping**
+### **Step 2: Talent HEXACO Mapping**
 
-**Map 70 skill blocks to optimal HEXACO combinations:**
+**Map 70 talents to optimal HEXACO combinations:**
 
 ```
-Target: 70 skill blocks in /mobsta-specs/skill_blocks/
+Target: 70 talents in /mobsta-specs/skill_blocks/
 Focus: Determine optimal behavioral profiles for each technical domain
 Output: Context-sensitive HEXACO switching logic
 ```
 
 **Key Considerations:**
-- Some skill blocks may require different HEXACO profiles in different contexts
-- Complex skill blocks may need integrated HEXACO approaches
-- Cross-skill-block coordination may require behavioral adaptation
+- Some talents may require different HEXACO profiles in different contexts
+- Complex talents may need integrated HEXACO approaches
+- Cross-talent coordination may require behavioral adaptation
 
 ### **Step 3: Dynamic Switching Protocol Design**
 
@@ -157,7 +157,7 @@ Output: Context-sensitive HEXACO switching logic
 - Assess complexity level requiring HEXACO profile adaptation
 
 **Profile Activation:**
-- Switch to optimal HEXACO combination for current mobsta/skill block
+- Switch to optimal HEXACO combination for current mobsta/talent
 - Maintain behavioral consistency during perspective execution
 - Apply anti-lurching safeguards during transitions
 
@@ -210,7 +210,7 @@ Output: Context-sensitive HEXACO switching logic
 
 **Prerequisites Met:**
 - ✅ **HEXACO breakthrough insights** documented and validated
-- ✅ **Mobsta specifications** available (32 mobstas, 70 skill blocks)
+- ✅ **Mobsta specifications** available (32 mobstas, 70 talents)
 - ✅ **Current simulation context** established and working
 - ✅ **Performance baseline** demonstrated through breakthrough analysis
 

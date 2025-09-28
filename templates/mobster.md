@@ -1,6 +1,6 @@
 ## Mobsta Specification Components
 
-Beyond the skill-block composition, a mobsta would need:
+Beyond the talent composition, a mobsta would need:
 
 ### Identity & Purpose
 **Role Name**: What this mobsta represents (e.g., "Full-Stack Developer", "Security Architect", "Product Owner")  
@@ -8,9 +8,9 @@ Beyond the skill-block composition, a mobsta would need:
 **Perspective Lens**: The unique viewpoint this mobsta brings to discussions
 
 ### Skill-Block Composition
-**Primary Skills**: Core skill-blocks that define this mobsta's expertise  
-**Secondary Skills**: Supporting skill-blocks for broader context  
-**Skill Adaptations**: Specific overrides, reinforcements, or biases applied to skill-blocks  
+**Primary Skills**: Core talents that define this mobsta's expertise  
+**Secondary Skills**: Supporting talents for broader context  
+**Skill Adaptations**: Specific overrides, reinforcements, or biases applied to talents  
 (e.g., "Database skills with strong preference for ACID compliance")
 
 ### Game Configuration

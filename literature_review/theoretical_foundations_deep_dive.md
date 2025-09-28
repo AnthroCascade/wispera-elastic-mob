@@ -106,7 +106,7 @@ This document provides a comprehensive deep dive into the theoretical foundation
 - No separation between "mind" and "environment"
 
 **Relevance to Elastic-Mob**:
-- Intelligence distributed across skill blocks and stakeholders
+- Intelligence distributed across talents and stakeholders
 - No central controller - emergence through distributed interaction
 - System tightly coupled with conversation context
 
@@ -156,7 +156,7 @@ This document provides a comprehensive deep dive into the theoretical foundation
 - Semantic resonance activates relevant schemas
 - Coordination emerges from schema interaction
 
-**Scientific Validation**: Schema theory provides cognitive foundation for skill block activation and coordination.
+**Scientific Validation**: Schema theory provides cognitive foundation for talent activation and coordination.
 
 ---
 
@@ -324,7 +324,7 @@ This document provides a comprehensive deep dive into the theoretical foundation
 
 **Testable Predictions**:
 - Stakeholder coordination will emerge naturally without central control
-- Semantic resonance will activate relevant skill blocks based on conversation content
+- Semantic resonance will activate relevant talents based on conversation content
 - System behavior will adapt to changing conversation context
 
 **Validation Approach**:

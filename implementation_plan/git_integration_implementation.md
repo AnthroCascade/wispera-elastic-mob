@@ -262,7 +262,7 @@ interface FileNode {
 
 ### **With Existing Components**
 - **Caper**: Integrate git status and operations
-- **SkillBlockPanel**: Connect skill blocks to file analysis
+- **SkillBlockPanel**: Connect talents to file analysis
 - **AgentDisplay**: Show git-aware development context
 - **ConversationView**: Include git operations in AI conversations
 

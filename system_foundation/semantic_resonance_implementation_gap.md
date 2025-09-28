@@ -9,11 +9,11 @@ During the research and planning phase of elastic-mob development, a significant
 ### **Intended Behavior (from deeper_architecture.md)**
 - **Skill blocks are summoned by semantic resonance** rather than rigid role assignments
 - **No orchestrator decides who should be involved** - the conversation itself summons participants
-- **Multiple skill blocks activate simultaneously** when their domains are touched
+- **Multiple talents activate simultaneously** when their domains are touched
 - **Emergent participation** based on conversation content and relevance
 
 ### **Example of Intended Behavior**
-When conversation touches on "user authentication," multiple skill blocks should activate simultaneously:
+When conversation touches on "user authentication," multiple talents should activate simultaneously:
 - **Security** (protecting credentials)
 - **UX** (minimizing friction)  
 - **Backend** (implementation patterns)
@@ -31,7 +31,7 @@ When conversation touches on "user authentication," multiple skill blocks should
 1. **Explicit mobsta activation calls**: `[UX mobsta activated]` rather than natural emergence
 2. **Consistent pattern usage**: Same mobstas appearing regardless of conversation content
 3. **Manual flow control**: Orchestrating participation rather than facilitating emergence
-4. **No semantic resonance**: Conversation content not naturally summoning relevant skill blocks
+4. **No semantic resonance**: Conversation content not naturally summoning relevant talents
 
 ## **Root Cause Analysis**
 
@@ -51,14 +51,14 @@ When conversation touches on "user authentication," multiple skill blocks should
 
 ### **1. Semantic Pattern Matching Engine**
 - **Pattern recognition** for conversation content
-- **Static skill block activation** based on predefined patterns
+- **Static talent activation** based on predefined patterns
 - **Multi-skill activation** when domains overlap
-- **Context awareness** for appropriate skill block selection
+- **Context awareness** for appropriate talent selection
 
 ### **2. Emergent Participation System**
 - **No manual orchestration** - system must be self-organizing
 - **Conversation-driven activation** - content determines participation
-- **Static skill block composition** - Mobstas use predefined skill block sets
+- **Static talent composition** - Mobstas use predefined talent sets
 - **Natural flow management** - no forced consensus or direction
 
 ### **3. Game Theory Integration**
@@ -86,7 +86,7 @@ When conversation touches on "user authentication," multiple skill blocks should
 - **Runtime Execution**: Works with static, predefined components
 - **Design Iteration**: Continuous improvement through analysis of sub-optimal executions
 - **Pattern Refinement**: Updates to activation patterns and participation rules
-- **Component Evolution**: New skill blocks and mobstas added through design process
+- **Component Evolution**: New talents and mobstas added through design process
 
 ## **Implementation Strategy Correction**
 
@@ -94,22 +94,22 @@ When conversation touches on "user authentication," multiple skill blocks should
 Before building the elastic-mob engine, we must:
 
 1. **Implement semantic pattern matching** as the core mechanism
-2. **Build static skill block activation system** that responds to conversation content
+2. **Build static talent activation system** that responds to conversation content
 3. **Create static emergent participation framework** that eliminates manual orchestration
 4. **Validate static emergence mechanisms** before building higher-level features
 
 ### **Testing Approach**
 - **Test semantic resonance** with simple conversation patterns
-- **Validate skill block activation** without manual intervention
+- **Validate talent activation** without manual intervention
 - **Ensure emergent participation** works before adding complexity
 - **Measure actual vs. intended behavior** at each implementation step
 
 ## **Success Criteria for Implementation**
 
 ### **Semantic Resonance Validation**
-- [ ] Conversation content naturally activates relevant skill blocks
-- [ ] Multiple skill blocks activate simultaneously when domains overlap
-- [ ] No manual orchestration required for skill block selection
+- [ ] Conversation content naturally activates relevant talents
+- [ ] Multiple talents activate simultaneously when domains overlap
+- [ ] No manual orchestration required for talent selection
 - [ ] Skill block activation correlates with conversation relevance
 
 ### **Emergent Participation Validation**
@@ -148,7 +148,7 @@ Each implementation phase must validate actual vs. intended behavior before proc
 
 ### **Implementation Priority**
 1. **Semantic pattern matching** (core mechanism)
-2. **Static skill block activation** (response system)
+2. **Static talent activation** (response system)
 3. **Static emergent participation** (self-organization)
 4. **Static game theory integration** (optimization games)
 5. **Higher-level features** (mob dynamics, consensus building)
@@ -157,7 +157,7 @@ Each implementation phase must validate actual vs. intended behavior before proc
 
 The discovery of this implementation gap is critical for elastic-mob success. We cannot build the system until semantic resonance and emergent participation are properly implemented. The current approach of manual orchestration must be replaced with genuine emergence mechanisms.
 
-**Key Insight**: Elastic-mob requires emergence, not orchestration. The implementation must focus on creating systems that naturally summon relevant skill blocks and allow mobstas to participate based on conversation content, using static patterns and rules rather than dynamic creation.
+**Key Insight**: Elastic-mob requires emergence, not orchestration. The implementation must focus on creating systems that naturally summon relevant talents and allow mobstas to participate based on conversation content, using static patterns and rules rather than dynamic creation.
 
 This document serves as a critical checkpoint before moving into implementation. The gap must be resolved, and emergence mechanisms must be validated, before the elastic-mob vision can become reality.
 

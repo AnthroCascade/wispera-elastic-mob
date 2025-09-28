@@ -28,7 +28,7 @@ This document serves as the critical hand-off between the research/planning phas
 - **Iterative Refinement**: Updates happen through design process, not runtime execution
 
 ### **Supplementary Design Methodology: PS-PPS Framework**
-The implementation may optionally incorporate the **PS-PPS Framework** (Purpose, Scope, Participations, Patterns, Semantics) as a supplementary design methodology. This recursive, holonic approach to software investigation aligns with elastic-mob's architectural principles and could enhance skill block behavior and stakeholder coordination. See [ps_pps_framework.md](ps_pps_framework.md) for details.
+The implementation may optionally incorporate the **PS-PPS Framework** (Purpose, Scope, Participations, Patterns, Semantics) as a supplementary design methodology. This recursive, holonic approach to software investigation aligns with elastic-mob's architectural principles and could enhance talent behavior and stakeholder coordination. See [ps_pps_framework.md](ps_pps_framework.md) for details.
 
 ### **Implementation Benefits**
 - **Simpler Architecture**: No complex dynamic creation mechanisms
@@ -40,11 +40,11 @@ The implementation may optionally incorporate the **PS-PPS Framework** (Purpose,
 
 ### **1. Semantic Pattern Matching Engine (Phase 1 Priority)**
 - **Pattern recognition** for conversation content
-- **Static skill block activation** based on predefined patterns
+- **Static talent activation** based on predefined patterns
 - **Multi-skill activation** when domains overlap
-- **Context awareness** for appropriate skill block selection
+- **Context awareness** for appropriate talent selection
 
-### **2. Static Skill Block Activation System**
+### **2. Static Talent Activation System**
 - **Predefined activation patterns** loaded once and used consistently
 - **Relevance scoring** based on conversation content
 - **Activation strength** determination (high/medium based on relevance)
@@ -64,12 +64,12 @@ The implementation may optionally incorporate the **PS-PPS Framework** (Purpose,
 
 ## **Enhanced Foundation Components**
 
-### **Skill Blocks with Semantic Activation Patterns**
-All skill blocks now include:
-- **Triggers**: Specific words/phrases that activate the skill block
-- **Co-activation**: Other skill blocks that activate simultaneously
+### **Talents with Semantic Activation Patterns**
+All talents now include:
+- **Triggers**: Specific words/phrases that activate the talent
+- **Co-activation**: Other talents that activate simultaneously
 - **Activation Strength**: High/medium based on relevance
-- **Deactivation**: When the skill block should disengage
+- **Deactivation**: When the talent should disengage
 
 **Examples Updated**:
 - **Security**: Triggers on ["security", "authentication", "authorization", "encryption", "vulnerability", "threat", "compliance"]
@@ -88,17 +88,17 @@ All mobstas now include:
 - **Resource Guardian**: Activates when relevance score > 0.6 for resource/cost concerns
 - **User Advocate**: Activates when relevance score > 0.7 for user experience concerns
 
-### **New Semantic Resonance Skill Block**
-- **Purpose**: Enable skill blocks to be summoned by conversation content
+### **New Semantic Resonance Talent**
+- **Purpose**: Enable talents to be summoned by conversation content
 - **Capabilities**: Pattern matching, relevance scoring, activation management
-- **Integration**: Core system component that activates other skill blocks
+- **Integration**: Core system component that activates other talents
 - **Runtime Behavior**: Static pattern matching against conversation content
 
 ## **Implementation Phases and Priorities**
 
 ### **Phase 1: Semantic Resonance Core (Required Before Anything Else)**
 1. **Implement semantic pattern matching** as the core mechanism
-2. **Build static skill block activation system** that responds to conversation content
+2. **Build static talent activation system** that responds to conversation content
 3. **Create static emergent participation framework** that eliminates manual orchestration
 4. **Validate static emergence mechanisms** before building higher-level features
 
@@ -117,9 +117,9 @@ All mobstas now include:
 ## **Success Criteria for Implementation**
 
 ### **Semantic Resonance Validation**
-- [ ] Conversation content naturally activates relevant skill blocks
-- [ ] Multiple skill blocks activate simultaneously when domains overlap
-- [ ] No manual orchestration required for skill block selection
+- [ ] Conversation content naturally activates relevant talents
+- [ ] Multiple talents activate simultaneously when domains overlap
+- [ ] No manual orchestration required for talent selection
 - [ ] Skill block activation correlates with conversation relevance
 
 ### **Emergent Participation Validation**
@@ -138,12 +138,12 @@ All mobstas now include:
 
 ### **Phase 1 Testing**
 - **Test semantic resonance** with simple conversation patterns
-- **Validate skill block activation** without manual intervention
+- **Validate talent activation** without manual intervention
 - **Ensure emergent participation** works before adding complexity
 - **Measure actual vs. intended behavior** at each implementation step
 
 ### **Validation Metrics**
-- **Activation Accuracy**: How well skill blocks match conversation content
+- **Activation Accuracy**: How well talents match conversation content
 - **Relevance Scoring**: Accuracy of relevance calculations
 - **Participation Quality**: Natural emergence of mobsta participation
 - **System Emergence**: Self-organization without manual direction
@@ -204,7 +204,7 @@ This hand-off statement captures the critical discovery that semantic resonance 
 
 1. **Clear implementation requirements** for semantic resonance
 2. **Static runtime architecture** specifications
-3. **Enhanced skill blocks and mobstas** with activation patterns
+3. **Enhanced talents and mobstas** with activation patterns
 4. **Implementation phases and priorities** with dependencies
 5. **Success criteria and validation approach** for each phase
 

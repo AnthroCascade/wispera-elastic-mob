@@ -13,7 +13,7 @@ The conversations become a negotiation space where these games interact, creatin
 
 ### **Supplementary Enhancement: PS-PPS Framework Integration**
 
-The system's holonic architecture naturally supports the **PS-PPS Framework** (Purpose, Scope, Participations, Patterns, Semantics) as an optional enhancement. This recursive investigation methodology could enhance skill block behavior and stakeholder coordination by providing:
+The system's holonic architecture naturally supports the **PS-PPS Framework** (Purpose, Scope, Participations, Patterns, Semantics) as an optional enhancement. This recursive investigation methodology could enhance talent behavior and stakeholder coordination by providing:
 
 - **Recursive Investigation**: Systematic exploration from system to component level
 - **Authentic Pattern Recognition**: Distinguishing true Alexandrian patterns from simplified abstractions
@@ -23,7 +23,7 @@ See [ps_pps_framework.md](ps_pps_framework.md) for detailed implementation appro
 
 ### Semantic Pattern Matching as Summons
 
-The intelligent matching mechanism is particularly elegant - rather than rigid role assignments, skill-blocks are **summoned by semantic resonance**. When a conversation touches on "user authentication," multiple skill-blocks might activate:
+The intelligent matching mechanism is particularly elegant - rather than rigid role assignments, talents are **summoned by semantic resonance**. When a conversation touches on "user authentication," multiple talents might activate:
 - Security (protecting credentials)
 - UX (minimizing friction)
 - Backend (implementation patterns)
@@ -33,7 +33,7 @@ Each brings its game logic to bear on the problem.
 
 ### The Prompt Engineering Meta-Layer
 
-Having Prompt Engineering as a skill-block is crucial - it means mobstas can:
+Having Prompt Engineering as a talent is crucial - it means mobstas can:
 - Optimize their communication with underlying AI models
 - Adapt their prompting strategies based on results
 - Share effective patterns across the system
@@ -44,7 +44,7 @@ Having Prompt Engineering as a skill-block is crucial - it means mobstas can:
 Given these insights, the bootstrap process follows this sequence:
 
 1. **Phase 0: Foundation Complete** ✅
-   - 37 skill blocks covering all development domains
+   - 37 talents covering all development domains
    - 25 Mobstas with proper composition
    - Template compliance and integration quality achieved
 
@@ -88,10 +88,10 @@ The recursive bootstrap isn't just clever - it's the perfect proof of concept. I
 
 ### Human Participation Through Proxy Mobstas
 
-The system supports human participation through **user proxy mobstas** that represent human availability and authority without predefined skill blocks:
+The system supports human participation through **user proxy mobstas** that represent human availability and authority without predefined talents:
 
 #### **Proxy Mobsta Design Principles**
-- **No skill blocks**: Users naturally embody expertise when they intervene
+- **No talents**: Users naturally embody expertise when they intervene
 - **Availability signaling**: Indicate when human input might be valuable
 - **Authority mapping**: Define decision-making power in different domains
 - **Intelligent polling**: Mob identifies optimal moments for human involvement
