@@ -1,12 +1,22 @@
-# Mobsters - Overview
+# Mobstas - Overview
 
-## What Are Mobsters?
+## What Are Mobstas?
 
-Mobsters are AI agents that represent various perspectives, roles, and archetypes that participate in elastic-mob sessions. They are composed of skill blocks and represent different viewpoints that contribute to comprehensive decision-making and problem-solving.
+**Mobstas** are AI agent instances created from fortes at game time. They represent various perspectives, roles, and archetypes that participate in elastic-capers, combining the expertise defined in their source forte with the specific requirements of the current game.
 
-## Current Mobsters
+### **Composition Hierarchy**:
+```
+Talents → Fortes → Mobstas
+   ↓        ↓        ↓
+ Atomic  Composed  Game
+ Units   Expertise Instances
+```
 
-The complete, detailed definitions of all mobsters are now maintained in the **in-concert repository** under `app/services/elastic_mob/definitions/mobsters/`.
+**Key Point**: Mobstas are **instantiated** from fortes (which are composed from talents), not directly from talents.
+
+## Current Mobstas
+
+The complete, detailed definitions of all mobstas are maintained in syndicate repositories. See the **[Software Development Syndicate](https://github.com/AnthroCascade/software-development-syndicate)** for a comprehensive example.
 
 ### Explicitly Named Roles
 - **Domain Expert** - Subject matter expertise in specific domains
@@ -21,7 +31,7 @@ The complete, detailed definitions of all mobsters are now maintained in the **i
 - **Marketing** - Market positioning and user acquisition
 - **Sales** - Customer needs and sales considerations
 - **CEO** - Strategic business perspective
-- **Sponsor** - Project sponsorship and support
+- **Sponsor** - Game sponsorship and support
 - **Component Architecture** - Client-side development expertise
 - **API Design** - Server-side development expertise
 - **DevOps Engineer** - Operations and deployment expertise
@@ -37,21 +47,19 @@ The complete, detailed definitions of all mobsters are now maintained in the **i
 
 ## Important Notes
 
-- **Composable Mobsters** - We moved away from fixed role definitions toward composable Mobsters built from skill-blocks
-- **Dynamic Composition** - Mobsters are dynamically composed from skill-block collections based on project needs
+- **Composable Fortes** - We moved away from fixed role definitions toward fortes composed from talents
+- **Dynamic Instantiation** - Mobstas are dynamically instantiated from fortes at game time based on project needs
 - **Flexible Scenarios** - Supports both startup scenarios (agents wearing multiple hats) and enterprise scenarios (highly specialized agents)
-- **Emergent Participation** - All Mobsters include emergent participation patterns for semantic resonance
+- **Emergent Participation** - All Mobstas include emergent participation patterns for semantic resonance
 
-### Enhanced Mobster Specifications
-All Mobsters now include **emergent participation patterns** for semantic resonance:
-- **Activation Thresholds** - Relevance scores that determine when Mobsters participate
-- **Participation Styles** - How Mobsters emerge and engage in conversations
-- **Collaboration Patterns** - Natural interaction with other relevant Mobsters
-- **Exit Conditions** - When Mobsters disengage from conversations
-- **Conflict Resolution** - How Mobsters handle disagreements with other perspectives
+### Enhanced Mobsta Specifications
+All Mobstas now include **emergent participation patterns** for semantic resonance:
+- **Activation Thresholds** - Relevance scores that determine when Mobstas participate
+- **Participation Styles** - How Mobstas emerge and engage in conversations
+- **Collaboration Patterns** - Natural interaction with other relevant Mobstas
+- **Exit Conditions** - When Mobstas disengage from conversations
+- **Conflict Resolution** - How Mobstas handle disagreements with other perspectives
 
 ## For Detailed Definitions
 
-See the in-concert repository at `app/services/elastic_mob/definitions/mobsters/` for complete specifications of each mobster.
-
-**📋 [Mobster Template](templates/mobster.md)** - Template for creating new mobster specifications
+See syndicate repositories for complete specifications. The **[Software Development Syndicate](https://github.com/AnthroCascade/software-development-syndicate)** provides comprehensive examples and templates for creating new forte and talent definitions.

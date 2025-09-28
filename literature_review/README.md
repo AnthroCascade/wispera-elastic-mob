@@ -138,7 +138,7 @@ Elastic-mob is grounded in well-established theoretical frameworks:
 - Activation correlates with conversation relevance
 
 ### **Emergent Participation Validation**
-- Mobsters emerge based on conversation needs
+- Mobstas emerge based on conversation needs
 - Participation patterns vary naturally with content
 - No consistent go-to patterns or ritualistic behavior
 - System self-organizes without external direction

@@ -2,7 +2,7 @@
 
 ## What Are Skill Blocks?
 
-Skill blocks are the fundamental building blocks that define the capabilities and behaviors of mobsters in the elastic-mob system. Each skill block represents a specific domain of expertise or capability that can be combined with others to create specialized mobsters.
+Skill blocks are the fundamental building blocks that define the capabilities and behaviors of mobstas in the elastic-mob system. Each skill block represents a specific domain of expertise or capability that can be combined with others to create specialized mobstas.
 
 ## Current Skill Blocks
 
@@ -39,7 +39,7 @@ The complete, detailed definitions of all skill blocks are now maintained in the
 - **Process Facilitation** - Conversation management, decision frameworks, mob dynamics
 - **Requirements Gathering** - User needs analysis, requirement specification, stakeholder communication
 - **Requirements Analysis** - Requirement validation, feasibility analysis, scope definition
-- **Project Planning** - Project structure, timeline management, resource planning
+- **Game Planning** - Game structure, timeline management, resource planning
 - **Service Integration** - System integration, component integration, deployment integration, authentication flows, OAuth providers
 
 ### User Experience & Design
@@ -84,7 +84,7 @@ The complete, detailed definitions of all skill blocks are now maintained in the
 
 ## Important Notes
 
-- **Skill blocks are composable** - Multiple skill blocks can be combined to create specialized Mobsters
+- **Skill blocks are composable** - Multiple skill blocks can be combined to create specialized Mobstas
 - **Single source of truth** - Detailed definitions are maintained in the in-concert repository
 - **Pattern recognition** - Several skill blocks include pattern recognition capabilities for specification guidance and quality drift prevention
 - **Static Runtime Approach** - All skill blocks use predefined activation patterns for semantic resonance

@@ -46,7 +46,7 @@
 ### **Backend/Elastic-Mob Service: Ruby + EventMachine/Async**
 
 **Why Ruby is ideal for Elastic-Mob:**
-- **Metaprogramming excellence**: Perfect for dynamic mobster creation and skill block composition
+- **Metaprogramming excellence**: Perfect for dynamic mobsta creation and skill block composition
 - **DSL capabilities**: Can create elegant, declarative agent definitions
 - **Rich ecosystem**: Gems for WebSockets, async processing, and AI integration
 - **Your expertise**: You already know the language deeply
@@ -57,9 +57,9 @@
 - **Redis**: For real-time state sharing and pub/sub between agents
 - **Sequel**: Lightweight ORM alternative to ActiveRecord for performance
 
-**Example of Ruby metaprogramming for mobsters:**
+**Example of Ruby metaprogramming for mobstas:**
 ```ruby
-class Mobster
+class Mobsta
   def self.skill_block(name, &block)
     define_method(name) do
       instance_eval(&block)
@@ -86,7 +86,7 @@ end
 
 **Example of mob interface in Web Components:**
 ```javascript
-class MobSession extends HTMLElement {
+class Caper extends HTMLElement {
   constructor() {
     super();
     this.attachShadow({ mode: 'open' });
@@ -120,7 +120,7 @@ class MobSession extends HTMLElement {
 
 ### **Layer 1: Rails Backend (Foundation)**
 - Keep existing Assistant/Thread/Run infrastructure
-- Add new models: `Mob`, `Agent`, `SkillBlock`, `Mobster`
+- Add new models: `Mob`, `Agent`, `SkillBlock`, `Mobsta`
 - Use ActionCable for real-time mob coordination
 - Leverage existing authentication and persistence
 
@@ -137,7 +137,7 @@ class MobSession extends HTMLElement {
 - **Mob activity visualization** showing agent participation and progress
 - **Observer dashboard** for monitoring mob work without participation
 - **Real-time updates** via WebSocket connection to in-concert
-- **Configuration interface** for mobsters and skill blocks
+- **Configuration interface** for mobstas and skill blocks
 - **Code preview and editing** for generated code
 - **Live execution results** showing code output and errors
 - **Version history** for tracking code evolution through conversations
@@ -148,14 +148,14 @@ class MobSession extends HTMLElement {
 - **Context injection interface** for adding requirements mid-conversation
 - **Agent management panel** for activating/deactivating agents during conversation
 - **Intervention history** tracking user interventions and their outcomes
-- **User proxy mobster configuration** for defining availability and authority preferences
+- **User proxy mobsta configuration** for defining availability and authority preferences
 - **Participation mode switching** between observer, participant, and authority modes
 - **Intelligent polling interface** showing when mob requests human input
 - **Authority resolution panel** for human decision-making in their domains
 
 ## **Why This Architecture Serves Elastic-Mob Best**
 
-1. **Metaprogramming**: Ruby excels at creating the dynamic mobster and skill block systems
+1. **Metaprogramming**: Ruby excels at creating the dynamic mobsta and skill block systems
 2. **Real-time performance**: Web Components with direct DOM manipulation handle high-frequency updates
 3. **Developer experience**: You can focus on the agent logic, not framework complexity
 4. **Integration simplicity**: Direct access to existing in-concert services without API overhead
@@ -177,17 +177,17 @@ The current Flutter frontend serves as a good prototype but should be replaced w
 
 **The user is NOT a participant in the mob conversation** - they are an observer and initiator:
 
-## **User as Stakeholder: User Proxy Mobsters in the Mob**
+## **User as Stakeholder: User Proxy Mobstas in the Mob**
 
-**Users can become active participants in the mob** through proxy mobsters that represent their availability and authority:
+**Users can become active participants in the mob** through proxy mobstas that represent their availability and authority:
 
-### **User Proxy Mobster Concept**
-- **Proxy mobsters**: Represent human availability and decision-making authority
+### **User Proxy Mobsta Concept**
+- **Proxy mobstas**: Represent human availability and decision-making authority
 - **No predefined skill blocks**: Users naturally embody expertise when they intervene
 - **Hybrid participation**: Users can observe OR participate in the mob
-- **Authority preservation**: User proxy mobsters maintain decision-making authority
+- **Authority preservation**: User proxy mobstas maintain decision-making authority
 
-### **User Proxy Mobster Capabilities**
+### **User Proxy Mobsta Capabilities**
 - **Availability signaling**: Indicate when user is online and willing to participate
 - **Domain interest**: Signal areas where human input might be valuable
 - **Authority definition**: Define decision-making power in different domains
@@ -196,18 +196,18 @@ The current Flutter frontend serves as a good prototype but should be replaced w
 
 ### **Participation Modes**
 1. **Observer Mode**: Watch agents work autonomously (default)
-2. **Participant Mode**: Join the mob with user proxy mobster active
+2. **Participant Mode**: Join the mob with user proxy mobsta active
 3. **Authority Mode**: Take control in specific domains when needed
 4. **Hybrid Mode**: Participate in some areas, observe in others
 
-### **Human-Agent Mobster Interaction**
-- **Authority hierarchy**: User proxy mobsters can override agent decisions
+### **Human-Agent Mobsta Interaction**
+- **Authority hierarchy**: User proxy mobstas can override agent decisions
 - **Intelligent polling**: Mob identifies when human input would be valuable
 - **Natural expertise**: Human judgment emerges without predefined constraints
-- **Conflict resolution**: User proxy mobsters can break deadlocks between agent mobsters
-- **Quality assurance**: User proxy mobsters provide final approval for critical decisions
+- **Conflict resolution**: User proxy mobstas can break deadlocks between agent mobstas
+- **Quality assurance**: User proxy mobstas provide final approval for critical decisions
 
-### **User Proxy Mobster Design**
+### **User Proxy Mobsta Design**
 - **No skill blocks**: Represents human availability and authority, not predefined expertise
 - **Polling mechanism**: Mob can request human input when needed
 - **Authority mapping**: Defines decision-making power in different domains
@@ -247,14 +247,14 @@ The current Flutter frontend serves as a good prototype but should be replaced w
 4. **Results Review**: Human reviews generated code and decisions
 5. **Iteration or Completion**: Human decides to iterate or accept results
 
-### **Enhanced Conversation Flow with User Proxy Mobsters**
-1. **Setup Phase**: Human configures their proxy mobster with availability and authority preferences
-2. **Mob Formation**: User proxy mobster joins the mob alongside agent mobsters
+### **Enhanced Conversation Flow with User Proxy Mobstas**
+1. **Game Phase**: Human configures their proxy mobsta with availability and authority preferences
+2. **Mob Formation**: User proxy mobsta joins the mob alongside agent mobstas
 3. **Intelligent Polling**: Mob identifies when human input would be valuable
 4. **Human Intervention**: User naturally provides expertise when polled
-5. **Authority Resolution**: User proxy mobster makes final decisions in their domains
+5. **Authority Resolution**: User proxy mobsta makes final decisions in their domains
 6. **Learning Integration**: System learns optimal timing and domains for human involvement
-7. **Results Validation**: User proxy mobster provides final approval and quality gates
+7. **Results Validation**: User proxy mobsta provides final approval and quality gates
 
 ### **High-Speed Agent Communication**
 - **Not human-readable**: Agents communicate in technical shorthand

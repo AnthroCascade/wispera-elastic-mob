@@ -40,7 +40,7 @@ Build a complete, navigable prototype of a micro-SaaS application called "Though
 3. **Dashboard** (post-login)
    - Welcome message with quick stats (e.g., "5 pieces repurposed this week")
    - Recent projects grid/list
-   - Quick action buttons: "New Project", "Templates", "Analytics"
+   - Quick action buttons: "New Setup", "Templates", "Analytics"
    - Usage meter showing plan limits
 
 4. **Content Input Page**

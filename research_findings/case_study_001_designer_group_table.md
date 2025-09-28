@@ -15,13 +15,13 @@
 - **Domain Expertise**: Product design, UX, native app design, startup experience
 - **Previous Experience**: Silicon Valley startup, worked with ML engineers but couldn't collaborate effectively
 
-### **Project Context**
-- **Project**: Group Table - AI/ML app for helping groups decide where to eat
+### **Setup Context**
+- **Setup**: Group Table - AI/ML app for helping groups decide where to eat
 - **Motivation**: Wanted to work in AI space, couldn't find engineering partners, decided to go solo
 - **Timeline**: August 2023 - August 2024 (1 year)
 - **Launch Status**: Successfully launched beta version
 
-## **Project Details**
+## **Setup Details**
 
 ### **What They Built**
 - **Application Type**: Full-stack AI/ML application with social features
@@ -144,7 +144,7 @@ This user represents the **ideal elastic-mob user**:
 
 ## **Integration with Elastic-Mob Design**
 
-### **User Proxy Mobster Design Implications**
+### **User Proxy Mobsta Design Implications**
 - **Pattern Recognition**: Detect when users are building novel features
 - **Intervention Timing**: When specifications lack detail or quality gates are bypassed
 - **Authority Mapping**: Users control vision and quality, agents handle execution
@@ -165,7 +165,7 @@ This user represents the **ideal elastic-mob user**:
 ## **Action Items for Elastic-Mob**
 
 ### **Immediate Implementation**
-- [ ] Design user proxy mobster with specification guidance capabilities
+- [ ] Design user proxy mobsta with specification guidance capabilities
 - [ ] Implement quality gate suggestion system
 - [ ] Build documentation continuity support
 - [ ] Create feature prioritization assistance
@@ -184,7 +184,7 @@ This user represents the **ideal elastic-mob user**:
 
 ## **Research Status**
 
-**Status**: Fully Integrated - Case study insights incorporated into skill blocks and mobsters  
+**Status**: Fully Integrated - Case study insights incorporated into skill blocks and mobstas  
 **Last Updated**: August 2024  
 **Next Review**: September 2024  
 **Research Quality**: High - Detailed first-person account with specific process details  
@@ -194,7 +194,7 @@ This user represents the **ideal elastic-mob user**:
 ### **Integration Details**
 - **New Skill Block Created**: Quality Gates - systematic quality maintenance and drift prevention
 - **Enhanced Skill Blocks**: Quality Validation, Documentation, Process Facilitation with case study insights
-- **Updated Mobster**: User Advocate enhanced with pattern recognition and quality gate capabilities
+- **Updated Mobsta**: User Advocate enhanced with pattern recognition and quality gate capabilities
 - **Key Learnings Applied**: Specification continuity, quality gate implementation, drift prevention strategies  
 
 ---

@@ -40,7 +40,7 @@ In-concert is a collaborative platform for designing, building, testing, sharing
 - `instructions`: Combined instructions from persona, audience, and conduct
 
 **Integration Value**: 
-- **Perfect foundation** for elastic-mob Mobsters
+- **Perfect foundation** for elastic-mob Mobstas
 - **Existing persona system** can be extended for skill blocks
 - **Tool resources** can be mapped to skill block capabilities
 - **Instructions** can incorporate elastic-mob coordination logic
@@ -55,7 +55,7 @@ In-concert is a collaborative platform for designing, building, testing, sharing
 - `tool_resources`: Inherited from assistant
 
 **Integration Value**:
-- **Natural fit** for elastic-mob mob sessions
+- **Natural fit** for elastic-mob capers
 - **Existing message structure** can support agent conversations
 - **Tool resources** can be shared across agents
 - **Seed functionality** supports conversation continuity
@@ -97,22 +97,22 @@ In-concert is a collaborative platform for designing, building, testing, sharing
 
 #### **Playground Model**
 - **Purpose**: Environment for content experimentation
-- **Integration**: May or may not be appropriate for elastic-mob session containers (reserved judgment)
+- **Integration**: May or may not be appropriate for elastic-caper containers (reserved judgment)
 
 #### **Pack Model**
 - **Purpose**: Groups related assets (assistants, personas, prompts)
-- **Integration**: Can organize elastic-mob skill blocks and mobsters
+- **Integration**: Can organize elastic-mob skill blocks and mobstas
 
 ## **Real-Time Communication Infrastructure**
 
-### **ActionCable Setup**
+### **ActionCable Game**
 - **Base Channel**: `ApplicationCable::Channel` with minimal configuration
 - **Thread Channel**: `ThreadChannel` for real-time thread updates
 - **Authentication**: Currently minimal, can be extended for elastic-mob
 
 ### **Integration Points for Elastic-Mob**
 - **Existing WebSocket infrastructure** can be leveraged
-- **Thread-based communication** aligns with elastic-mob sessions
+- **Thread-based communication** aligns with elastic-capers
 - **Real-time updates** can support agent coordination
 - **Authentication** can be extended for elastic-mob users
 - **Note**: Current implementation does not exploit batch jobs for WebSocket connections (performance flaw to address)
@@ -155,9 +155,9 @@ In-concert is a collaborative platform for designing, building, testing, sharing
 
 ### **1. Model Integration**
 - **Extend Assistant Model**: Add elastic-mob specific attributes
-- **Extend MessageThread Model**: Add mob session capabilities
+- **Extend MessageThread Model**: Add caper capabilities
 - **Extend Participant Model**: Add elastic-mob user roles
-- **New Models**: Add elastic-mob specific models (Engine, MobSession, etc.)
+- **New Models**: Add elastic-mob specific models (Engine, Caper, etc.)
 
 ### **2. Service Integration**
 - **Leverage LLM Services**: Use existing LLM infrastructure
@@ -167,7 +167,7 @@ In-concert is a collaborative platform for designing, building, testing, sharing
 
 ### **3. Real-Time Integration**
 - **Extend ActionCable**: Add elastic-mob specific channels
-- **Leverage ThreadChannel**: Extend for mob session communication
+- **Leverage ThreadChannel**: Extend for caper communication
 - **Authentication**: Extend WebSocket authentication for elastic-mob
 
 ### **4. API Integration**
@@ -181,7 +181,7 @@ In-concert is a collaborative platform for designing, building, testing, sharing
 ### **1. Asset Management Pattern**
 - **Packs**: Group related elastic-mob components
 - **Personas**: Extend for skill block definitions
-- **Audiences**: Extend for mobster specifications
+- **Audiences**: Extend for mobsta specifications
 - **Prompts**: Extend for coordination instructions
 
 ### **2. Participation Pattern**
@@ -203,8 +203,8 @@ In-concert is a collaborative platform for designing, building, testing, sharing
 
 ### **Phase 1: Model Extension**
 1. **Extend Assistant Model**: Add elastic-mob attributes and associations
-2. **Extend MessageThread Model**: Add mob session capabilities
-3. **Create New Models**: Engine, MobSession, ActiveAgent, etc.
+2. **Extend MessageThread Model**: Add caper capabilities
+3. **Create New Models**: Engine, Caper, ActiveAgent, etc.
 4. **Database Migration**: Add elastic-mob specific tables and columns
 
 ### **Phase 2: Service Integration**

@@ -2,7 +2,7 @@
 
 ## **Purpose**
 
-This document serves as a curated knowledge base for tracking successful patterns, processes, and experiences of non-technical users building software using LLMs. This knowledge will inform our elastic-mob user proxy mobster design and intervention mechanisms.
+This document serves as a curated knowledge base for tracking successful patterns, processes, and experiences of non-technical users building software using LLMs. This knowledge will inform our elastic-mob user proxy mobsta design and intervention mechanisms.
 
 ## **Document Structure**
 
@@ -60,7 +60,7 @@ This document serves as a curated knowledge base for tracking successful pattern
 
 ### **Initial Setup Scripts**
 - **Purpose**: Establish context, constraints, and objectives
-- **Key Elements**: Project scope, user background, success criteria, constraints
+- **Key Elements**: Setup scope, user background, success criteria, constraints
 - **Example Template**: "I'm a [role] trying to [goal]. I have [constraints]. I want to [specific outcome]."
 
 ### **Iteration Scripts**
@@ -107,7 +107,7 @@ This document serves as a curated knowledge base for tracking successful pattern
 ### **Case Study Template**
 ```
 **User Profile**: [Role, technical background, domain expertise]
-**Project**: [What they built, complexity level, timeline]
+**Setup**: [What they built, complexity level, timeline]
 **Process**: [How they approached the problem, tools used, iterations]
 **Outcomes**: [What worked, what didn't, final result]
 **Key Learnings**: [What made it successful, what they'd do differently]
@@ -179,19 +179,19 @@ This document serves as a curated knowledge base for tracking successful pattern
 - **Capabilities**: Basic problem description, simple requests
 - **Challenges**: Unclear requirements, tool confusion, unrealistic expectations
 - **Success Patterns**: Start small, use templates, celebrate progress
-- **Common Projects**: Simple websites, basic automation, data formatting
+- **Common Setups**: Simple websites, basic automation, data formatting
 
 ### **Intermediate Phase (2-8 weeks)**
 - **Capabilities**: Problem decomposition, iterative refinement, tool selection
 - **Challenges**: Scope management, quality standards, debugging complexity
 - **Success Patterns**: Clear process, validation checkpoints, incremental improvement
-- **Common Projects**: Business applications, workflow automation, data analysis
+- **Common Setups**: Business applications, workflow automation, data analysis
 
 ### **Advanced Phase (8+ weeks)**
 - **Capabilities**: Complex problem solving, tool orchestration, quality assurance
 - **Challenges**: System thinking, performance optimization, maintenance planning
 - **Success Patterns**: Architecture planning, testing strategies, documentation
-- **Common Projects**: Full-stack applications, complex integrations, scalable systems
+- **Common Setups**: Full-stack applications, complex integrations, scalable systems
 
 ### **LLM Collaboration Learning Progression**
 - **Novice Phase (0-2 weeks)**:
@@ -234,13 +234,13 @@ This document serves as a curated knowledge base for tracking successful pattern
 
 ## **Integration with Elastic-Mob**
 
-### **User Proxy Mobster Design**
+### **User Proxy Mobsta Design**
 - **Availability Patterns**: When are users most likely to need intervention?
 - **Authority Mapping**: What decisions should users make vs. agents?
 - **Intervention Triggers**: When should the system request human input?
 - **Learning Integration**: How can user decisions improve agent behavior?
 
-### **LLM Collaboration User Proxy Mobster Design**
+### **LLM Collaboration User Proxy Mobsta Design**
 - **Pattern Recognition**: 
   - Detect when users are building novel features (LLMs struggle with these)
   - Identify specification ambiguity or insufficient detail

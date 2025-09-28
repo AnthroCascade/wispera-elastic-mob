@@ -2,12 +2,12 @@
 
 ## Overview
 
-This document outlines the simplified implementation strategy for proving the mobster requirements generation architecture with a handful of users at small scale. The approach prioritizes rapid validation over scalable architecture, with a clear migration path to production scale.
+This document outlines the simplified implementation strategy for proving the mobsta requirements generation architecture with a handful of users at small scale. The approach prioritizes rapid validation over scalable architecture, with a clear migration path to production scale.
 
 ## Strategic Context
 
 ### Goals
-- **Prove core concept**: Do mobsters actually generate useful requirements?
+- **Prove core concept**: Do mobstas actually generate useful requirements?
 - **Validate user workflow**: Is the experience intuitive and valuable?
 - **Test technical feasibility**: Does Rails ↔ Git integration work effectively?
 - **Measure performance baseline**: What are actual resource needs at small scale?
@@ -25,7 +25,7 @@ This document outlines the simplified implementation strategy for proving the mo
 #### Direct Rails ↔ Git Integration
 ```ruby
 # Minimal database schema - avoid duplication complexity
-class MobsterProject < ApplicationRecord
+class MobstaGame < ApplicationRecord
   # Rails operational needs only
   attribute :id, :integer
   attribute :user_id, :integer
@@ -49,12 +49,12 @@ class MobsterProject < ApplicationRecord
     project_config['tech_stack']
   end
   
-  def active_mobsters
-    project_config['active_mobsters']
+  def active_mobstas
+    project_config['active_mobstas']
   end
 end
 
-class MobSession < ApplicationRecord
+class Caper < ApplicationRecord
   # Minimal session tracking
   attribute :id, :integer
   attribute :mob_project_id, :integer
@@ -73,15 +73,15 @@ end
 
 #### Synchronous Git Operations
 ```ruby
-class GitProjectService
+class GitGameService
   def initialize(project)
     @project = project
     @repo_path = project.git_repository_path
   end
   
   def create_project_from_template
-    # Copy mobster project template structure
-    template_path = Rails.root.join('lib', 'templates', 'mobster_project')
+    # Copy mobsta project template structure
+    template_path = Rails.root.join('lib', 'templates', 'mobsta_project')
     FileUtils.cp_r(template_path, @repo_path)
     
     # Initialize git repository
@@ -90,7 +90,7 @@ class GitProjectService
     # Initial commit
     repo = Git.open(@repo_path)
     repo.add(all: true)
-    repo.commit('Initial project setup from template')
+    repo.commit('Initial project game from template')
   end
   
   def commit_session_results(session_data, generated_files)
@@ -113,7 +113,7 @@ class GitProjectService
   end
   
   def load_project_context
-    # Load all documents for mobster context
+    # Load all documents for mobsta context
     docs = {}
     
     # Global documentation
@@ -121,8 +121,8 @@ class GitProjectService
       docs[File.basename(file)] = File.read(file)
     end
     
-    # Mobster-specific documentation
-    Dir.glob(File.join(@repo_path, 'docs/mobsters/**/*.md')).each do |file|
+    # Mobsta-specific documentation
+    Dir.glob(File.join(@repo_path, 'docs/mobstas/**/*.md')).each do |file|
       relative_path = file.sub(@repo_path + '/', '')
       docs[relative_path] = File.read(file)
     end
@@ -134,17 +134,17 @@ end
 
 ## Implementation Timeline
 
-### Week 1-2: Basic Project Creation
+### Week 1-2: Basic Game Creation
 ```ruby
 # Simple project creation endpoint
-class ProjectsController < ApplicationController
+class GamesController < ApplicationController
   def create
-    project = current_user.mobster_projects.create!(
+    project = current_user.mobsta_projects.create!(
       git_repository_path: generate_repo_path
     )
     
     # Create git repository from template
-    GitProjectService.new(project).create_project_from_template
+    GitGameService.new(project).create_project_from_template
     
     render json: { 
       project: {
@@ -159,32 +159,32 @@ class ProjectsController < ApplicationController
   private
   
   def generate_repo_path
-    Rails.root.join('storage', 'mobster_projects', SecureRandom.uuid)
+    Rails.root.join('storage', 'mobsta_projects', SecureRandom.uuid)
   end
 end
 ```
 
 **Deliverables:**
-- ✅ Project creation API endpoint
+- ✅ Game creation API endpoint
 - ✅ Git repository initialization from template
 - ✅ Basic project listing and retrieval
 - ✅ Template structure implementation
 
-### Week 3-4: Single Mobster Agent
+### Week 3-4: Single Mobsta Agent
 ```ruby
-# Start with one mobster to prove the concept
-class MobsterAgent
-  def initialize(mobster_type, project_context)
-    @mobster_type = mobster_type
+# Start with one mobsta to prove the concept
+class MobstaAgent
+  def initialize(mobsta_type, project_context)
+    @mobsta_type = mobsta_type
     @project_context = project_context
-    @assistant = create_assistant_from_spec(mobster_type)
+    @assistant = create_assistant_from_spec(mobsta_type)
   end
   
   def analyze_requirements(user_input)
     # Create thread for this analysis
     thread = MessageThread.create!(
       assistant: @assistant,
-      title: "Requirements Analysis - #{@mobster_type}"
+      title: "Requirements Analysis - #{@mobsta_type}"
     )
     
     # Send analysis prompt to LLM
@@ -203,22 +203,22 @@ class MobsterAgent
   
   private
   
-  def create_assistant_from_spec(mobster_type)
-    # Load mobster specification from existing definitions
-    mobster_spec = ElasticMob::Mobster.find_by_name(mobster_type)
+  def create_assistant_from_spec(mobsta_type)
+    # Load mobsta specification from existing definitions
+    mobsta_spec = ElasticMob::Mobsta.find_by_name(mobsta_type)
     
     Assistant.create!(
-      title: "#{mobster_spec.name} - Project Agent",
-      instructions: build_instructions_from_spec(mobster_spec),
+      title: "#{mobsta_spec.name} - Game Agent",
+      instructions: build_instructions_from_spec(mobsta_spec),
       model_descriptor: 'claude-3-opus'
     )
   end
   
   def build_analysis_prompt(user_input)
     <<~PROMPT
-      You are #{@mobster_type} analyzing this development request: #{user_input}
+      You are #{@mobsta_type} analyzing this development request: #{user_input}
       
-      Project Context:
+      Game Context:
       #{@project_context.to_json}
       
       Your role is to provide requirements and concerns from your area of expertise.
@@ -235,29 +235,29 @@ end
 ```
 
 **Deliverables:**
-- ✅ Single mobster agent implementation
-- ✅ Mobster spec to Assistant mapping
+- ✅ Single mobsta agent implementation
+- ✅ Mobsta spec to Assistant mapping
 - ✅ Requirements generation from user input
 - ✅ Integration with existing LLM infrastructure
 
-### Week 5-6: Multi-Mobster Coordination
+### Week 5-6: Multi-Mobsta Coordination
 ```ruby
-class MobSession
+class Caper
   def execute_mob_analysis(user_input)
     # Load project context from git
-    project_context = GitProjectService.new(project).load_project_context
+    project_context = GitGameService.new(project).load_project_context
     
-    # Activate relevant mobsters (start with 2-3 for proof-of-concept)
-    mobsters = [
-      MobsterAgent.new('architect', project_context),
-      MobsterAgent.new('backend_developer', project_context),
-      MobsterAgent.new('security_expert', project_context)
+    # Activate relevant mobstas (start with 2-3 for proof-of-concept)
+    mobstas = [
+      MobstaAgent.new('architect', project_context),
+      MobstaAgent.new('backend_developer', project_context),
+      MobstaAgent.new('security_expert', project_context)
     ]
     
     # Parallel requirements analysis
-    requirements = mobsters.map do |mobster|
+    requirements = mobstas.map do |mobsta|
       Thread.new { 
-        mobster.analyze_requirements(user_input) 
+        mobsta.analyze_requirements(user_input) 
       }
     end.map(&:value)
     
@@ -268,12 +268,12 @@ class MobSession
     generated_code = CodeGenerator.generate(synthesized_requirements, project_context)
     
     # Commit results to git repository
-    GitProjectService.new(project).commit_session_results(
+    GitGameService.new(project).commit_session_results(
       session_data: {
         id: id,
         title: "Analysis: #{user_input[0..50]}...",
         user_input: user_input,
-        mobster_requirements: requirements,
+        mobsta_requirements: requirements,
         synthesized_requirements: synthesized_requirements,
         completed_at: Time.current.iso8601
       },
@@ -297,7 +297,7 @@ end
 ```
 
 **Deliverables:**
-- ✅ Multi-mobster session execution
+- ✅ Multi-mobsta session execution
 - ✅ Parallel requirements generation
 - ✅ Basic requirements synthesis
 - ✅ Code generation integration
@@ -306,19 +306,19 @@ end
 ## Proof-of-Concept Success Metrics
 
 ### Technical Validation
-- ✅ **Project Creation**: Users can create git-based mobster projects through web interface
-- ✅ **Mobster Activation**: System can instantiate mobster agents with LLM backing
-- ✅ **Requirements Generation**: Mobsters produce coherent, useful analysis from user input
-- ✅ **Multi-Mobster Coordination**: Multiple mobsters can analyze same request in parallel
+- ✅ **Game Creation**: Users can create git-based mobsta projects through web interface
+- ✅ **Mobsta Activation**: System can instantiate mobsta agents with LLM backing
+- ✅ **Requirements Generation**: Mobstas produce coherent, useful analysis from user input
+- ✅ **Multi-Mobsta Coordination**: Multiple mobstas can analyze same request in parallel
 - ✅ **Code Generation**: Synthesized requirements produce working, relevant code
 - ✅ **Git Integration**: All results properly versioned and stored in git repository
 - ✅ **Context Preservation**: Subsequent sessions can access and build on previous work
 
 ### User Experience Validation
-- ✅ **Intuitive Workflow**: Users can easily create projects and initiate mob sessions
+- ✅ **Intuitive Workflow**: Users can easily create projects and initiate capers
 - ✅ **Valuable Output**: Generated code addresses user requests meaningfully
 - ✅ **Iterative Improvement**: Follow-up sessions build effectively on previous work
-- ✅ **Transparent Process**: Users can understand what mobsters contributed
+- ✅ **Transparent Process**: Users can understand what mobstas contributed
 - ✅ **Error Recovery**: System handles failures gracefully with clear feedback
 
 ### Performance Validation (Small Scale)
@@ -326,7 +326,7 @@ end
 - ✅ **Concurrent Users**: System handles 5-10 concurrent users without degradation
 - ✅ **Storage Growth**: Git repositories remain manageable size (< 100MB per project)
 - ✅ **Resource Usage**: Rails application stays within reasonable memory/CPU bounds
-- ✅ **Error Rates**: < 5% failure rate for mob session execution
+- ✅ **Error Rates**: < 5% failure rate for caper execution
 
 ## Advantages of Small Scale Approach
 
@@ -343,7 +343,7 @@ end
 - **Easy Testing**: Straightforward integration tests with real git operations
 
 ### Clear Validation Path
-- **Prove Core Concept**: Validate that mobsters generate genuinely useful requirements
+- **Prove Core Concept**: Validate that mobstas generate genuinely useful requirements
 - **Test User Workflow**: Confirm the experience is intuitive and provides value
 - **Verify Technical Feasibility**: Ensure Rails ↔ Git integration works reliably
 - **Establish Performance Baseline**: Measure actual resource needs and bottlenecks
@@ -391,8 +391,8 @@ end
 ## Success Criteria for Proof-of-Concept
 
 ### Minimum Viable Validation
-- **5 active users** creating and using mobster projects regularly
-- **20+ successful mob sessions** with useful code generation
+- **5 active users** creating and using mobsta projects regularly
+- **20+ successful capers** with useful code generation
 - **Positive user feedback** on workflow and output quality
 - **Technical stability** with < 5% error rate
 - **Clear value proposition** demonstrated through user outcomes
@@ -404,4 +404,4 @@ end
 - **Technical architecture** validated for production scaling
 - **Business case** confirmed through user value demonstration
 
-This proof-of-concept strategy prioritizes rapid validation of the core mobster requirements generation concept while maintaining a clear path to production-scale implementation.
+This proof-of-concept strategy prioritizes rapid validation of the core mobsta requirements generation concept while maintaining a clear path to production-scale implementation.

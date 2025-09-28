@@ -4,10 +4,10 @@
 
 The system isn't just facilitating conversation - it's **orchestrating a multi-player game where each player optimizes for different objectives across different time horizons**. This mirrors how real teams work but without human limitations:
 
-- **Security Mobster** plays a long-term protection game
-- **UX Mobster** plays a medium-term user satisfaction game  
-- **Performance Mobster** plays a tactical optimization game
-- **Business Strategy Mobster** plays an infinite game of market positioning
+- **Security Mobsta** plays a long-term protection game
+- **UX Mobsta** plays a medium-term user satisfaction game  
+- **Performance Mobsta** plays a tactical optimization game
+- **Business Strategy Mobsta** plays an infinite game of market positioning
 
 The conversations become a negotiation space where these games interact, creating natural checks and balances.
 
@@ -33,7 +33,7 @@ Each brings its game logic to bear on the problem.
 
 ### The Prompt Engineering Meta-Layer
 
-Having Prompt Engineering as a skill-block is crucial - it means mobsters can:
+Having Prompt Engineering as a skill-block is crucial - it means mobstas can:
 - Optimize their communication with underlying AI models
 - Adapt their prompting strategies based on results
 - Share effective patterns across the system
@@ -45,13 +45,13 @@ Given these insights, the bootstrap process follows this sequence:
 
 1. **Phase 0: Foundation Complete** ✅
    - 37 skill blocks covering all development domains
-   - 25 Mobsters with proper composition
+   - 25 Mobstas with proper composition
    - Template compliance and integration quality achieved
 
 2. **Phase 1: Persona System Ready** ✅
    - Elastic-mob persona for AI orchestration
    - Persona optimizer for continuous improvement
-   - Meta-mobster architecture for self-awareness without circular complexity
+   - Meta-mobsta architecture for self-awareness without circular complexity
 
 3. **Phase 2: Implementation Approach Defined** ✅
    - Agreed architecture: integrated engine within in-concert
@@ -86,11 +86,11 @@ This isn't just "no-code" - it's **"conversation-as-code"**. The system treats s
 
 The recursive bootstrap isn't just clever - it's the perfect proof of concept. If the system can build itself through agent conversations, it validates the entire approach.
 
-### Human Participation Through Proxy Mobsters
+### Human Participation Through Proxy Mobstas
 
-The system supports human participation through **user proxy mobsters** that represent human availability and authority without predefined skill blocks:
+The system supports human participation through **user proxy mobstas** that represent human availability and authority without predefined skill blocks:
 
-#### **Proxy Mobster Design Principles**
+#### **Proxy Mobsta Design Principles**
 - **No skill blocks**: Users naturally embody expertise when they intervene
 - **Availability signaling**: Indicate when human input might be valuable
 - **Authority mapping**: Define decision-making power in different domains
@@ -98,12 +98,12 @@ The system supports human participation through **user proxy mobsters** that rep
 
 #### **Human-Agent Collaboration Model**
 - **Emergent expertise**: Human judgment emerges without predefined constraints
-- **Authority hierarchy**: User proxy mobsters can override agent decisions
+- **Authority hierarchy**: User proxy mobstas can override agent decisions
 - **Learning integration**: System learns optimal timing for human involvement
-- **Conflict resolution**: Human proxy mobsters can break deadlocks between agent mobsters
+- **Conflict resolution**: Human proxy mobstas can break deadlocks between agent mobstas
 
 #### **Multi-Game Integration**
-User proxy mobsters participate in the multi-game optimization:
+User proxy mobstas participate in the multi-game optimization:
 - **Human authority game**: Maintaining decision-making control in critical domains
 - **Learning game**: Improving system behavior through human interventions
 - **Quality assurance game**: Providing final approval and validation gates

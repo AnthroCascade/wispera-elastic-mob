@@ -1,4 +1,4 @@
-# Package Management Strategy for Wispera Projects
+# Package Management Strategy for Wispera Setups
 
 ## **Core Principle: Stable GitHub Repositories Are Default State**
 

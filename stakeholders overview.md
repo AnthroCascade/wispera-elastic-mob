@@ -1,12 +1,12 @@
-# Mobsters - Overview
+# Mobstas - Overview
 
-## What Are Mobsters?
+## What Are Mobstas?
 
-Mobsters are AI agents that represent various perspectives, roles, and archetypes that participate in elastic-mob sessions. They are composed of skill blocks and represent different viewpoints that contribute to comprehensive decision-making and problem-solving.
+Mobstas are AI agents that represent various perspectives, roles, and archetypes that participate in elastic-capers. They are composed of skill blocks and represent different viewpoints that contribute to comprehensive decision-making and problem-solving.
 
-## Current Mobsters
+## Current Mobstas
 
-The complete, detailed definitions of all mobsters are now maintained in the **in-concert repository** under `app/services/elastic_mob/definitions/mobsters/`.
+The complete, detailed definitions of all mobstas are now maintained in the **in-concert repository** under `app/services/elastic_mob/definitions/mobstas/`.
 
 ### Explicitly Named Roles
 - **Domain Expert** - Subject matter expertise in specific domains
@@ -21,7 +21,7 @@ The complete, detailed definitions of all mobsters are now maintained in the **i
 - **Marketing** - Market positioning and user acquisition
 - **Sales** - Customer needs and sales considerations
 - **CEO** - Strategic business perspective
-- **Sponsor** - Project sponsorship and support
+- **Sponsor** - Game sponsorship and support
 - **Frontend Developer** - Client-side development expertise
 - **Backend Developer** - Server-side development expertise
 - **DevOps Engineer** - Operations and deployment expertise
@@ -39,23 +39,23 @@ The complete, detailed definitions of all mobsters are now maintained in the **i
 
 ## Important Notes
 
-- **Composable Mobsters** - We moved away from fixed role definitions toward composable Mobsters built from skill-blocks
-- **Dynamic Composition** - Mobsters are dynamically composed from skill-block collections based on project needs
+- **Composable Mobstas** - We moved away from fixed role definitions toward composable Mobstas built from skill-blocks
+- **Dynamic Composition** - Mobstas are dynamically composed from skill-block collections based on project needs
 - **Flexible Scenarios** - Supports both startup scenarios (agents wearing multiple hats) and enterprise scenarios (highly specialized agents)
-- **Emergent Participation** - All Mobsters include emergent participation patterns for semantic resonance
-- **Opinionated guidance integration** - New mobsters incorporate opinionated app guidance principles for architectural enforcement, stability, and fierce conversations
-- **Current total**: 26 mobsters with proper skill block composition
+- **Emergent Participation** - All Mobstas include emergent participation patterns for semantic resonance
+- **Opinionated guidance integration** - New mobstas incorporate opinionated app guidance principles for architectural enforcement, stability, and fierce conversations
+- **Current total**: 26 mobstas with proper skill block composition
 
-### Enhanced Mobster Specifications
-All Mobsters now include **emergent participation patterns** for semantic resonance:
-- **Activation Thresholds** - Relevance scores that determine when Mobsters participate
-- **Participation Styles** - How Mobsters emerge and engage in conversations
-- **Collaboration Patterns** - Natural interaction with other relevant Mobsters
-- **Exit Conditions** - When Mobsters disengage from conversations
-- **Conflict Resolution** - How Mobsters handle disagreements with other perspectives
+### Enhanced Mobsta Specifications
+All Mobstas now include **emergent participation patterns** for semantic resonance:
+- **Activation Thresholds** - Relevance scores that determine when Mobstas participate
+- **Participation Styles** - How Mobstas emerge and engage in conversations
+- **Collaboration Patterns** - Natural interaction with other relevant Mobstas
+- **Exit Conditions** - When Mobstas disengage from conversations
+- **Conflict Resolution** - How Mobstas handle disagreements with other perspectives
 
-### Mobster Structure
-Each mobster specification includes:
+### Mobsta Structure
+Each mobsta specification includes:
 - **Identity & Purpose** - Core mission and perspective lens
 - **Skill-Block Composition** - Primary and secondary skills with adaptations
 - **Game Configuration** - Primary game, weights, conflict resolution, and negotiation patterns
@@ -66,7 +66,7 @@ Each mobster specification includes:
 - **Stakeholder Experience Integration** - Responsive design, design system integration, and business value demonstration
 
 ### Opinionated Guidance Integration
-New mobsters incorporate key opinionated guidance principles:
+New mobstas incorporate key opinionated guidance principles:
 - **Opinionated Architect Stance** - BE an opinionated architect with fierce conversations required
 - **Stability Commitment** - Hold ground on promising solutions rather than abandoning them at first questioning
 - **Type Safety Enforcement** - Make incorrect states unrepresentable through types and behavioral contracts
@@ -76,4 +76,4 @@ New mobsters incorporate key opinionated guidance principles:
 
 ## For Detailed Definitions
 
-See the in-concert repository at `app/services/elastic_mob/definitions/mobsters/` for complete specifications of each mobster.
+See the in-concert repository at `app/services/elastic_mob/definitions/mobstas/` for complete specifications of each mobsta.

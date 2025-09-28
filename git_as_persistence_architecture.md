@@ -1,4 +1,4 @@
-# Git as Persistence Architecture for Mobster Projects
+# Git as Persistence Architecture for Mobsta Setups
 
 ## Core Architectural Insight
 
@@ -6,10 +6,10 @@
 
 This symmetry of representation - same medium for input and output - aligns perfectly with how AI processes information and how developers actually work.
 
-## Mobster Project State as IDE Workspace
+## Mobsta Setup State as IDE Workspace
 
 ### Conceptual Model
-- **Mobster project state = IDE workspace configuration**
+- **Mobsta project state = IDE workspace configuration**
 - **Document-based corpus** provides context for AI reasoning
 - **JSON for machine-readable state, Markdown for human-readable context**
 - **Mixed media corpus** - exactly what AI needs to generate code
@@ -24,12 +24,12 @@ This symmetry of representation - same medium for input and output - aligns perf
 
 ### Single Writer Principle
 - **Only one person at the keyboard** - classic mob programming pattern
-- **Mobsters don't edit documents individually** - they participate in the mob
+- **Mobstas don't edit documents individually** - they participate in the mob
 - **Mob writes output collectively** - not concurrent individual edits
-- **User provides input** to satisfy mobster information needs
+- **User provides input** to satisfy mobsta information needs
 
 ### AI Mob Execution Process
-- **Mobsters coordinate through semantic resonance** during high-speed execution
+- **Mobstas coordinate through semantic resonance** during high-speed execution
 - **Conflict resolution built into mob process** - not git merge conflicts
 - **Collective intelligence** produces single consensus output stream
 - **Sequential commits** representing mob decisions and reasoning
@@ -41,7 +41,7 @@ This symmetry of representation - same medium for input and output - aligns perf
 2. **Mob consumes document corpus** during AI-speed collaboration session
 3. **Single atomic commit** contains both:
    - Generated code changes
-   - Updated mobster understanding/context documents
+   - Updated mobsta understanding/context documents
 4. **Repeat iteratively** as project evolves
 
 ### Version Control Benefits
@@ -67,7 +67,7 @@ This symmetry of representation - same medium for input and output - aligns perf
 ### Knowledge Persistence
 - **Entire project evolution** captured in git history
 - **Context and code co-evolve** in same repository  
-- **Mobster learning** preserved across sessions
+- **Mobsta learning** preserved across sessions
 - **Experiment safely** with branching and rollback
 
 ## Implementation Notes
@@ -78,7 +78,7 @@ This symmetry of representation - same medium for input and output - aligns perf
 - **Cross-document relationships** - handled through mob semantic reasoning
 
 ### Key Insight
-The mob coordination model eliminates the major concurrency and conflict resolution challenges that would make git-as-persistence complex. Since mobsters coordinate through semantic resonance and produce consensus output, git becomes a clean, linear record of mob intelligence evolution.
+The mob coordination model eliminates the major concurrency and conflict resolution challenges that would make git-as-persistence complex. Since mobstas coordinate through semantic resonance and produce consensus output, git becomes a clean, linear record of mob intelligence evolution.
 
 ## Revolutionary Potential
 

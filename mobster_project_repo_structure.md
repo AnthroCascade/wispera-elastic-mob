@@ -1,31 +1,31 @@
-# Mobster Project Repository Structure
+# Mobsta Setup Repository Structure
 
 ## Overview
 
-A mobster project repository contains both the **collaboration infrastructure** (configs, documentation, mobster contexts) and the **generated code artifacts** organized by solution architecture.
+A mobsta project repository contains both the **collaboration infrastructure** (configs, documentation, mobsta contexts) and the **generated code artifacts** organized by solution architecture.
 
 ## Repository Structure
 
 ```
-mobster-project-repo/
+mobsta-project-repo/
 ├── config/
-│   ├── project.json              # Project-level configuration
+│   ├── project.json              # Setup-level configuration
 │   ├── sessions/                 # Session configurations
 │   │   ├── session-001.json
 │   │   ├── session-002.json
 │   │   └── ...
-│   └── mobsters/                 # Individual mobster configurations
+│   └── mobstas/                 # Individual mobsta configurations
 │       ├── architect.json
 │       ├── backend-dev.json
 │       ├── frontend-dev.json
 │       └── ...
 ├── docs/
-│   ├── global/                   # Project-wide documentation
+│   ├── global/                   # Setup-wide documentation
 │   │   ├── requirements.md
 │   │   ├── architecture.md
 │   │   └── decisions.md
-│   └── mobsters/                 # Mobster-specific documentation
-│       ├── architect/            # Documentation organized by mobster interest
+│   └── mobstas/                 # Mobsta-specific documentation
+│       ├── architect/            # Documentation organized by mobsta interest
 │       │   ├── system-design.md
 │       │   └── patterns.md
 │       ├── backend-dev/
@@ -62,15 +62,15 @@ mobster-project-repo/
 
 ## Configuration Files
 
-### Project Configuration (`config/project.json`)
+### Setup Configuration (`config/project.json`)
 ```json
 {
   "name": "project-name",
-  "description": "Project description",
+  "description": "Setup description",
   "tech_stack": ["rails", "react", "postgresql", "docker"],
   "created_at": "2024-01-15T10:00:00Z",
   "updated_at": "2024-01-15T10:00:00Z",
-  "active_mobsters": ["architect", "backend-dev", "frontend-dev"],
+  "active_mobstas": ["architect", "backend-dev", "frontend-dev"],
   "solution_architecture": {
     "frontend": ["web-app", "mobile-app"],
     "backend": ["api-server", "auth-service"],
@@ -86,7 +86,7 @@ mobster-project-repo/
   "started_at": "2024-01-15T10:00:00Z",
   "completed_at": "2024-01-15T12:30:00Z",
   "focus": "Initial API design and database schema",
-  "participating_mobsters": ["architect", "backend-dev"],
+  "participating_mobstas": ["architect", "backend-dev"],
   "commits": ["abc123", "def456", "ghi789"],
   "outcomes": [
     "Created user authentication API",
@@ -96,13 +96,13 @@ mobster-project-repo/
 }
 ```
 
-### Mobster Configuration (`config/mobsters/backend-dev.json`)
+### Mobsta Configuration (`config/mobstas/backend-dev.json`)
 ```json
 {
-  "mobster_type": "backend-developer",
+  "mobsta_type": "backend-developer",
   "expertise_areas": ["api-design", "database-modeling", "performance"],
   "active_contexts": [
-    "docs/mobsters/backend-dev/api-specs.md",
+    "docs/mobstas/backend-dev/api-specs.md",
     "docs/global/requirements.md"
   ],
   "learning_state": {
@@ -119,14 +119,14 @@ mobster-project-repo/
 ## Documentation Organization
 
 ### Global Documentation (`docs/global/`)
-- **Project-wide context** that all mobsters need
+- **Setup-wide context** that all mobstas need
 - **Requirements, architecture decisions, constraints**
 - **Cross-cutting concerns and shared understanding**
 
-### Mobster-Specific Documentation (`docs/mobsters/[mobster-name]/`)
-- **Organized by mobster interest and expertise**
+### Mobsta-Specific Documentation (`docs/mobstas/[mobsta-name]/`)
+- **Organized by mobsta interest and expertise**
 - **Enables focused search and context loading**
-- **Reduces noise - each mobster sees relevant docs first**
+- **Reduces noise - each mobsta sees relevant docs first**
 - **Supports specialized knowledge accumulation**
 
 ## Code Organization
@@ -137,24 +137,24 @@ mobster-project-repo/
 - **Shared libraries and utilities** for cross-project code
 - **Scripts for build, deployment, utilities**
 
-### Benefits for Mobster Collaboration
-- **Clear ownership boundaries** - frontend mobster focuses on frontend/
+### Benefits for Mobsta Collaboration
+- **Clear ownership boundaries** - frontend mobsta focuses on frontend/
 - **Solution architecture drives organization** - matches real-world patterns
 - **Scalable structure** - can add new projects within categories
-- **Search optimization** - mobsters know where to look for relevant code
+- **Search optimization** - mobstas know where to look for relevant code
 
 ## Search and Discovery Benefits
 
 ### Hierarchical Context Loading
 1. **Global context** - always relevant
-2. **Mobster-specific context** - filtered by expertise
+2. **Mobsta-specific context** - filtered by expertise
 3. **Code context** - organized by solution component
 4. **Session context** - temporal organization of decisions
 
 ### Optimized for AI Consumption
 - **Structured paths** enable focused document loading
-- **Mobster interest alignment** reduces irrelevant context
+- **Mobsta interest alignment** reduces irrelevant context
 - **Solution architecture organization** matches code generation patterns
 - **Git history** provides temporal context for all changes
 
-This structure supports both **efficient mobster collaboration** and **organized code generation** while maintaining **searchable, version-controlled knowledge evolution**.
+This structure supports both **efficient mobsta collaboration** and **organized code generation** while maintaining **searchable, version-controlled knowledge evolution**.

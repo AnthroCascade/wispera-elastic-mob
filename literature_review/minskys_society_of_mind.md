@@ -34,7 +34,7 @@
 ### **3. Distributed Intelligence**
 - **Principle**: No single "central controller" - emergence through agent society
 - **Implication**: Intelligence is distributed across the system, not centralized
-- **Elastic-Mob Application**: System intelligence distributed across skill blocks and mobsters
+- **Elastic-Mob Application**: System intelligence distributed across skill blocks and mobstas
 
 ### **4. Natural Activation**
 - **Principle**: Agents respond to environmental cues and contextual relevance
@@ -58,7 +58,7 @@ Minsky's theory provides theoretical inspiration for elastic-mob's approach to d
 The elastic-mob architecture is inspired by Minsky's core principles, with practical implementation through:
 - **Agent Specialization**: 37 specialized skill blocks covering all development domains
 - **Coordinated Behavior**: Stakeholder coordination through game-theoretic interactions
-- **Distributed Intelligence**: System intelligence distributed across skill blocks and mobsters
+- **Distributed Intelligence**: System intelligence distributed across skill blocks and mobstas
 - **Context-Driven Activation**: Skill block activation through semantic resonance and pattern matching
 
 ---
@@ -122,7 +122,7 @@ The elastic-mob architecture is inspired by Minsky's core principles, with pract
 ## **Theoretical Extensions and Future Research**
 
 ### **Research Directions**
-1. **Agent Composition**: How do skill blocks compose into effective mobsters?
+1. **Agent Composition**: How do skill blocks compose into effective mobstas?
 2. **Emergence Mechanisms**: What drives the emergence of coordinated behavior?
 3. **Intelligence Scaling**: How does system intelligence scale with agent complexity?
 4. **Pattern Recognition**: How do agents recognize and respond to patterns?

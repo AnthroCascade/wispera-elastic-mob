@@ -1,29 +1,26 @@
 # Elastic-Mob
-## Revolutionary AI-Powered Software Development Platform
+## AI-Powered Software Development Platform
 
-> **🚨 CRITICAL STATUS**: 
+> **📋 PROJECT STATUS**: 
 > - **[REVOLUTIONARY_SYSTEM_HANDOVER.md](REVOLUTIONARY_SYSTEM_HANDOVER.md)** - Complete system handover and activation guide
 > - **[SYSTEM_STATUS_AND_CRITICAL_PATH.md](SYSTEM_STATUS_AND_CRITICAL_PATH.md)** - Current implementation status and immediate next steps
 
 ## Core Vision
 
-We're building the world's **first conversational programming platform** where users describe software requirements in natural language, and specialized AI agents (mobsters) collaborate to automatically generate working code with full git integration and multi-session continuity.
+We're building a **collaborative AI platform** where users describe complex requirements in natural language, and specialized AI agents (mobstas) collaborate dynamically to achieve sophisticated outcomes across any domain requiring expert knowledge and coordinated effort.
 
-**This is not another code assistant. This is a fundamental transformation of how software is created.**
+The platform enables natural language interaction with AI teams that can adapt their composition and expertise to match the specific challenges at hand.
 
-## What is a Mobster?
+## What is a Mobsta?
 
-**Mobster** is the core entity in the Elastic-Mob system. Each Mobster is:
+**Mobsta** is the core entity in the Elastic-Mob system. Each Mobsta is:
 
 - **An AI Agent**: Possesses AI capabilities and can process information, make decisions, and take actions
-- **A Perspective**: Represents a specific development perspective (e.g., Security Expert, UX Designer, Product Owner)
-- **A Unified Entity**: Not separate "agent" and "perspective" - but one entity that plays both roles simultaneously
+- **A Domain Expert**: Represents specialized expertise in any field (e.g., Legal Analyst, Financial Advisor, Medical Specialist, Marketing Strategist)
+- **A Unified Entity**: Not separate "agent" and "expertise" - but one entity that plays both roles simultaneously
 
-**Etymology**: "Mobster" combines:
-- **Mob**: The collaborative, emergent team that forms around problems
-- **-ster**: Suffix meaning "one who does/is" (like "gangster", "mobster")
 
-**Composition**: Each Mobster is built from multiple skill blocks that define their capabilities and expertise areas.
+**Composition**: Each Mobsta is built from multiple talents that define their capabilities and expertise areas across any domain.
 
 ## System Foundation
 
@@ -44,101 +41,202 @@ For the latest architectural analysis and implementation roadmap, see these key 
 - **[architecture_web_vs_local_analysis.md](system_foundation/architecture_web_vs_local_analysis.md)** - Analysis of web vs. local architecture tension for internal tool use
 - **[git_integration_implementation.md](implementation_plan/git_integration_implementation.md)** - Detailed 4-week implementation plan for git integration foundation
 
-## Foundation: Skill-Blocks
+## Foundation: The Composition Hierarchy
 
-The system is built on **skill-blocks** - atomic units of expertise that can be composed into Mobsters. We currently have **38 skill blocks** organized into families:
+The system follows a clear composition hierarchy: **Talents → Fortes → Mobstas**
 
-> **📋 [Complete Skill Block Overview](skill%20blocks%20overview.md)** - Comprehensive list and categorization of all skill blocks
+### **Talents** (Atomic Units)
+**Talents** are the fundamental atomic units of expertise. They are defined in syndicate repositories and composed into fortes.
 
-- **Technical Creation** (Component Architecture, API Design, Data Modeling, DevOps, Mobile Optimization, Service Integration...)
-- **Design & Experience** (UX, UI, Information Architecture, Accessibility...)
-- **Quality & Reliability** (Testing, Security, Performance, Monitoring...)
-- **Communication** (Documentation, Training Materials, API Docs, User Guides...)
-- **Process & Coordination** (Requirements Gathering, Project Planning, Prompt Engineering...)
-- **Business & Strategy** (Market Analysis, Pricing, Sales Enablement, ROI Analysis...)
-- **Architectural Principles** (Secure-by-Default, Type-Enforced Security, Performance Architecture...)
-- **Code Generation** (Agreement Recognition, Context Translation, Generation Triggering, Quality Validation)
-- **Architectural Enforcement** (Type Safety, Behavioral Contracts, Responsibility-Driven Design, Stability)
+**📚 [Software Development Syndicate](https://github.com/AnthroCascade/software-development-syndicate)** - Example syndicate repository with comprehensive forte and talent definitions
 
-Each skill-block:
+#### Example Talent Families:
+- **Technical Creation** (Component Architecture, API Design, Data Modeling...)
+- **Design & Experience** (UX, UI, Information Architecture...)
+- **Quality & Reliability** (Testing, Security, Performance...)
+- **Communication** (Documentation, Training Materials, API Docs...)
+- **Process & Coordination** (Requirements Gathering, Game Planning...)
+- **Business & Strategy** (Market Analysis, Pricing, Sales Enablement...)
+
+Each talent:
 - Knows its domain of expertise
 - Can effectively prompt underlying Gen AI systems
 - Recognizes patterns in conversations relevant to its domain
 - Understands what outputs it's responsible for
+
+### **Fortes** (Composed Expertise)
+**Fortes** are LLM prompt definitions created by composing multiple talents into coherent specializations. They define the behavioral patterns and expertise scope for specific roles.
+
+### **Mobstas** (Game Instances)
+**Mobstas** are AI agent instances created from fortes at game time. Each mobsta represents a specific expert role within a particular game context.
 - Can evaluate quality within its domain
-- **Incorporates opionated guidance principles** for architectural enforcement and stability
+- **Incorporates opinionated guidance principles** for architectural enforcement and stability
 
-## Mobster Specifications
+## Syndicates and Games
 
-As defined above, Mobsters are AI agents that also represent development perspectives. They are composed of collections of skill-blocks, representing the different roles and perspectives needed in software development. Unlike traditional roles, Mobsters can be dynamically composed based on project needs.
+**Syndicates** are collections of forte definitions (LLM prompts) stored in Git repositories. They serve as "expertise libraries" that can be imported into the system to make specialized AI agents available for any domain.
 
-**📋 [Mobster Template](templates/mobster.md)** - Complete template for defining new mobster specifications
-**📋 [Skill Block Template](templates/skill%20block.md)** - Complete template for defining new skill block specifications
+**Games** are specific projects or initiatives that use syndicates to define their AI expert team. When a game is created with a syndicate, the system automatically creates mobstas (AI agent instances) from the syndicate's fortes.
 
-> **👥 [Complete Mobster Overview](stakeholders%20overview.md)** - Comprehensive list and categorization of all mobsters
+**Capers** are collaborative sessions within a game where mobstas work together on specific tasks.
 
-Critically, each Mobster plays different "games" at different levels - from tactical ("make this function work") to strategic ("build sustainable competitive advantage"). These games have different time horizons, success metrics, and optimization targets.
+### **The Complete Workflow**:
+```
+Syndicate (Git repo of fortes)
+    ↓ (Import at game creation)
+Game (project/initiative) 
+    ↓ (Instantiate from fortes)
+Mobstas (AI experts for this project)
+    ↓ (Collaborate in sessions)
+Capers (collaborative sessions)
+```
 
-**New Mobsters incorporate opinionated guidance principles** for architectural enforcement, stability, and fierce conversations, ensuring the system maintains architectural integrity through opinionated design decisions.
+**Key Relationships**:
+- **Talents** compose into **Fortes** (defined in syndicates)
+- **Fortes** instantiate into **Mobstas** (at game time)
+- **Mobstas** collaborate in **Capers** (within games)
 
-## The Process: Elastic Mob Programming
+### **Domain Applications**
 
-The development process uses an adaptive mob programming approach where:
+The Mobsta framework can be applied to any collaborative endeavor requiring specialized expertise:
 
-1. **All Mobsters are always present** but engage dynamically based on relevance
+#### **1. Software Development** (Process Management)
+- **Game**: Building an e-commerce platform
+- **Syndicate**: Core Development Syndicate (Architecture, Backend, Frontend, DevOps, Security experts)
+- **Capers**: Architecture planning, API design, UI implementation, deployment
+
+#### **2. Legal Case Management**
+- **Game**: Corporate merger proceedings
+- **Syndicate**: Legal Expertise Syndicate (Corporate Law, Antitrust, Tax, Regulatory experts)
+- **Capers**: Due diligence, regulatory filing, contract negotiation, compliance review
+
+#### **3. Medical Diagnosis & Treatment**
+- **Game**: Complex patient case management
+- **Syndicate**: Medical Specialists Syndicate (Cardiology, Neurology, Radiology, Pharmacology experts)
+- **Capers**: Initial assessment, diagnostic imaging, treatment planning, follow-up care
+
+#### **4. Business Strategy & Consulting**
+- **Game**: Market expansion strategy
+- **Syndicate**: Business Strategy Syndicate (Market Research, Financial Analysis, Operations, Marketing experts)
+- **Capers**: Market analysis, competitive assessment, financial modeling, go-to-market planning
+
+#### **5. Regulatory Compliance & Risk Management**
+- **Game**: Financial institution compliance audit
+- **Syndicate**: Compliance Experts Syndicate (Regulatory Affairs, Risk Assessment, Audit, Legal Compliance experts)
+- **Capers**: Policy review, risk evaluation, compliance testing, regulatory reporting
+
+#### **6. Generational Learning Preservation**
+- **Game**: Capturing expertise of retiring specialists
+- **Syndicate**: Knowledge Preservation Syndicate (Senior Experts, Knowledge Engineers, Documentation Specialists, Training experts)
+- **Capers**: Expert interviews, knowledge extraction, documentation creation, training material development
+
+## Mobsta Specifications
+
+**Mobstas** are AI agent instances created from fortes at game time. Each mobsta represents a specific expert role within a particular game context, combining the expertise defined in its source forte with the specific requirements of the current game.
+
+### **Composition Flow Reminder**:
+```
+Talents → Fortes → Mobstas
+   ↓        ↓        ↓
+ Atomic  Composed  Game
+ Units   Expertise Instances
+```
+
+**📚 [Software Development Syndicate](https://github.com/AnthroCascade/software-development-syndicate)** - See complete forte definitions and talent specifications
+
+### Example Mobstas (Instantiated from Fortes):
+- **Backend Developer** - Server architecture, APIs, databases, security
+- **Frontend Developer** - User interfaces, responsive design, accessibility
+- **DevOps Engineer** - Infrastructure, deployment, monitoring, automation
+- **Security Specialist** - Threat analysis, vulnerability assessment, compliance
+- **UX Designer** - User research, interface design, usability testing
+
+Critically, each Mobsta plays different "games" at different levels - from tactical ("complete this specific task") to strategic ("achieve long-term objectives"). These games have different time horizons, success metrics, and optimization targets across any domain.
+
+**New Mobstas incorporate opinionated guidance principles** for domain-specific best practices, quality assurance, and collaborative excellence, ensuring the system maintains expertise integrity through specialized knowledge and rigorous standards.
+
+## The Process: Elastic Mob Collaboration
+
+The collaborative process uses an adaptive mob approach where:
+
+1. **All Mobstas are always present** but engage dynamically based on relevance
 2. **Mob roles rotate** semi-randomly:
-   - Driver (implementing)
-   - Navigator (directing)
-   - Facilitator (process flow)
-   - Scout (looking ahead)
+   - Driver (executing tasks)
+   - Navigator (directing strategy)
+   - Facilitator (coordinating process)
+   - Scout (exploring opportunities)
    - Housekeeper (maintaining quality)
 
-3. **Participation is stake-based** - Mobsters engage more when the conversation touches their skill-blocks' domains
+3. **Participation is stake-based** - Mobstas engage more when the conversation touches their talents' domains
 
-4. **The mob is elastic** - expanding during complex architectural decisions, contracting during routine implementation
+4. **The mob is elastic** - expanding during complex strategic decisions, contracting during routine execution
 
-5. **High-speed polling** allows the process to constantly check who has relevant input
+5. **High-speed polling** allows the process to constantly check who has relevant input and expertise
 
-## Key Innovations
+## Key Features
 
-1. **Emergent Participation**: No orchestrator decides who should be involved. The conversation itself summons the right participants through semantic pattern matching.
+1. **Dynamic Participation**: Conversation analysis determines which AI agents should participate based on semantic pattern matching and domain relevance.
 
-2. **Holonic Output**: Each iteration produces working software that is complete and valuable at its own level, not merely a step toward the final product.
+2. **Iterative Progress**: Each iteration aims to produce meaningful progress that provides value at its current level of completion.
 
-3. **Conversation as Specification**: The natural language exchanges between Mobsters become the living specification, preserving the multidimensional nature of system requirements.
+3. **Natural Language Specifications**: Conversations between AI agents serve as living documentation of requirements and decisions across any domain.
 
-4. **Parallel Games**: Multiple optimization games run simultaneously - Security plays "protect the system" while UX plays "delight the user" - creating natural tension and balance.
+4. **Multi-perspective Analysis**: Different AI agents optimize for different concerns (quality, efficiency, compliance, user experience) to provide balanced solutions.
 
-5. **AI-Powered Code Generation**: When the mob reaches consensus, specialized skill blocks automatically translate architectural decisions into code generation context, ensuring that all principles are preserved in the final implementation.
+5. **Automated Output Generation**: When AI agents reach consensus on requirements, the system generates deliverables that incorporate the agreed-upon decisions and standards.
 
-6. **Architectural Enforcement**: New mobsters maintain architectural integrity through fierce conversations, type safety, and behavioral contracts, incorporating opinionated guidance principles for stability and consistency.
+6. **Consistency Enforcement**: The system maintains quality integrity through defined patterns, domain standards, and collaborative best practices.
 
 ## Bootstrap Strategy
 
-We've completed the **foundation phase** with a comprehensive set of **38 skill blocks** and **26 Mobsters**. The system now includes:
+We've completed the foundation phase with a comprehensive set of talent and mobsta specifications. The system currently includes:
 
-1. **Complete skill block coverage** across all development domains
-2. **AI-powered code generation** system that preserves architectural principles
-3. **Integrated architectural principles** (security, performance, quality) declared at specification time
-4. **Coordinated mob conversation** system with process facilitation and agreement recognition
-5. **Opinionated guidance integration** for architectural enforcement, type safety, and stability
+1. Talent definitions covering major collaborative domains
+2. Output generation framework designed to preserve quality principles
+3. Domain-specific principles integrated at the specification level
+4. Conversation coordination system with facilitation and agreement recognition
+5. Guidance patterns for consistency and excellence across any domain
 
-**Current Status**: Foundation complete, ready for implementation and testing.
+**Current Status**: Foundation implemented, AI collaboration system in development.
 
-**Next Phase**: Building the actual Elastic-Mob system using the skill blocks and Mobsters we've designed.
+**Next Phase**: Implementing the semantic resonance processor and multi-agent coordination system.
 
-The first working system will be the tool that builds itself - a satisfyingly recursive beginning that proves the concept while creating the platform.
+The system is designed to be self-hosting, where the platform can be used to develop and improve itself across any collaborative endeavor.
 
 ---
+
+## Glossary: Key Concepts
+
+### **Core Entities**
+- **Talents**: Atomic units of expertise that compose into fortes
+- **Fortes**: LLM prompt definitions created by composing talents into coherent specializations
+- **Mobstas**: AI agent instances created from fortes at game time
+- **Syndicates**: Collections of forte definitions stored in Git repositories
+- **Games**: Specific projects/initiatives that use syndicates to define AI expert teams
+- **Capers**: Collaborative sessions where mobstas work together on specific tasks
+
+### **Composition Flow**
+```
+Talents → Fortes → Mobstas
+   ↓        ↓        ↓
+ Atomic  Composed  Game
+ Units   Expertise Instances
+```
+
+### **System Workflow**
+```
+Syndicate (Git repo) → Game Creation → Mobsta Instantiation → Caper Collaboration
+```
 
 ## Further Reading
 
 ### Core Definitions & Specifications
 
-> **📚 [Skill Blocks Overview](skill%20blocks%20overview.md)** - Complete categorization and overview of all 37 skill blocks
-> **👥 [Mobsters Overview](stakeholders%20overview.md)** - Complete list and categorization of all mobsters
+> **📚 [Software Development Syndicate](https://github.com/AnthroCascade/software-development-syndicate)** - Authoritative source for all forte and talent definitions
+> **🏢 [Syndicates Architecture](SYNDICATES_ARCHITECTURE.md)** - Skill library management system with Git integration
+> **🎯 [Forte-Instructor Integration Specification](FORTE_INSTRUCTOR_INTEGRATION_SPECIFICATION.md)** - Complete architectural transformation plan for Forte-Instructor integration
 
-> **💡 Note**: Detailed specifications for skill blocks and mobsters are now maintained in the **in-concert repository** under `app/services/elastic_mob/definitions/` for implementation use.
+> **💡 Note**: Syndicate repositories contain the definitive forte and talent specifications. The system dynamically imports these definitions into games as needed.
 
 For deeper technical and conceptual details about the system architecture, multi-game optimization strategies, and implementation approaches, see **[deeper architecture.md](deeper%20architecture.md)**.
 
@@ -149,7 +247,7 @@ This document explores the sophisticated game-theoretic foundations, semantic pa
 For a comprehensive assessment of the current Elastic-Mob implementation status, including identified deficiencies, inconsistencies, and recommended action items, see **[current audit.md](current%20audit.md)**.
 
 This document provides:
-- Detailed analysis of skill block and mobster composition
+- Detailed analysis of talent and mobsta composition
 - Identification of missing components and template inconsistencies
 - Strategic recommendations for system completion
 - Prioritized action plan for moving forward
@@ -178,7 +276,7 @@ These documents provide:
 For external reference materials and market analysis, see **[reference_materials/](reference_materials/)**:
 
 - **Market Analysis**: Competitive landscape and market context
-- **Mobster Analysis**: External research on mobster applications
+- **Mobsta Analysis**: External research on mobsta applications
 - **Context Documents**: Background information for development decisions
 
 ### Technology & Implementation
@@ -217,9 +315,9 @@ This document provides:
 For the meta-instruction persona that enables any AI assistant to simulate elastic-mob behavior, see **[elastic_mob_persona.md](system_foundation/elastic_mob_persona.md)**.
 
 This document provides:
-- **Meta-mobster orchestration** instructions for AI assistants
+- **Meta-mobsta orchestration** instructions for AI assistants
 - **Response structure** patterns for elastic-mob simulation
-- **Mobster activation rules** and skill block integration
+- **Mobsta activation rules** and talent integration
 - **Consensus building process** and code generation triggering
 - **Behavioral guidelines** and success metrics
 - **Usage instructions** for immediate elastic-mob experience
@@ -235,12 +333,12 @@ This document provides:
 - **Quality assurance guidelines** for maintaining system integrity
 - **Iteration planning** for continuous persona evolution
 
-### Meta-Mobster Architecture
+### Meta-Mobsta Architecture
 
-For analysis of self-improvement capabilities and the balance between self-awareness and system stability, see **[meta_mobster_architecture.md](system_foundation/meta_mobster_architecture.md)**.
+For analysis of self-improvement capabilities and the balance between self-awareness and system stability, see **[meta_mobsta_architecture.md](system_foundation/meta_mobsta_architecture.md)**.
 
 This document provides:
-- **Meta-mobster vs. external orchestrator** analysis and trade-offs
+- **Meta-mobsta vs. external orchestrator** analysis and trade-offs
 - **Hybrid approach** for self-awareness without circular complexity
 - **Layered meta-architecture** design principles
 - **Implementation strategy** for emergent optimization

@@ -8,7 +8,7 @@ This document synthesizes insights from all case studies in the research finding
 
 ### **Case Study 001: Designer Building AI/ML App with LLMs**
 - **User Type**: Product Designer with domain expertise, no technical background
-- **Project**: Complex AI/ML application with social features
+- **Setup**: Complex AI/ML application with social features
 - **Success**: Launched beta version in under 1 year
 - **Key Insight**: "You provide the vision, the LLM provides the code"
 
@@ -109,7 +109,7 @@ This document synthesizes insights from all case studies in the research finding
 
 ## **Elastic-Mob Design Recommendations**
 
-### **1. User Proxy Mobster Design**
+### **1. User Proxy Mobsta Design**
 
 #### **Core Capabilities Required**
 - **Pattern Recognition**: Detect when users are building novel features or experiencing quality drift
@@ -155,7 +155,7 @@ This document synthesizes insights from all case studies in the research finding
 ## **Implementation Priorities**
 
 ### **Phase 1: Core Capabilities (Weeks 1-4)**
-- [ ] **User Proxy Mobster Design**: Basic pattern recognition and intervention capabilities
+- [ ] **User Proxy Mobsta Design**: Basic pattern recognition and intervention capabilities
 - [ ] **Specification Guidance**: Help users create detailed, LLM-accessible specifications
 - [ ] **Quality Gate Suggestion**: Recommend quality processes and validation criteria
 - [ ] **Documentation Support**: Help maintain comprehensive project documentation
@@ -187,7 +187,7 @@ This document synthesizes insights from all case studies in the research finding
 - **Process Optimization**: How effectively the system improves development workflows
 
 ### **Outcome Metrics**
-- **Project Success Rate**: How often users successfully complete their projects
+- **Setup Success Rate**: How often users successfully complete their projects
 - **Quality Improvement**: How much user projects improve in quality over time
 - **Learning Acceleration**: How quickly users progress through development phases
 - **User Satisfaction**: How satisfied users are with the elastic-mob experience
@@ -201,10 +201,10 @@ This document synthesizes insights from all case studies in the research finding
 - **Performance Optimization**: How users approach performance and scalability concerns
 
 ### **Future Research Priorities**
-- **Multi-User Projects**: How teams of non-technical users collaborate on development
+- **Multi-User Setups**: How teams of non-technical users collaborate on development
 - **Advanced AI Integration**: How users work with multiple AI tools and systems
 - **Industry-Specific Patterns**: How these approaches vary across different industries
-- **Long-term Project Management**: How users maintain quality over extended development cycles
+- **Long-term Setup Management**: How users maintain quality over extended development cycles
 
 ## **Conclusion**
 

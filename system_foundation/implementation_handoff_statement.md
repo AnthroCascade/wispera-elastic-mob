@@ -10,7 +10,7 @@ This document serves as the critical hand-off between the research/planning phas
 
 ### **Theory vs. Reality**
 - **Intended Behavior**: Skill blocks summoned by semantic resonance, emergent participation, no manual orchestration
-- **Actual Behavior**: Manual mobster activation, go-to patterns, ritualistic behavior, top-down orchestration
+- **Actual Behavior**: Manual mobsta activation, go-to patterns, ritualistic behavior, top-down orchestration
 - **Impact**: System cannot be built until this gap is resolved
 
 ### **Root Cause Analysis**
@@ -22,9 +22,9 @@ This document serves as the critical hand-off between the research/planning phas
 ## **Required Implementation Approach: Static Runtime with Iterative Refinement**
 
 ### **Key Principles**
-- **No Dynamic Creation**: Skill blocks and mobsters are predefined and static at runtime
+- **No Dynamic Creation**: Skill blocks and mobstas are predefined and static at runtime
 - **Static Activation Patterns**: Semantic patterns are loaded once and used consistently
-- **Static Participation Rules**: Mobster behavior patterns are predefined and applied uniformly
+- **Static Participation Rules**: Mobsta behavior patterns are predefined and applied uniformly
 - **Iterative Refinement**: Updates happen through design process, not runtime execution
 
 ### **Supplementary Design Methodology: PS-PPS Framework**
@@ -51,9 +51,9 @@ The implementation may optionally incorporate the **PS-PPS Framework** (Purpose,
 - **Deactivation** when domains are no longer relevant
 
 ### **3. Static Emergent Participation Framework**
-- **Predefined participation rules** for mobster behavior
+- **Predefined participation rules** for mobsta behavior
 - **Activation thresholds** based on relevance scores
-- **Collaboration patterns** for natural interaction between mobsters
+- **Collaboration patterns** for natural interaction between mobstas
 - **Exit conditions** for disengagement
 
 ### **4. Static Game Theory Integration**
@@ -76,11 +76,11 @@ All skill blocks now include:
 - **User Experience**: Triggers on ["user experience", "usability", "accessibility", "user interface", "user journey"]
 - **Quality Gates**: Triggers on ["quality gates", "quality maintenance", "drift prevention", "specification adherence"]
 
-### **Mobsters with Emergent Participation Patterns**
-All mobsters now include:
+### **Mobstas with Emergent Participation Patterns**
+All mobstas now include:
 - **Activation Threshold**: Relevance score for participation
-- **Participation Style**: How the mobster emerges and engages
-- **Collaboration Patterns**: Natural interaction with other mobsters
+- **Participation Style**: How the mobsta emerges and engages
+- **Collaboration Patterns**: Natural interaction with other mobstas
 - **Exit Conditions**: When to disengage
 - **Conflict Resolution**: How to handle disagreements
 
@@ -123,7 +123,7 @@ All mobsters now include:
 - [ ] Skill block activation correlates with conversation relevance
 
 ### **Emergent Participation Validation**
-- [ ] Mobsters emerge based on conversation needs, not manual selection
+- [ ] Mobstas emerge based on conversation needs, not manual selection
 - [ ] Participation patterns vary naturally with conversation content
 - [ ] No consistent go-to patterns or ritualistic behavior
 - [ ] System self-organizes without external direction
@@ -145,7 +145,7 @@ All mobsters now include:
 ### **Validation Metrics**
 - **Activation Accuracy**: How well skill blocks match conversation content
 - **Relevance Scoring**: Accuracy of relevance calculations
-- **Participation Quality**: Natural emergence of mobster participation
+- **Participation Quality**: Natural emergence of mobsta participation
 - **System Emergence**: Self-organization without manual direction
 
 ## **Critical Success Factors**
@@ -182,7 +182,7 @@ All mobsters now include:
 
 ### **Foundation Status: ✅ READY**
 - **Skill blocks**: Enhanced with semantic activation patterns
-- **Mobsters**: Enhanced with emergent participation patterns
+- **Mobstas**: Enhanced with emergent participation patterns
 - **Architecture**: Static runtime approach defined
 - **Implementation plan**: Phases and priorities established
 
@@ -204,7 +204,7 @@ This hand-off statement captures the critical discovery that semantic resonance 
 
 1. **Clear implementation requirements** for semantic resonance
 2. **Static runtime architecture** specifications
-3. **Enhanced skill blocks and mobsters** with activation patterns
+3. **Enhanced skill blocks and mobstas** with activation patterns
 4. **Implementation phases and priorities** with dependencies
 5. **Success criteria and validation approach** for each phase
 

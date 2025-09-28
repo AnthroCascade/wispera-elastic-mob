@@ -7,14 +7,14 @@ This document outlines the implementation plan for git integration as the founda
 ## **Implementation Priority: Git Integration First**
 
 ### **Why Git Integration is Critical**
-- **Project Foundation** - git repos define project boundaries
+- **Game Foundation** - git repos define project boundaries
 - **File Access** - enables browsing and analyzing source code
 - **Change Tracking** - provides real-time development state
 - **Team Coordination** - git operations enable collaboration
 
 ### **Dependencies**
 - Git integration enables everything else
-- Project management builds on repository connections
+- Game management builds on repository connections
 - File system integration requires git status
 - AI context needs file content access
 
@@ -108,30 +108,30 @@ This document outlines the implementation plan for git integration as the founda
 - Merge completion workflow
 ```
 
-## **Phase 3: Project Management (Week 4)**
+## **Phase 3: Game Management (Week 4)**
 
-### **4.1 Project Switching**
+### **4.1 Game Switching**
 ```javascript
 // New component: <project-manager>
-- Project list/dashboard
-- Project switching with state persistence
-- Project context loading
-- Project state saving
+- Game list/dashboard
+- Game switching with state persistence
+- Game context loading
+- Game state saving
 ```
 
-### **4.2 Project Templates**
+### **4.2 Game Templates**
 ```javascript
 // Enhanced: <project-manager>
-- Project creation from templates
+- Game creation from templates
 - Template customization
-- Quick-start project setup
+- Quick-start project game
 - Template library management
 ```
 
-### **4.3 Project State Persistence**
+### **4.3 Game State Persistence**
 ```javascript
-// New service: ProjectStateManager
-- Project configuration storage
+// New service: GameStateManager
+- Game configuration storage
 - AI context persistence
 - Development state saving
 - Cross-session state restoration
@@ -261,7 +261,7 @@ interface FileNode {
 ## **Integration Points**
 
 ### **With Existing Components**
-- **MobSession**: Integrate git status and operations
+- **Caper**: Integrate git status and operations
 - **SkillBlockPanel**: Connect skill blocks to file analysis
 - **AgentDisplay**: Show git-aware development context
 - **ConversationView**: Include git operations in AI conversations
@@ -269,7 +269,7 @@ interface FileNode {
 ### **With Backend Services**
 - **ElasticMob Services**: Git context for AI analysis
 - **File Watching**: Real-time git status updates
-- **Project State**: Git state persistence and restoration
+- **Game State**: Git state persistence and restoration
 
 ## **Implementation Steps**
 
@@ -291,7 +291,7 @@ interface FileNode {
 3. Test git operations end-to-end
 4. Validate file watching and status updates
 
-### **Step 4: Project Management**
+### **Step 4: Game Management**
 1. Implement project switching
 2. Add project state persistence
 3. Create project templates
@@ -318,9 +318,9 @@ interface FileNode {
 - [ ] Advanced git operations
 
 ### **Week 4**
-- [ ] Project switching works
-- [ ] Project state persists across sessions
-- [ ] Project templates function
+- [ ] Game switching works
+- [ ] Game state persists across sessions
+- [ ] Game templates function
 - [ ] Full project lifecycle management
 
 ## **Risk Mitigation**
@@ -346,7 +346,7 @@ interface FileNode {
 
 Git integration provides the foundation for effective project management in the Elastic-Mob internal tool. By implementing git integration first, we establish:
 
-- **Project boundaries** through repository connections
+- **Game boundaries** through repository connections
 - **File access** for source code analysis and AI context
 - **Development state** through git status and operations
 - **Team coordination** through shared repository access

@@ -8,23 +8,23 @@
 
 **Note**: PS-PPS Framework has been added as supplementary design methodology for potential enhancement. See [ps_pps_framework.md](ps_pps_framework.md) for details.
 
-**📋 Repository Structure**: Detailed skill block and mobster specifications are now maintained in the **in-concert repository** under `app/services/elastic_mob/definitions/`. See [skill blocks overview.md](../skill%20blocks%20overview.md) and [mobsters overview.md](../mobsters%20overview.md) for comprehensive overviews.
+**📋 Repository Structure**: Detailed skill block and mobsta specifications are now maintained in the **in-concert repository** under `app/services/elastic_mob/definitions/`. See [skill blocks overview.md](../skill%20blocks%20overview.md) and [mobstas overview.md](../mobstas%20overview.md) for comprehensive overviews.
 
-**📋 Templates**: Use [skill block template](../templates/skill%20block.md) and [mobster template](../templates/mobster.md) for creating new specifications.
+**📋 Templates**: Use [skill block template](../templates/skill%20block.md) and [mobsta template](../templates/mobsta.md) for creating new specifications.
 
 ## **✅ What's Been Accomplished**
 
 ### **1. Foundation Completion (COMPLETED)**
 - **37 skill blocks** covering all major development domains
-- **25 Mobsters** properly composed and integrated
+- **25 Mobstas** properly composed and integrated
 - **Template compliance** achieved across all artifacts
 - **Missing skill blocks** created and integrated
 
 ### **2. New Skill Blocks Added (COMPLETED)**
-- ✅ **Testing** - Most critical, referenced by 15+ mobsters
+- ✅ **Testing** - Most critical, referenced by 15+ mobstas
 - ✅ **Mobile Development** - Mobile app development expertise
 - ✅ **Integration** - System integration and API design
-- ✅ **Project Planning** - Project management and coordination
+- ✅ **Setup Planning** - Setup management and coordination
 - ✅ **Requirements Gathering** - Stakeholder requirements discovery
 
 ### **3. Architectural Principle Integration (COMPLETED)**
@@ -35,13 +35,13 @@
 - ✅ **Quality Validation** - Ensures generated code meets principles
 
 ### **4. Code Generation System (COMPLETED)**
-- ✅ **Code Generation Mobster** - Coordinates all code generation activities
+- ✅ **Code Generation Mobsta** - Coordinates all code generation activities
 - ✅ **Agreement Recognition** - Identifies when mob reaches consensus
 - ✅ **Context Translation** - Converts decisions to code generation context
 - ✅ **Generation Triggering** - Initiates code generation when ready
 - ✅ **Quality Validation** - Ensures generated code meets principles
 
-### **5. Mobster Consolidation (COMPLETED)**
+### **5. Mobsta Consolidation (COMPLETED)**
 - ✅ **UX Person consolidated into UI/UX Designer**
 - ✅ **All references updated** to use consolidated role
 - ✅ **Specialized roles maintained** (Backend Developer, Frontend Developer, Engineer/Developer)
@@ -54,20 +54,20 @@
 - **Design & Experience**: UX, UI, Information Architecture, Accessibility ✅
 - **Quality & Reliability**: Testing, Security, Performance, Monitoring ✅
 - **Communication**: Documentation, Training Materials, API Docs, User Guides ✅
-- **Process & Coordination**: Requirements Gathering, Project Planning, Prompt Engineering ✅
+- **Process & Coordination**: Requirements Gathering, Setup Planning, Prompt Engineering ✅
 - **Business & Strategy**: Market Analysis, Pricing, Sales Enablement, ROI Analysis ✅
 - **Architectural Principles**: Secure-by-Default, Type-Enforced Security, Performance Architecture ✅
 - **Code Generation**: Agreement Recognition, Context Translation, Generation Triggering, Quality Validation ✅
 
-### **Mobster Composition: 100% Complete**
-- **25 Mobsters** with proper skill block composition
+### **Mobsta Composition: 100% Complete**
+- **25 Mobstas** with proper skill block composition
 - **All skill block references** resolved and consistent
 - **No duplicate roles** remaining
 - **Clear collaboration patterns** established
 
 ### **Template Compliance: 100% Complete**
 - **All skill blocks** follow the established template format (see [skill block.md](../templates/skill%20block.md))
-- **All Mobsters** follow the established template format (see [mobster.md](../templates/mobster.md))
+- **All Mobstas** follow the established template format (see [mobsta.md](../templates/mobsta.md))
 - **Consistent formatting** across all artifacts
 - **No template violations** remaining
 
@@ -78,20 +78,20 @@
 - Each skill block knows its domain, can prompt AI systems, and evaluate quality
 - Clear boundaries and evolution paths defined
 
-### **2. Integrated Mobster System**
-- 25 Mobsters representing all development perspectives
+### **2. Integrated Mobsta System**
+- 25 Mobstas representing all development perspectives
 - Dynamic composition based on project needs
 - Multi-game optimization with different time horizons and success metrics
 
 ### **3. AI-Powered Code Generation**
-- Agreement recognition across multiple mobsters
+- Agreement recognition across multiple mobstas
 - Context translation preserving architectural principles
 - Quality validation ensuring principle compliance
 - Coordinated generation workflow
 
 ### **4. Architectural Principle Enforcement**
 - Security, performance, and quality principles declared at specification time
-- Principles integrated into all relevant mobsters
+- Principles integrated into all relevant mobstas
 - Quality gates built into the generation process
 
 ### **5. Implementation Architecture Defined**
@@ -103,14 +103,14 @@
 ### **6. Persona System Ready**
 - **Elastic-mob persona**: See [elastic_mob_persona.md](elastic_mob_persona.md) for complete system
 - **Persona optimizer**: See [persona_optimizer.md](persona_optimizer.md) for optimization framework
-- **Meta-mobster architecture**: See [meta_mobster_architecture.md](meta_mobster_architecture.md) for self-improvement design
+- **Meta-mobsta architecture**: See [meta_mobsta_architecture.md](meta_mobsta_architecture.md) for self-improvement design
 - **Repository context**: See [elastic_mob_persona.md](elastic_mob_persona.md) for initialization requirements
 
 ## **📋 Next Phase Recommendations**
 
 ### **Phase 1: Persona System Testing (Weeks 1-2)**
 1. **Test elastic-mob persona** with real technical questions
-2. **Validate Mobster coordination** and consensus building
+2. **Validate Mobsta coordination** and consensus building
 3. **Test code generation** from mob conversations
 4. **Identify persona optimization opportunities**
 
@@ -141,7 +141,7 @@
 - Security → Application Security, Infrastructure Security, Compliance Security
 - Testing → Test Automation, Performance Testing, Security Testing
 
-### **Mobster Evolution**
+### **Mobsta Evolution**
 - New specialized roles can be composed from existing skill blocks
 - Skill blocks can be enhanced with new capabilities
 - System can adapt to new development methodologies and technologies

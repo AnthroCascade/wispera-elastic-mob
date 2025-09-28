@@ -7,9 +7,9 @@ Elastic-mob will be implemented as an **integrated engine within in-concert** ra
 
 **Note**: This document contains the complete implementation strategy. For current status and readiness assessment, see [current_audit.md](current_audit.md). For technology analysis and recommendations, see [architecture_critique.md](architecture_critique.md).
 
-**📋 Implementation Resources**: The detailed skill block and mobster specifications that will be implemented are maintained in the **in-concert repository** under `app/services/elastic_mob/definitions/`. See [skill blocks overview.md](../skill%20blocks%20overview.md) and [mobsters overview.md](../mobsters%20overview.md) for comprehensive overviews.
+**📋 Implementation Resources**: The detailed skill block and mobsta specifications that will be implemented are maintained in the **in-concert repository** under `app/services/elastic_mob/definitions/`. See [skill blocks overview.md](../skill%20blocks%20overview.md) and [mobstas overview.md](../mobstas%20overview.md) for comprehensive overviews.
 
-**📋 Templates**: Use [skill block template](../templates/skill%20block.md) and [mobster template](../templates/mobster.md) for creating new specifications.
+**📋 Templates**: Use [skill block template](../templates/skill%20block.md) and [mobsta template](../templates/mobsta.md) for creating new specifications.
 
 ### **Architecture Overview**
 ```
@@ -52,11 +52,11 @@ Elastic-Mob Frontend (Plain JS + Web Components) → Elastic-Mob Engine (within 
 module ElasticMob
   class Engine < ApplicationRecord
     belongs_to :user
-    has_many :mob_sessions
+    has_many :capers
     has_many :agent_combinations
     
-    def start_mob_session(context, skill_blocks)
-      # Create mob session
+    def start_caper(context, skill_blocks)
+      # Create caper
       # Initialize agents with skill blocks
       # Begin autonomous conversation
     end
@@ -66,7 +66,7 @@ end
 
 **Deliverables:**
 - Core engine models integrated into in-concert
-- Basic mob session management
+- Basic caper management
 - User isolation and mob-space creation
 - Frontend component architecture design
 
@@ -75,12 +75,12 @@ end
 # Use existing ActionCable infrastructure
 class MobChannel < ApplicationCable::Channel
   def subscribed
-    stream_from "mob_session_#{params[:session_id]}"
+    stream_from "caper_#{params[:session_id]}"
   end
   
   def receive(data)
     # Handle user interventions
-    # Route to appropriate mob session
+    # Route to appropriate caper
   end
 end
 ```
@@ -89,12 +89,12 @@ end
 - Real-time communication via ActionCable
 - User intervention handling
 - Session state synchronization
-- Core web components (MobSession, AgentDisplay, ConversationView)
+- Core web components (Caper, AgentDisplay, ConversationView)
 - WebSocket integration with frontend components
 
 ### **Phase 3: Autonomous Agent Process (2-3 weeks)**
 ```ruby
-class MobSession
+class Caper
   def run_autonomous_conversation
     loop do
       # Agent coordination logic
@@ -129,14 +129,14 @@ end
 # Each user gets their own mob-space
 class User < ApplicationRecord
   has_one :elastic_mob_engine
-  has_many :mob_sessions, through: :elastic_mob_engine
+  has_many :capers, through: :elastic_mob_engine
 end
 ```
 
 ### **Git Integration**
 ```ruby
 # Direct access to existing file/document models
-class MobSession
+class Caper
   def commit_changes(conversation_context, generated_code)
     # Use existing file management
     # Create git commits with conversation metadata
@@ -148,7 +148,7 @@ end
 ### **LLM Service Integration**
 ```ruby
 # Direct access to existing LLM infrastructure
-class MobSession
+class Caper
   def request_llm_response(context, skill_blocks)
     # Use existing Assistant/LLM services
     # No API calls needed
@@ -178,14 +178,14 @@ customElements.define('mob-conversation', MobConversation);
 customElements.define('code-section', CodeSection);
 
 // Layout components (high-level composition)
-customElements.define('mob-session', MobSession);
+customElements.define('mob-session', Caper);
 customElements.define('intervention-panel', InterventionPanel);
 ```
 
 ### **Real-Time Updates**
 ```javascript
 // WebSocket integration for immediate responsiveness
-class MobSession extends HTMLElement {
+class Caper extends HTMLElement {
   constructor() {
     super();
     this.websocket = new WebSocket('ws://localhost:3000/cable');
@@ -211,13 +211,13 @@ class MobSession extends HTMLElement {
 
 ### **Single User Focus (Initial)**
 - **Long-running agent process** that writes/adjusts code to a git repo
-- **User as one of the mobsters** providing answers when needed
+- **User as one of the mobstas** providing answers when needed
 - **Rare user interventions** for course correction
 - **Autonomous operation** with minimal human oversight
 
 ### **User Participation Modes**
 1. **Observer Mode**: Watch agents work autonomously (default)
-2. **Participant Mode**: Join the mob with user proxy mobster active
+2. **Participant Mode**: Join the mob with user proxy mobsta active
 3. **Authority Mode**: Take control in specific domains when needed
 4. **Intervention Mode**: Emergency halt and redirection capabilities
 
@@ -267,7 +267,7 @@ class MobSession extends HTMLElement {
 ### **Persona System**
 - **[elastic_mob_persona.md](elastic_mob_persona.md)** - Meta-instruction system for AI assistants
 - **[persona_optimizer.md](persona_optimizer.md)** - Continuous improvement framework
-- **[meta_mobster_architecture.md](meta_mobster_architecture.md)** - Self-improvement design principles
+- **[meta_mobsta_architecture.md](meta_mobsta_architecture.md)** - Self-improvement design principles
 
 ### **Technology & Integration**
 - **[architecture_critique.md](architecture_critique.md)** - Technology assessment and recommendations

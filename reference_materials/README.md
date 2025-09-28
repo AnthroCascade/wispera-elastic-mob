@@ -10,7 +10,7 @@ This directory contains external reference materials that have been copied into 
 - **[Conversational App Builder Market Analysis.pdf](Conversational%20App%20Builder%20Market%20Analysis.pdf)** - External market research document providing competitive landscape and market context
 
 ### **Stakeholder Analysis**
-- **[Mobsters Analysis.md](Mobsters%20Analysis.md)** - External analysis of Mobster Specifications and their applications
+- **[Mobstas Analysis.md](Mobstas%20Analysis.md)** - External analysis of Mobsta Specifications and their applications
 
 ## **Usage Guidelines**
 

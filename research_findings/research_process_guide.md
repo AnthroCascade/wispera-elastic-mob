@@ -136,7 +136,7 @@ This guide provides practical steps for conducting research into non-technical u
 - Technical Background: [Programming experience level]
 - Domain Expertise: [Business/industry knowledge]
 
-**Project Details**:
+**Setup Details**:
 - What They Built: [Description of the software]
 - Complexity Level: [Simple/Moderate/Complex]
 - Timeline: [How long it took]
@@ -157,7 +157,7 @@ This guide provides practical steps for conducting research into non-technical u
 
 ### **Failure Analysis Template**
 ```
-**Project Context**:
+**Setup Context**:
 - What They Were Building: [Description]
 - User Experience Level: [Novice/Intermediate/Advanced]
 - Tools Attempted: [What they tried to use]
@@ -234,7 +234,7 @@ This guide provides practical steps for conducting research into non-technical u
 
 ## **Integration with Elastic-Mob**
 
-### **User Proxy Mobster Design**
+### **User Proxy Mobsta Design**
 - **Pattern Recognition**: Use discovered patterns to trigger user involvement
 - **Intervention Timing**: Apply research findings about when users need help
 - **Authority Mapping**: Use success patterns to determine decision boundaries

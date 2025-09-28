@@ -22,14 +22,14 @@ When conversation touches on "user authentication," multiple skill blocks should
 ## **The Reality: Manual Orchestration and Go-To Patterns**
 
 ### **Actual Behavior Observed**
-- **Manual mobster activation** rather than natural emergence
-- **Go-to mobster cycling** through familiar patterns regardless of context
+- **Manual mobsta activation** rather than natural emergence
+- **Go-to mobsta cycling** through familiar patterns regardless of context
 - **Ritualistic behavior** (e.g., "Consensus building" in every response)
 - **Top-down orchestration** rather than bottom-up emergence
 
 ### **Evidence from Development Conversations**
-1. **Explicit mobster activation calls**: `[UX mobster activated]` rather than natural emergence
-2. **Consistent pattern usage**: Same mobsters appearing regardless of conversation content
+1. **Explicit mobsta activation calls**: `[UX mobsta activated]` rather than natural emergence
+2. **Consistent pattern usage**: Same mobstas appearing regardless of conversation content
 3. **Manual flow control**: Orchestrating participation rather than facilitating emergence
 4. **No semantic resonance**: Conversation content not naturally summoning relevant skill blocks
 
@@ -58,7 +58,7 @@ When conversation touches on "user authentication," multiple skill blocks should
 ### **2. Emergent Participation System**
 - **No manual orchestration** - system must be self-organizing
 - **Conversation-driven activation** - content determines participation
-- **Static skill block composition** - Mobsters use predefined skill block sets
+- **Static skill block composition** - Mobstas use predefined skill block sets
 - **Natural flow management** - no forced consensus or direction
 
 ### **3. Game Theory Integration**
@@ -71,9 +71,9 @@ When conversation touches on "user authentication," multiple skill blocks should
 ## **Static Runtime Approach**
 
 ### **Key Principles**
-- **No Dynamic Creation**: Skill blocks and mobsters are predefined and static at runtime
+- **No Dynamic Creation**: Skill blocks and mobstas are predefined and static at runtime
 - **Static Activation Patterns**: Semantic patterns are loaded once and used consistently
-- **Static Participation Rules**: Mobster behavior patterns are predefined and applied uniformly
+- **Static Participation Rules**: Mobsta behavior patterns are predefined and applied uniformly
 - **Iterative Refinement**: Updates happen through design process, not runtime execution
 
 ### **Implementation Benefits**
@@ -86,7 +86,7 @@ When conversation touches on "user authentication," multiple skill blocks should
 - **Runtime Execution**: Works with static, predefined components
 - **Design Iteration**: Continuous improvement through analysis of sub-optimal executions
 - **Pattern Refinement**: Updates to activation patterns and participation rules
-- **Component Evolution**: New skill blocks and mobsters added through design process
+- **Component Evolution**: New skill blocks and mobstas added through design process
 
 ## **Implementation Strategy Correction**
 
@@ -113,7 +113,7 @@ Before building the elastic-mob engine, we must:
 - [ ] Skill block activation correlates with conversation relevance
 
 ### **Emergent Participation Validation**
-- [ ] Mobsters emerge based on conversation needs, not manual selection
+- [ ] Mobstas emerge based on conversation needs, not manual selection
 - [ ] Participation patterns vary naturally with conversation content
 - [ ] No consistent go-to patterns or ritualistic behavior
 - [ ] System self-organizes without external direction
@@ -157,7 +157,7 @@ Each implementation phase must validate actual vs. intended behavior before proc
 
 The discovery of this implementation gap is critical for elastic-mob success. We cannot build the system until semantic resonance and emergent participation are properly implemented. The current approach of manual orchestration must be replaced with genuine emergence mechanisms.
 
-**Key Insight**: Elastic-mob requires emergence, not orchestration. The implementation must focus on creating systems that naturally summon relevant skill blocks and allow mobsters to participate based on conversation content, using static patterns and rules rather than dynamic creation.
+**Key Insight**: Elastic-mob requires emergence, not orchestration. The implementation must focus on creating systems that naturally summon relevant skill blocks and allow mobstas to participate based on conversation content, using static patterns and rules rather than dynamic creation.
 
 This document serves as a critical checkpoint before moving into implementation. The gap must be resolved, and emergence mechanisms must be validated, before the elastic-mob vision can become reality.
 

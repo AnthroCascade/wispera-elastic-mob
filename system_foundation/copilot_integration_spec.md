@@ -4,22 +4,22 @@
 
 ### **1. Enhanced Skill Blocks for Architectural Principles**
 
-**Security Mobster Enhanced Skill Blocks:**
+**Security Mobsta Enhanced Skill Blocks:**
 - **"Secure-by-Default Architecture"** - declares security principles at specification time
 - **"Type-Enforced Security"** - declares security through types, not validation
 - **"Security Quality Gates"** - declares what constitutes secure code
 
-**Performance Mobster Enhanced Skill Blocks:**
+**Performance Mobsta Enhanced Skill Blocks:**
 - **"Performance Architecture"** - declares performance principles at specification time
 - **"Efficiency by Design"** - declares performance built-in, not added later
 - **"Performance Quality Gates"** - declares performance benchmarks
 
-**System Architecture Mobster Enhanced Skill Blocks:**
+**System Architecture Mobsta Enhanced Skill Blocks:**
 - **"Architectural Principles"** - declares overall system design principles
 - **"Design Constraints"** - declares allowed/forbidden patterns
 - **"Quality Architecture"** - declares architectural quality standards
 
-### **2. New Code Generation Mobster**
+### **2. New Code Generation Mobsta**
 
 **Role**: Dedicated conversation-to-code translator
 **Activation**: Immediately when mob reaches consensus
@@ -36,18 +36,18 @@
 ### **1. Specification Time Declaration Flow**
 ```
 1. Mob discusses feature
-2. Mobsters contribute domain expertise
-3. Mobsters declare architectural principles (enhanced skill blocks)
+2. Mobstas contribute domain expertise
+3. Mobstas declare architectural principles (enhanced skill blocks)
 4. Mob reaches agreement
-5. Code Generation Mobster recognizes agreement
-6. Code Generation Mobster translates to context
+5. Code Generation Mobsta recognizes agreement
+6. Code Generation Mobsta translates to context
 7. Code generation begins with principles intact
 ```
 
 ### **2. Copilot Principles Applied**
 
 **From Mindset.md:**
-- **Low agreeableness**: Mobsters stand ground on architectural principles
+- **Low agreeableness**: Mobstas stand ground on architectural principles
 - **Low conscientiousness**: Focus on architecture over implementation details
 - **Fierce conversations**: Challenge weak solutions and compromises
 
@@ -59,12 +59,12 @@
 ## **Implementation Requirements**
 
 ### **1. Skill Block Enhancement**
-- Add new architectural principle skill blocks to existing mobsters
+- Add new architectural principle skill blocks to existing mobstas
 - Ensure skill blocks activate at specification time, not after decisions
 - Integrate principles into mob conversation flow
 
-### **2. Code Generation Mobster Creation**
-- Create new mobster with dedicated translation role
+### **2. Code Generation Mobsta Creation**
+- Create new mobsta with dedicated translation role
 - Integrate into mob participation system
 - Ensure high-speed activation when consensus is reached
 
@@ -76,7 +76,7 @@
 ## **Expected Outcomes**
 
 ### **1. Enhanced Mob Conversations** ✅
-- Mobsters declare principles during decision-making
+- Mobstas declare principles during decision-making
 - Architectural thinking integrated into discussions
 - Quality gates established before code generation
 
@@ -95,7 +95,7 @@
 The copilot integration specification is now **implemented and ready for testing**:
 
 - **Enhanced skill blocks** for architectural principles are integrated
-- **Code generation mobster** with all required skill blocks is ready
+- **Code generation mobsta** with all required skill blocks is ready
 - **Integration points** are defined and accessible
 - **Copilot principles** from mindset.md and idioms.md are incorporated
 
