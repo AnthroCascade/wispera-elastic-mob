@@ -58,9 +58,9 @@ This document serves as a curated knowledge base for tracking successful pattern
 
 ## **Script Collections**
 
-### **Initial Setup Scripts**
+### **Initial Game Scripts**
 - **Purpose**: Establish context, constraints, and objectives
-- **Key Elements**: Setup scope, user background, success criteria, constraints
+- **Key Elements**: Game scope, user background, success criteria, constraints
 - **Example Template**: "I'm a [role] trying to [goal]. I have [constraints]. I want to [specific outcome]."
 
 ### **Iteration Scripts**
@@ -107,7 +107,7 @@ This document serves as a curated knowledge base for tracking successful pattern
 ### **Case Study Template**
 ```
 **User Profile**: [Role, technical background, domain expertise]
-**Setup**: [What they built, complexity level, timeline]
+**Game**: [What they built, complexity level, timeline]
 **Process**: [How they approached the problem, tools used, iterations]
 **Outcomes**: [What worked, what didn't, final result]
 **Key Learnings**: [What made it successful, what they'd do differently]
@@ -179,19 +179,19 @@ This document serves as a curated knowledge base for tracking successful pattern
 - **Capabilities**: Basic problem description, simple requests
 - **Challenges**: Unclear requirements, tool confusion, unrealistic expectations
 - **Success Patterns**: Start small, use templates, celebrate progress
-- **Common Setups**: Simple websites, basic automation, data formatting
+- **Common Games**: Simple websites, basic automation, data formatting
 
 ### **Intermediate Phase (2-8 weeks)**
 - **Capabilities**: Problem decomposition, iterative refinement, tool selection
 - **Challenges**: Scope management, quality standards, debugging complexity
 - **Success Patterns**: Clear process, validation checkpoints, incremental improvement
-- **Common Setups**: Business applications, workflow automation, data analysis
+- **Common Games**: Business applications, workflow automation, data analysis
 
 ### **Advanced Phase (8+ weeks)**
 - **Capabilities**: Complex problem solving, tool orchestration, quality assurance
 - **Challenges**: System thinking, performance optimization, maintenance planning
 - **Success Patterns**: Architecture planning, testing strategies, documentation
-- **Common Setups**: Full-stack applications, complex integrations, scalable systems
+- **Common Games**: Full-stack applications, complex integrations, scalable systems
 
 ### **LLM Collaboration Learning Progression**
 - **Novice Phase (0-2 weeks)**:

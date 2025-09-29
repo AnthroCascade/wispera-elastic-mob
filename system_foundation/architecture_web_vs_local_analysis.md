@@ -108,7 +108,7 @@ Web Interface
 - **Branch management** and PR integration
 
 ### **Phase 3: AI Context Management**
-- **Setup-specific AI context** and learning
+- **Game-specific AI context** and learning
 - **Cross-project pattern recognition** and knowledge sharing
 - **Team knowledge accumulation** and collaboration
 
@@ -116,7 +116,7 @@ Web Interface
 
 The tension isn't about web vs. desktop - it's about **project isolation** vs. **global knowledge**. For an internal tool building multiple apps, you want:
 
-- **Setup isolation** for development context and state management
+- **Game isolation** for development context and state management
 - **Global knowledge** for pattern recognition and cross-project learning
 - **Team collaboration** for knowledge sharing and collective intelligence
 - **Workflow integration** for efficiency and consistency
@@ -137,7 +137,7 @@ The tension isn't about web vs. desktop - it's about **project isolation** vs. *
 
 For an internal tool used by the Wispera organization to build applications, the web-first approach with strong project management is the optimal architecture. It provides:
 
-1. **Setup isolation** needed for development context
+1. **Game isolation** needed for development context
 2. **Global knowledge** for pattern recognition and learning
 3. **Team collaboration** for knowledge sharing and efficiency
 4. **Workflow integration** for seamless development experience

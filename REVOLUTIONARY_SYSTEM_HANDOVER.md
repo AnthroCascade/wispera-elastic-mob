@@ -22,7 +22,7 @@ We are building a conversational programming platform designed to transform natu
 ```
 ┌─────────────────┐    ┌──────────────────┐    ┌─────────────────┐
 │  wispera-mobsta│    │   in-concert     │    │  Generated      │
-│  (Frontend UI)  │◄──►│  (Backend API)   │◄──►│  Setups       │
+│  (Frontend UI)  │◄──►│  (Backend API)   │◄──►│  Games       │
 │                 │    │                  │    │  (Git Repos)    │
 │ • Web Components│    │ • ElasticMob     │    │                 │
 │ • Real-time UI  │    │   Engine         │    │ • Working Code  │
@@ -44,7 +44,7 @@ We are building a conversational programming platform designed to transform natu
 
 ### **Backend (in-concert): FOUNDATION IMPLEMENTED** 🏗️
 **Core Infrastructure:**
-- **Setup Management**: Database models and API endpoints for managing AI development projects
+- **Game Management**: Database models and API endpoints for managing AI development projects
 - **Session Management**: Framework for multi-day development conversations with pause/resume capability
 - **File Tracking**: System for managing AI-generated code files and git integration
 - **LLM Integration**: Foundation for connecting mobsta specifications to code generation services
@@ -74,7 +74,7 @@ We are building a conversational programming platform designed to transform natu
 Users describe requirements in natural language, AI agents collaborate to generate working code with automatic git integration and progress tracking.
 
 ### **2. Multi-Day Development Continuity**
-Setups can be paused and resumed across multiple days with context preservation, allowing development to continue where it left off.
+Games can be paused and resumed across multiple days with context preservation, allowing development to continue where it left off.
 
 ### **3. AI Agent Collaboration**
 Multiple specialized AI agents work together, each contributing their domain expertise to create comprehensive, well-architected solutions.
@@ -107,13 +107,13 @@ Multiple specialized AI agents work together, each contributing their domain exp
 
 ### **API Integration**
 **Frontend Integration Points:**
-- **Setup Management**: RESTful endpoints for creating and managing AI development projects
+- **Game Management**: RESTful endpoints for creating and managing AI development projects
 - **Session Management**: API for creating, pausing, and resuming multi-day development sessions
 - **Real-time Processing**: WebSocket integration for live conversation processing and code generation
 
 ### **Database Foundation**
 **Core Data Models:**
-- **Setup Management**: Database schema for managing AI development projects and their metadata
+- **Game Management**: Database schema for managing AI development projects and their metadata
 - **Session Tracking**: Models for conversation processing and multi-day session continuity
 - **Code Management**: Schema for tracking generated files and automated git commit history
 
@@ -145,7 +145,7 @@ Multiple specialized AI agents work together, each contributing their domain exp
 ## 📚 **Documentation Structure**
 
 ### **Primary Navigation:**
-1. **[SYSTEM_STATUS_AND_CRITICAL_PATH.md](SYSTEM_STATUS_AND_CRITICAL_PATH.md)** - Current status and activation steps
+1. **[wispera-mobsta/README.md](../wispera-mobsta/README.md)** - Current implementation status
 2. **[README.md](README.md)** - System overview and vision  
 3. **[implementation_plan.md](implementation_plan.md)** - Implementation approach (COMPLETE)
 4. **[system_foundation/](system_foundation/)** - Architecture and technical details

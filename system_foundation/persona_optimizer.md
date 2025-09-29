@@ -50,7 +50,7 @@ Every response should follow this pattern:
 - **Process feels artificial** rather than emergent
 
 ### **4. Talent Integration Issues**
-- **Skill blocks not referenced** when relevant
+- **Talents not referenced** when relevant
 - **Principles not enforced** in final decisions
 - **Architectural concerns** lost in implementation
 - **Quality gates bypassed** during consensus

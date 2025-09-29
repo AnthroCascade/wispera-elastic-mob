@@ -1,4 +1,4 @@
-# Package Management Strategy for Wispera Setups
+# Package Management Strategy for Wispera Games
 
 ## **Core Principle: Stable GitHub Repositories Are Default State**
 
@@ -130,7 +130,7 @@ wispera_components:
 - **CI/CD Integration**: Build systems must have SSH keys or deploy keys configured
 - **Dependency Resolution**: Flutter must be able to authenticate via SSH with GitHub
 
-### **SSH Setup Requirements**
+### **SSH Game Requirements**
 - **SSH Key Generation**: Each developer needs SSH key pair
 - **GitHub Account**: SSH public key added to GitHub account
 - **SSH Agent**: Keys loaded into SSH agent (`ssh-add`)
@@ -174,7 +174,7 @@ wispera_components:
 ### **If Authentication Issues**
 1. **SSH Key Verification**: Check developer SSH key configuration
 2. **Organization Access**: Verify developer has access to private repositories
-3. **SSH Key Setup**: Ensure SSH keys are added to GitHub account and agent
+3. **SSH Key Game**: Ensure SSH keys are added to GitHub account and agent
 4. **Network/Firewall**: Check for corporate network restrictions (SSH port 22)
 
 ## **Cross-Repository Dependency Management**

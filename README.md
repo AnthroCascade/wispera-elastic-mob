@@ -3,7 +3,7 @@
 
 > **📋 PROJECT STATUS**: 
 > - **[REVOLUTIONARY_SYSTEM_HANDOVER.md](REVOLUTIONARY_SYSTEM_HANDOVER.md)** - Complete system handover and activation guide
-> - **[SYSTEM_STATUS_AND_CRITICAL_PATH.md](SYSTEM_STATUS_AND_CRITICAL_PATH.md)** - Current implementation status and immediate next steps
+> - **[wispera-mobsta/README.md](../wispera-mobsta/README.md)** - Current implementation status
 
 ## Core Vision
 

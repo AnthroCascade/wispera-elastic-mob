@@ -15,12 +15,12 @@ The claimed "Repository/Shipment pattern violations" in wispera_components **do 
 
 ## **Violations Analysis Results**
 
-### **1. SetupRepository: ✅ COMPLIANT**
-**Claimed Issue**: Custom `createSetup()` method bypassing framework patterns  
+### **1. GameRepository: ✅ COMPLIANT**
+**Claimed Issue**: Custom `createGame()` method bypassing framework patterns  
 **Reality**: No such method exists. Repository properly implements:
 - Standard `create()` method with validation
 - Correct `resourceWith()` parameter mapping  
-- Legitimate domain-specific extensions (`getSetupWithContext`, `getSetupsWithStats`)
+- Legitimate domain-specific extensions (`getGameWithContext`, `getGamesWithStats`)
 
 ### **2. Shipment Patterns: ✅ PROPERLY IMPLEMENTED**
 **Claimed Issue**: Widgets extracting repositories instead of using Shipment methods  
@@ -28,8 +28,8 @@ The claimed "Repository/Shipment pattern violations" in wispera_components **do 
 - Repository casting (`repository as TypedRepository`) is established framework pattern
 - Used for accessing domain-specific methods in widgets
 
-### **3. Setup Component Widgets: ✅ COMPLETE**
-**Claimed Issue**: Missing Setup component widgets directory  
+### **3. Game Component Widgets: ✅ COMPLETE**
+**Claimed Issue**: Missing Game component widgets directory  
 **Reality**: Complete widget set exists:
 ```
 projects/widgets/

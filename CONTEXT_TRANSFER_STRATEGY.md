@@ -1,4 +1,4 @@
-# Context Transfer Strategy: Anthro Super-Setup Knowledge Reactivation
+# Context Transfer Strategy: Anthro Super-Game Knowledge Reactivation
 
 ## **Purpose**
 Systematic strategy for transferring comprehensive understanding of the anthro super-project into fresh AI assistant contexts, enabling effective collaboration across multiple chat sessions.
@@ -23,7 +23,7 @@ Transfer comprehensive understanding of:
 #### **Folder Attachment Protocol**
 Always attach these folders in order of priority:
 ```
-1. /Users/markratjens/Development/anthro/mobsta-specs
+1. /Users/markratjens/Development/anthro/elastic-mob
 2. /Users/markratjens/Development/anthro/elastic-mob  
 3. /Users/markratjens/Development/anthro (root for workspace overview)
 ```
@@ -44,10 +44,10 @@ Key Context: 8-repo anthro super-project building conversational programming pla
 - wispera_framework: UI framework (✅ mature)
 - wispera_components: Business logic (🔧 has violations)
 - elastic-mob: Specifications (✅ mature/ongoing)
-- mobsta-specs: AI definitions (✅ mature)
+- elastic-mob: AI definitions (✅ mature)
 
 Current focus: Building mobsta app as thin orchestration layer over components.
-Reference: elastic-mob/ANTHRO_CONTEXT_BRIEFING.md for complete overview.
+Reference: wispera-mobsta/README.md for current implementation status.
 Reference: wispera-mobsta/ARCHITECTURE_REFERENCE.md for established patterns.
 ```
 
@@ -56,7 +56,7 @@ Reference: wispera-mobsta/ARCHITECTURE_REFERENCE.md for established patterns.
 ### **Tier 2: Comprehensive Context Briefing (5 minutes)**
 
 #### **Primary Reference Document**
-**Location**: `/Users/markratjens/Development/anthro/elastic-mob/ANTHRO_CONTEXT_BRIEFING.md`
+**Location**: `/Users/markratjens/Development/anthro/wispera-mobsta/README.md`
 
 **Contains**:
 - Complete repository overview with current status
@@ -107,7 +107,7 @@ Reference: wispera-mobsta/ARCHITECTURE_REFERENCE.md for established patterns.
 **Duration**: 30 seconds
 **Method**: Tier 1 Instant Activation
 **Steps**:
-1. Attach 3 key folders (mobsta-specs, elastic-mob, anthro root)
+1. Attach 3 key folders (elastic-mob, elastic-mob, anthro root)
 2. Use instant activation command
 3. Reference memory IDs for immediate context
 4. Proceed with specific question/task
@@ -117,7 +117,7 @@ Reference: wispera-mobsta/ARCHITECTURE_REFERENCE.md for established patterns.
 **Method**: Tier 1 + Tier 2 Briefing
 **Steps**:
 1. Use Tier 1 for immediate activation
-2. Reference ANTHRO_CONTEXT_BRIEFING.md for complete overview
+2. Reference wispera-mobsta/README.md for current implementation status
 3. Consult ARCHITECTURE_REFERENCE.md for current patterns
 4. Verify understanding against actual codebase
 5. Proceed with development work
@@ -136,7 +136,7 @@ Reference: wispera-mobsta/ARCHITECTURE_REFERENCE.md for established patterns.
 **Duration**: 30+ minutes
 **Method**: Complete documentation review
 **Steps**:
-1. Start with ANTHRO_CONTEXT_BRIEFING.md
+1. Start with wispera-mobsta/README.md
 2. Review elastic-mob/README.md for system overview
 3. Examine ARCHITECTURE_REFERENCE.md for patterns
 4. Study framework documentation in wispera-flutter
@@ -155,7 +155,7 @@ Reference: wispera-mobsta/ARCHITECTURE_REFERENCE.md for established patterns.
 - Integration milestones reached
 
 **Update Process**:
-1. Update ANTHRO_CONTEXT_BRIEFING.md with new information
+1. Update wispera-mobsta/README.md with new information
 2. Revise instant activation command if needed
 3. Update memory content using update_memory tool
 4. Test activation strategy with fresh context
@@ -200,12 +200,12 @@ Reference: wispera-mobsta/ARCHITECTURE_REFERENCE.md for established patterns.
 
 ### **Emergency Activation (Minimal Context)**
 ```
-Memory ID 7663956 + attach mobsta-specs folder
+Memory ID 7663956 + attach elastic-mob folder
 ```
 
 ### **Standard Activation (Balanced)**
 ```
-Tier 1 command + elastic-mob/ANTHRO_CONTEXT_BRIEFING.md
+Tier 1 command + wispera-mobsta/README.md
 ```
 
 ### **Deep Activation (Comprehensive)**
@@ -214,11 +214,9 @@ Full Tier 1 + 2 + ARCHITECTURE_REFERENCE.md + codebase verification
 ```
 
 ### **Key File Locations**
-- **Context Briefing**: `elastic-mob/ANTHRO_CONTEXT_BRIEFING.md`
+- **Current Implementation**: `wispera-mobsta/README.md`
 - **Architecture Patterns**: `wispera-mobsta/ARCHITECTURE_REFERENCE.md`
 - **System Overview**: `elastic-mob/README.md`
-- **Implementation Status**: `elastic-mob/SYSTEM_STATUS_AND_CRITICAL_PATH.md`
-- **HEXACO Reference**: `mobsta-specs/HEXACO_MOBSTA_BREAKTHROUGH_REFERENCE.md`
 
 ---
 

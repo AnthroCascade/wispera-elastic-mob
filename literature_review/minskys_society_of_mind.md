@@ -24,7 +24,7 @@
 ### **1. Agent Specialization**
 - **Principle**: Each agent has a specific function and domain of expertise
 - **Implication**: No single agent possesses complete intelligence
-- **Elastic-Mob Application**: Skill blocks as specialized agents with domain-specific expertise
+- **Elastic-Mob Application**: Talents as specialized agents with domain-specific expertise
 
 ### **2. Emergent Coordination**
 - **Principle**: Complex behaviors arise from agent interaction, not top-down orchestration
@@ -59,7 +59,7 @@ The elastic-mob architecture is inspired by Minsky's core principles, with pract
 - **Agent Specialization**: 37 specialized talents covering all development domains
 - **Coordinated Behavior**: Stakeholder coordination through game-theoretic interactions
 - **Distributed Intelligence**: System intelligence distributed across talents and mobstas
-- **Context-Driven Activation**: Skill block activation through semantic resonance and pattern matching
+- **Context-Driven Activation**: Talent activation through semantic resonance and pattern matching
 
 ---
 

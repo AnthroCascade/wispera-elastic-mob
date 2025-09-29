@@ -116,7 +116,7 @@ Elastic-mob is grounded in well-established theoretical frameworks:
 
 ### **Phase 1: Semantic Resonance Core**
 - Pattern matching and relevance scoring implementation
-- Skill block activation based on conversation content
+- Talent activation based on conversation content
 - Emergent participation framework validation
 
 ### **Phase 2: WebSocket Layer**

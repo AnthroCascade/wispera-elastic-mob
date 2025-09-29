@@ -74,7 +74,7 @@ This literature review establishes elastic-mob as a valid and significant resear
 
 **Relevance to Elastic-Mob**:
 - System architecture follows holonic principles (every component is both system and object)
-- Skill block activation uses recursive investigation of conversation context
+- Talent activation uses recursive investigation of conversation context
 - Pattern recognition emphasizes authentic domain patterns over simplified abstractions
 - Semantic resonance can be formally expressed through behavioral contracts
 
@@ -226,7 +226,7 @@ This literature review establishes elastic-mob as a valid and significant resear
 
 **Phase 1**: Semantic resonance core implementation with static runtime approach
 - Pattern matching and relevance scoring
-- Skill block activation based on conversation content
+- Talent activation based on conversation content
 - Emergent participation framework validation
 
 **Phase 2**: WebSocket layer and real-time communication

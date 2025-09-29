@@ -49,7 +49,7 @@
   - Architecture docs, implementation guides, HEXACO insights
   - References syndicate repositories as authoritative source for forte/talent definitions
 
-- **mobsta-specs**: Ruby gem with AI agent specifications
+- **elastic-mob**: AI agent specifications and definitions
   - Markdown-based mobsta and talent definitions
   - Flexible configuration, integrates with in-concert
 
@@ -206,7 +206,7 @@ components/[name]/
 
 When starting new chat:
 - [ ] Apply HEXACO behavioral optimization
-- [ ] Attach key folders (mobsta-specs, elastic-mob, anthro root)
+- [ ] Attach key folders (elastic-mob, elastic-mob, anthro root)
 - [ ] Reference this briefing document
 - [ ] Consult ARCHITECTURE_REFERENCE.md for current patterns
 - [ ] Verify understanding against actual codebase

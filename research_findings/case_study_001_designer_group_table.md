@@ -15,13 +15,13 @@
 - **Domain Expertise**: Product design, UX, native app design, startup experience
 - **Previous Experience**: Silicon Valley startup, worked with ML engineers but couldn't collaborate effectively
 
-### **Setup Context**
-- **Setup**: Group Table - AI/ML app for helping groups decide where to eat
+### **Game Context**
+- **Game**: Group Table - AI/ML app for helping groups decide where to eat
 - **Motivation**: Wanted to work in AI space, couldn't find engineering partners, decided to go solo
 - **Timeline**: August 2023 - August 2024 (1 year)
 - **Launch Status**: Successfully launched beta version
 
-## **Setup Details**
+## **Game Details**
 
 ### **What They Built**
 - **Application Type**: Full-stack AI/ML application with social features

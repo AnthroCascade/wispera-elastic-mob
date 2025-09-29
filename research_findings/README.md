@@ -41,7 +41,7 @@ Each case study follows a consistent structure:
 ## **User Profile**
 - Professional background, technical limitations, domain expertise
 
-## **Setup Details**
+## **Game Details**
 - What they built, complexity, timeline, tools used
 
 ## **Process Description**

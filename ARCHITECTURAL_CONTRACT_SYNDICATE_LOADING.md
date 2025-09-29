@@ -148,7 +148,7 @@ end
 ```ruby
 module ElasticMob
   class Game < ApplicationRecord
-    include SetupLifecycle
+    include GameLifecycle
     
     after_create :ensure_mobstas  # ✅ Canon pattern
     
@@ -208,11 +208,11 @@ end
 ### **Game Dependencies Protected:**
 ```ruby
 def can_be_unloaded?
-  setups.empty?  # ✅ Already implemented correctly
+  games.empty?  # ✅ Already implemented correctly
 end
 
 def can_deprecate_forte?(forte)
-  forte.mobstas.joins(:setup).where(setups: { status: 'active' }).empty?
+  forte.mobstas.joins(:game).where(games: { status: 'active' }).empty?
 end
 ```
 
@@ -231,7 +231,7 @@ end
 - Safe for concurrent access
 
 ### **3. Backward Compatibility**
-- Existing setups continue to work
+- Existing games continue to work
 - Deprecated fortes remain available
 - Graceful degradation
 

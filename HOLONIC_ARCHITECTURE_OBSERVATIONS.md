@@ -74,4 +74,4 @@ widgets/
 ### **Conclusion**
 Holonic design is a powerful principle for organizing user-facing concepts, but it breaks down at infrastructure levels where inheritance hierarchies and cross-cutting concerns require some fragmentation. The key is recognizing when you're dealing with user concepts vs. implementation details.
 
-**Reference**: Added to [ANTHRO_CONTEXT_BRIEFING.md](./ANTHRO_CONTEXT_BRIEFING.md) for future context transfer.
+**Reference**: Added to wispera-mobsta documentation for future context transfer.

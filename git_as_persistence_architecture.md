@@ -1,4 +1,4 @@
-# Git as Persistence Architecture for Mobsta Setups
+# Git as Persistence Architecture for Mobsta Games
 
 ## Core Architectural Insight
 
@@ -6,7 +6,7 @@
 
 This symmetry of representation - same medium for input and output - aligns perfectly with how AI processes information and how developers actually work.
 
-## Mobsta Setup State as IDE Workspace
+## Mobsta Game State as IDE Workspace
 
 ### Conceptual Model
 - **Mobsta project state = IDE workspace configuration**

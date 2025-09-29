@@ -3,7 +3,7 @@
 
 **Context Bridge**: Continuing from HEXACO mobsta breakthrough analysis - We demonstrated that AI can dynamically switch HEXACO profiles for superior performance (unlike humans with fixed personalities). Current mobsta system models human constraints rather than leveraging AI behavioral flexibility. Need to architect practical dynamic HEXACO switching system for context-triggered optimal behavioral profiles in mob programming.
 
-**Reference**: [HEXACO_MOBSTA_BREAKTHROUGH_REFERENCE.md](../mobsta-specs/HEXACO_MOBSTA_BREAKTHROUGH_REFERENCE.md)
+**Reference**: Archived HEXACO breakthrough analysis
 
 ---
 
@@ -122,7 +122,7 @@ From breakthrough analysis, HEXACO-aware behavioral switching demonstrated:
 **Examine existing mobsta specifications for behavioral patterns:**
 
 ```
-Target: 32 mobsta specifications in /mobsta-specs/mobstas/
+Target: 32 mobsta specifications in in-concert repository
 Focus: Identify existing behavioral guidance and HEXACO implications
 Output: HEXACO profile mapping for each mobsta type
 ```
@@ -137,7 +137,7 @@ Output: HEXACO profile mapping for each mobsta type
 **Map 70 talents to optimal HEXACO combinations:**
 
 ```
-Target: 70 talents in /mobsta-specs/skill_blocks/
+Target: 70 talents in in-concert repository
 Focus: Determine optimal behavioral profiles for each technical domain
 Output: Context-sensitive HEXACO switching logic
 ```

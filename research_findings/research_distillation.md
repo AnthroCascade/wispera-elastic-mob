@@ -8,7 +8,7 @@ This document synthesizes insights from all case studies in the research finding
 
 ### **Case Study 001: Designer Building AI/ML App with LLMs**
 - **User Type**: Product Designer with domain expertise, no technical background
-- **Setup**: Complex AI/ML application with social features
+- **Game**: Complex AI/ML application with social features
 - **Success**: Launched beta version in under 1 year
 - **Key Insight**: "You provide the vision, the LLM provides the code"
 
@@ -187,7 +187,7 @@ This document synthesizes insights from all case studies in the research finding
 - **Process Optimization**: How effectively the system improves development workflows
 
 ### **Outcome Metrics**
-- **Setup Success Rate**: How often users successfully complete their projects
+- **Game Success Rate**: How often users successfully complete their projects
 - **Quality Improvement**: How much user projects improve in quality over time
 - **Learning Acceleration**: How quickly users progress through development phases
 - **User Satisfaction**: How satisfied users are with the elastic-mob experience
@@ -201,10 +201,10 @@ This document synthesizes insights from all case studies in the research finding
 - **Performance Optimization**: How users approach performance and scalability concerns
 
 ### **Future Research Priorities**
-- **Multi-User Setups**: How teams of non-technical users collaborate on development
+- **Multi-User Games**: How teams of non-technical users collaborate on development
 - **Advanced AI Integration**: How users work with multiple AI tools and systems
 - **Industry-Specific Patterns**: How these approaches vary across different industries
-- **Long-term Setup Management**: How users maintain quality over extended development cycles
+- **Long-term Game Management**: How users maintain quality over extended development cycles
 
 ## **Conclusion**
 

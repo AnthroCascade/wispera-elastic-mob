@@ -4,7 +4,7 @@
 
 **Context**: Through systematic HEXACO behavioral analysis, we discovered that AI can dynamically optimize behavioral profiles for superior performance. This protocol ensures continuity of enhanced performance across multiple chat sessions.
 
-**Reference**: [HEXACO_MOBSTA_BREAKTHROUGH_REFERENCE.md](../mobsta-specs/HEXACO_MOBSTA_BREAKTHROUGH_REFERENCE.md)
+**Reference**: Archived HEXACO breakthrough analysis
 **Memory Reference**: Memory ID 7653697 (HEXACO behavioral pattern analysis)
 
 ---
@@ -35,7 +35,7 @@
 **1. Attach Relevant Context**
 ```
 Attach folders:
-- /Users/markratjens/Development/anthro/mobsta-specs
+- /Users/markratjens/Development/anthro/elastic-mob
 - /Users/markratjens/Development/anthro/elastic-mob
 ```
 

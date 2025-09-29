@@ -7,7 +7,7 @@ During the research and planning phase of elastic-mob development, a significant
 ## **The Theory: Semantic Resonance and Emergent Participation**
 
 ### **Intended Behavior (from deeper_architecture.md)**
-- **Skill blocks are summoned by semantic resonance** rather than rigid role assignments
+- **Talents are summoned by semantic resonance** rather than rigid role assignments
 - **No orchestrator decides who should be involved** - the conversation itself summons participants
 - **Multiple talents activate simultaneously** when their domains are touched
 - **Emergent participation** based on conversation content and relevance
@@ -71,7 +71,7 @@ When conversation touches on "user authentication," multiple talents should acti
 ## **Static Runtime Approach**
 
 ### **Key Principles**
-- **No Dynamic Creation**: Skill blocks and mobstas are predefined and static at runtime
+- **No Dynamic Creation**: Talents and mobstas are predefined and static at runtime
 - **Static Activation Patterns**: Semantic patterns are loaded once and used consistently
 - **Static Participation Rules**: Mobsta behavior patterns are predefined and applied uniformly
 - **Iterative Refinement**: Updates happen through design process, not runtime execution
@@ -110,7 +110,7 @@ Before building the elastic-mob engine, we must:
 - [ ] Conversation content naturally activates relevant talents
 - [ ] Multiple talents activate simultaneously when domains overlap
 - [ ] No manual orchestration required for talent selection
-- [ ] Skill block activation correlates with conversation relevance
+- [ ] Talent activation correlates with conversation relevance
 
 ### **Emergent Participation Validation**
 - [ ] Mobstas emerge based on conversation needs, not manual selection

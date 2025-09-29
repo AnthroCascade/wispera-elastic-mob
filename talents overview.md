@@ -2,13 +2,13 @@
 
 ## What Are Talents?
 
-Skill blocks are the fundamental building blocks that define the capabilities and behaviors of mobstas in the elastic-mob system. Each talent represents a specific domain of expertise or capability that can be combined with others to create specialized mobstas.
+Talents are the fundamental building blocks that define the capabilities and behaviors of mobstas in the elastic-mob system. Each talent represents a specific domain of expertise or capability that can be combined with others to create specialized mobstas.
 
 ## Current Talents
 
-The complete, detailed definitions of all talents are now maintained in the **in-concert repository** under `app/services/elastic_mob/definitions/skill_blocks/`.
+The complete, detailed definitions of all talents are now maintained in the **in-concert repository** under `app/services/elastic_mob/definitions/talents/`.
 
-**📋 [Talent Template](templates/skill%20block.md)** - Template for creating new talent specifications
+**📋 [Talent Template](templates/talent.md)** - Template for creating new talent specifications
 
 ### Core Development Skills
 - **Frontend Development** - Client-side development, UI components, user interface implementation, responsive design, design system integration, plain JavaScript + Web Components preferred
@@ -80,11 +80,11 @@ The complete, detailed definitions of all talents are now maintained in the **in
 - **Agreement Recognition** - Consensus building, agreement detection, conflict resolution
 - **Generation Triggering** - Code generation initiation, generation control, generation management
 - **Context Translation** - Context adaptation, requirement translation, domain mapping
-- **Semantic Resonance** - Skill block activation through conversation content analysis
+- **Semantic Resonance** - Talent activation through conversation content analysis
 
 ## Important Notes
 
-- **Skill blocks are composable** - Multiple talents can be combined to create specialized Mobstas
+- **Talents are composable** - Multiple talents can be combined to create specialized Mobstas
 - **Single source of truth** - Detailed definitions are maintained in the in-concert repository
 - **Pattern recognition** - Several talents include pattern recognition capabilities for specification guidance and quality drift prevention
 - **Static Runtime Approach** - All talents use predefined activation patterns for semantic resonance
@@ -97,4 +97,4 @@ The complete, detailed definitions of all talents are now maintained in the **in
 
 ## For Detailed Definitions
 
-See the in-concert repository at `app/services/elastic_mob/definitions/skill_blocks/` for complete specifications of each talent.
+See the in-concert repository at `app/services/elastic_mob/definitions/talents/` for complete specifications of each talent.

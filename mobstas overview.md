@@ -16,7 +16,7 @@ Talents → Fortes → Mobstas
 
 ## Current Mobstas
 
-The complete, detailed definitions of all mobstas are maintained in syndicate repositories. See the **[Software Development Syndicate](https://github.com/AnthroCascade/software-development-syndicate)** for a comprehensive example.
+The complete, detailed definitions of all mobstas are now maintained in the **in-concert repository** under `app/services/elastic_mob/definitions/mobstas/`.
 
 ### Explicitly Named Roles
 - **Domain Expert** - Subject matter expertise in specific domains
@@ -62,4 +62,4 @@ All Mobstas now include **emergent participation patterns** for semantic resonan
 
 ## For Detailed Definitions
 
-See syndicate repositories for complete specifications. The **[Software Development Syndicate](https://github.com/AnthroCascade/software-development-syndicate)** provides comprehensive examples and templates for creating new forte and talent definitions.
+See the in-concert repository at `app/services/elastic_mob/definitions/mobstas/` for complete specifications of each mobsta.

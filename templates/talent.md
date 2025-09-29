@@ -20,7 +20,7 @@
 
 ### AI Prompting Capabilities
 **Prompt Strategies**: How to effectively communicate with underlying Gen AI systems  
-**Domain-Specific Prompting**: Special techniques for this skill area  
+**Domain-Specific Prompting**: Special techniques for this talent area  
 **Quality Recognition**: How to evaluate AI outputs in this domain
 
 ### Practical Notes

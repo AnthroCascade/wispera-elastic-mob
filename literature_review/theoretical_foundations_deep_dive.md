@@ -80,7 +80,7 @@ This document provides a comprehensive deep dive into the theoretical foundation
 
 **Relevance to Elastic-Mob**:
 - Semantic resonance measured through information-theoretic similarity
-- Skill block activation based on semantic distance to conversation content
+- Talent activation based on semantic distance to conversation content
 - Relevance scoring quantifies semantic alignment
 
 **Mathematical Validation**: Semantic resonance can be mathematically quantified using information-theoretic measures of semantic similarity.
@@ -129,7 +129,7 @@ This document provides a comprehensive deep dive into the theoretical foundation
 - No abstract, disembodied knowledge representation
 
 **Relevance to Elastic-Mob**:
-- Skill block activation situated in conversation context
+- Talent activation situated in conversation context
 - No abstract, context-independent activation rules
 - Understanding emerges from situated interaction
 
@@ -152,7 +152,7 @@ This document provides a comprehensive deep dive into the theoretical foundation
 - Natural emergence of coordinated behavior patterns
 
 **Relevance to Elastic-Mob**:
-- Skill blocks function as specialized schemas
+- Talents function as specialized schemas
 - Semantic resonance activates relevant schemas
 - Coordination emerges from schema interaction
 

@@ -7,11 +7,11 @@ Beyond the talent composition, a mobsta would need:
 **Core Mission**: The overarching purpose this mobsta serves in the development conversation  
 **Perspective Lens**: The unique viewpoint this mobsta brings to discussions
 
-### Skill-Block Composition
-**Primary Skills**: Core talents that define this mobsta's expertise  
-**Secondary Skills**: Supporting talents for broader context  
-**Skill Adaptations**: Specific overrides, reinforcements, or biases applied to talents  
-(e.g., "Database skills with strong preference for ACID compliance")
+### Talent Composition
+**Primary Talents**: Core talents that define this mobsta's expertise  
+**Secondary Talents**: Supporting talents for broader context  
+**Talent Adaptations**: Specific overrides, reinforcements, or biases applied to talents  
+(e.g., "Database talents with strong preference for ACID compliance")
 
 ### Game Configuration
 **Primary Game**: The main optimization game this mobsta plays  

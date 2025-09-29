@@ -1,4 +1,4 @@
-# Setup Creation Architecture Questions
+# Game Creation Architecture Questions
 
 ## Context
 
@@ -21,8 +21,8 @@ After cleaning up artificial complexity around "project types", we now have a cl
 
 ## Architecture Decisions & Answers
 
-### 1. Setup Types & Scaffolding ✅ RESOLVED
-**Setup type is arbitrary and determined case-by-case in tech stack declarations**
+### 1. Game Types & Scaffolding ✅ RESOLVED
+**Game type is arbitrary and determined case-by-case in tech stack declarations**
 - No predetermined project types or rigid templates
 - Technology stack specified in `tech_stack` array drives scaffolding decisions
 - Could be Flutter, Rails, Node.js, Python, or any combination
@@ -51,7 +51,7 @@ After cleaning up artificial complexity around "project types", we now have a cl
 ### 5. Development Environment Integration ❓ NEEDS CLARIFICATION
 **How does project creation establish the development environment?**
 - Integration with development terminal panels?
-- Setup context panel initialization?
+- Game context panel initialization?
 - IDE layout and workspace setup?
 
 ## Remaining Open Questions
@@ -62,7 +62,7 @@ After cleaning up artificial complexity around "project types", we now have a cl
    - How granular should tech stack detection be?
 
 2. **How does project creation integrate with mobsta development interface?**
-   - Setup context panel initialization and setup
+   - Game context panel initialization and setup
    - Development terminal panel integration
    - IDE layout and workspace configuration
 
@@ -75,9 +75,3 @@ Based on resolved architecture decisions:
 2. **Git integration completion** - finish repository initialization with proper initial commits
 3. **Mobsta interface integration** - connect project creation to development panels
 4. **AI collaboration optimization** - ensure project structure supports AI code generation
-
-### Implementation Approach
-- **Flexible scaffolding system** that reads `tech_stack` and creates appropriate structure
-- **No rigid templates** - dynamic generation based on technology requirements
-- **Rails server mediated integration** with wispera ecosystem when needed
-- **Case-by-case project setup** driven by specifications rather than predetermined types

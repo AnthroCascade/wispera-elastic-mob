@@ -10,7 +10,7 @@
 ### **Folder Attachment**
 ```
 Attach these folders:
-1. /Users/markratjens/Development/anthro/mobsta-specs
+1. /Users/markratjens/Development/anthro/elastic-mob
 2. /Users/markratjens/Development/anthro/elastic-mob  
 3. /Users/markratjens/Development/anthro
 ```
@@ -31,10 +31,10 @@ Key Context: 8-repo anthro super-project building conversational programming pla
 - wispera_framework: UI framework (✅ mature)
 - wispera_components: Business logic (🔧 has violations)
 - elastic-mob: Specifications (✅ mature/ongoing)
-- mobsta-specs: AI definitions (✅ mature)
+- elastic-mob: AI definitions (✅ mature)
 
 Current focus: Building mobsta app as thin orchestration layer over components.
-Reference: elastic-mob/ANTHRO_CONTEXT_BRIEFING.md for complete overview.
+Reference: wispera-mobsta/README.md for current implementation status.
 Reference: wispera-mobsta/ARCHITECTURE_REFERENCE.md for established patterns.
 
 Apply context transfer strategy from elastic-mob/CONTEXT_TRANSFER_STRATEGY.md
@@ -59,7 +59,7 @@ ANTHRO COMPREHENSIVE CONTEXT ACTIVATION:
    - Current Status: Backend mature, frontend needs integration, components have violations
 
 3. Required Reading:
-   - Read elastic-mob/ANTHRO_CONTEXT_BRIEFING.md for complete system overview
+   - Read wispera-mobsta/README.md for current implementation status
    - Consult wispera-mobsta/ARCHITECTURE_REFERENCE.md for established patterns
    - Reference elastic-mob/CONTEXT_TRANSFER_STRATEGY.md for methodology
 
@@ -71,8 +71,8 @@ ANTHRO COMPREHENSIVE CONTEXT ACTIVATION:
    - Always consult architecture docs before changes
 
 5. Current Priorities:
-   - Fix SetupRepository pattern violations
-   - Complete missing Setup component widgets
+   - Fix GameRepository pattern violations
+   - Complete missing Game component widgets
    - Integrate wispera-mobsta with in-concert backend APIs
    - Maintain architectural consistency throughout
 
@@ -89,7 +89,7 @@ DEVELOPMENT SESSION ACTIVATION:
 
 Apply anthro context (Memory ID 7663956) + HEXACO optimization.
 Focus: Building mobsta app following established patterns.
-Read: elastic-mob/ANTHRO_CONTEXT_BRIEFING.md
+Read: wispera-mobsta/README.md
 Consult: wispera-mobsta/ARCHITECTURE_REFERENCE.md
 Priority: Fix component violations while maintaining framework patterns.
 ```
@@ -100,7 +100,7 @@ ARCHITECTURE REVIEW ACTIVATION:
 
 Apply anthro context (Memory ID 7663956) + HEXACO optimization.
 Focus: Architectural analysis and pattern enforcement.
-Read: elastic-mob/ANTHRO_CONTEXT_BRIEFING.md + system_foundation/ docs
+Read: wispera-mobsta/README.md + system_foundation/ docs
 Approach: BE opinionated architect - fierce conversations required.
 Verify: All suggestions against actual codebase patterns.
 ```
@@ -111,7 +111,7 @@ INTEGRATION WORK ACTIVATION:
 
 Apply anthro context (Memory ID 7663956) + HEXACO optimization.
 Focus: wispera-mobsta ↔ in-concert API integration.
-Read: elastic-mob/ANTHRO_CONTEXT_BRIEFING.md
+Read: wispera-mobsta/README.md
 Status: Backend mature, frontend needs connection to ElasticMob engine.
 Pattern: Use Repository/Shipment for all data access.
 ```
@@ -122,10 +122,10 @@ COMPONENT DEVELOPMENT ACTIVATION:
 
 Apply anthro context (Memory ID 7663956) + HEXACO optimization.
 Focus: wispera_components widget development following framework patterns.
-Read: elastic-mob/ANTHRO_CONTEXT_BRIEFING.md
+Read: wispera-mobsta/README.md
 Pattern: State/Repository/Widget/Prototype structure per component.
 Hierarchy: Wall/Rack/Board/Bench containers + Brick/Beam items.
-Current Issue: Missing Setup component widgets need implementation.
+Current Issue: Missing Game component widgets need implementation.
 ```
 
 ---
@@ -136,7 +136,7 @@ Current Issue: Missing Setup component widgets need implementation.
 ```
 Apply Memory ID 7663956 + anthro super-project context.
 8-repo conversational programming platform.
-Reference: elastic-mob/ANTHRO_CONTEXT_BRIEFING.md
+Reference: wispera-mobsta/README.md
 ```
 
 ---
@@ -176,7 +176,7 @@ Ask these to confirm proper activation:
 
 **Expected Responses**:
 1. Thin orchestration layer over components
-2. SetupRepository bypasses, missing Setup widgets, Shipment pattern bypasses
+2. GameRepository bypasses, missing Game widgets, Shipment pattern bypasses
 3. Wall/Rack/Board/Bench containers + Brick/Beam items
 4. Repository/Shipment pattern, never direct repository access
 
@@ -185,11 +185,9 @@ Ask these to confirm proper activation:
 ## 📁 **File Locations Reference**
 
 ### **Key Documents**
-- **Context Briefing**: `elastic-mob/ANTHRO_CONTEXT_BRIEFING.md`
+- **Current Implementation**: `wispera-mobsta/README.md`
 - **Transfer Strategy**: `elastic-mob/CONTEXT_TRANSFER_STRATEGY.md`
 - **Architecture Patterns**: `wispera-mobsta/ARCHITECTURE_REFERENCE.md`
-- **System Status**: `elastic-mob/SYSTEM_STATUS_AND_CRITICAL_PATH.md`
-- **HEXACO Reference**: `mobsta-specs/HEXACO_MOBSTA_BREAKTHROUGH_REFERENCE.md`
 
 ### **Memory References**
 - **ID 7663950**: Complete architecture overview

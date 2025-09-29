@@ -1,6 +1,6 @@
-# SSH Setup Guide for Private GitHub Repositories
+# SSH Game Guide for Private GitHub Repositories
 
-## **Quick Setup for Developers**
+## **Quick Game for Developers**
 
 ### **1. Generate SSH Key (if you don't have one)**
 ```bash
@@ -71,7 +71,7 @@ ssh-add ~/.ssh/id_ed25519
 - Verify your GitHub account is linked
 - Check organization visibility settings
 
-## **CI/CD Setup**
+## **CI/CD Game**
 
 ### **For Build Systems**
 - Add SSH deploy key to each repository

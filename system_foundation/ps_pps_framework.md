@@ -37,7 +37,7 @@ The **PS-PPS Framework** (Purpose, Scope, Participations, Patterns, Semantics) i
 
 **P - Participations**: Holon composition at appropriate level
 - Packages, classes, mixins, functions
-- Skill blocks, mobstas, semantic resonance
+- Talents, mobstas, semantic resonance
 - Appropriate to exploration level
 
 **P - Patterns**: Recognition of authentic patterns

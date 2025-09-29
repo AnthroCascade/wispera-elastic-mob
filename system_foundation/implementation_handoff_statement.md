@@ -9,7 +9,7 @@ This document serves as the critical hand-off between the research/planning phas
 ## **Critical Implementation Gap Identified**
 
 ### **Theory vs. Reality**
-- **Intended Behavior**: Skill blocks summoned by semantic resonance, emergent participation, no manual orchestration
+- **Intended Behavior**: Talents summoned by semantic resonance, emergent participation, no manual orchestration
 - **Actual Behavior**: Manual mobsta activation, go-to patterns, ritualistic behavior, top-down orchestration
 - **Impact**: System cannot be built until this gap is resolved
 
@@ -22,7 +22,7 @@ This document serves as the critical hand-off between the research/planning phas
 ## **Required Implementation Approach: Static Runtime with Iterative Refinement**
 
 ### **Key Principles**
-- **No Dynamic Creation**: Skill blocks and mobstas are predefined and static at runtime
+- **No Dynamic Creation**: Talents and mobstas are predefined and static at runtime
 - **Static Activation Patterns**: Semantic patterns are loaded once and used consistently
 - **Static Participation Rules**: Mobsta behavior patterns are predefined and applied uniformly
 - **Iterative Refinement**: Updates happen through design process, not runtime execution
@@ -110,7 +110,7 @@ All mobstas now include:
 
 ### **Phase 3: Autonomous Agent Process (Depends on Phase 1)**
 - Agent coordination logic
-- Skill block activation integration
+- Talent activation integration
 - LLM service integration
 - Git operations integration
 
@@ -120,7 +120,7 @@ All mobstas now include:
 - [ ] Conversation content naturally activates relevant talents
 - [ ] Multiple talents activate simultaneously when domains overlap
 - [ ] No manual orchestration required for talent selection
-- [ ] Skill block activation correlates with conversation relevance
+- [ ] Talent activation correlates with conversation relevance
 
 ### **Emergent Participation Validation**
 - [ ] Mobstas emerge based on conversation needs, not manual selection
@@ -181,7 +181,7 @@ All mobstas now include:
 ## **Hand-Off Readiness Assessment**
 
 ### **Foundation Status: ✅ READY**
-- **Skill blocks**: Enhanced with semantic activation patterns
+- **Talents**: Enhanced with semantic activation patterns
 - **Mobstas**: Enhanced with emergent participation patterns
 - **Architecture**: Static runtime approach defined
 - **Implementation plan**: Phases and priorities established

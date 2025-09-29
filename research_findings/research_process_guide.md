@@ -136,7 +136,7 @@ This guide provides practical steps for conducting research into non-technical u
 - Technical Background: [Programming experience level]
 - Domain Expertise: [Business/industry knowledge]
 
-**Setup Details**:
+**Game Details**:
 - What They Built: [Description of the software]
 - Complexity Level: [Simple/Moderate/Complex]
 - Timeline: [How long it took]
@@ -157,7 +157,7 @@ This guide provides practical steps for conducting research into non-technical u
 
 ### **Failure Analysis Template**
 ```
-**Setup Context**:
+**Game Context**:
 - What They Were Building: [Description]
 - User Experience Level: [Novice/Intermediate/Advanced]
 - Tools Attempted: [What they tried to use]

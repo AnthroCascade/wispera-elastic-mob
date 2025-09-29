@@ -40,7 +40,7 @@ Build a complete, navigable prototype of a micro-SaaS application called "Though
 3. **Dashboard** (post-login)
    - Welcome message with quick stats (e.g., "5 pieces repurposed this week")
    - Recent projects grid/list
-   - Quick action buttons: "New Setup", "Templates", "Analytics"
+   - Quick action buttons: "New Game", "Templates", "Analytics"
    - Usage meter showing plan limits
 
 4. **Content Input Page**
@@ -228,7 +228,7 @@ By following these specifications, the application should achieve a consistent, 
 
 Build a complete, navigable prototype of "ThoughtStream" - a B2B thought-leadership content repurposing tool using the Wispera design system with React and Tailwind CSS.
 
-### Visual Design System Setup:
+### Visual Design System Game:
 
 First, configure Tailwind with the Wispera color palette:
 
@@ -365,7 +365,7 @@ This prompt combines the ThoughtStream functionality with the Wispera visual des
 
 Build a complete, navigable prototype of "FridgeChef" - an AI-powered recipe generation platform that helps users create meals from ingredients they already have, using the Wispera design system with React and Tailwind CSS.
 
-### Visual Design System Setup:
+### Visual Design System Game:
 
 Use the same Tailwind configuration with Wispera color palette as previously defined.
 
@@ -548,7 +548,7 @@ This prompt creates a comprehensive FridgeChef application that leverages the sa
 
 Build a complete, navigable prototype of "FridgeChef" - an AI-powered recipe generation platform using the Wispera design system.
 
-### Initial Setup Requirements:
+### Initial Game Requirements:
 
 **1. Install Dependencies:**
 ```bash
@@ -1083,7 +1083,7 @@ Yes, all three components (Header, CTA Section, and Footer) are fully incorporat
 
 Build a complete, navigable prototype of "FridgeChef" - an AI-powered recipe generation platform using the Wispera design system. **IMPORTANT: This must be a fully clickable prototype with NO authentication required and NO backend connections. All data should be dummy/mock data. Users should be able to click through the entire experience as if they were using a real application.**
 
-### Initial Setup Requirements:
+### Initial Game Requirements:
 
 **1. Install Dependencies:**
 ```bash

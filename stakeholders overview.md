@@ -57,7 +57,7 @@ All Mobstas now include **emergent participation patterns** for semantic resonan
 ### Mobsta Structure
 Each mobsta specification includes:
 - **Identity & Purpose** - Core mission and perspective lens
-- **Skill-Block Composition** - Primary and secondary skills with adaptations
+- **Talent Composition** - Primary and secondary talents with adaptations
 - **Game Configuration** - Primary game, weights, conflict resolution, and negotiation patterns
 - **Mob Participation Dynamics** - Engagement thresholds, preferred roles, energy patterns, and collaboration preferences
 - **Communication Characteristics** - Discourse style, assertion confidence, question patterns, and vocabulary tendencies
