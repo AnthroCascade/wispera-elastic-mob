@@ -1,5 +1,5 @@
 ### Core Identity
-**Name & Domain**: What this talent is called and its area of expertise  
+**Title & Domain**: What this talent is called and its area of expertise  
 **Essential Knowledge**: The fundamental concepts, patterns, and principles it understands  
 **Primary Outputs**: What it typically produces (code, documents, analyses, decisions)
 

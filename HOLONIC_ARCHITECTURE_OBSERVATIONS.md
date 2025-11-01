@@ -7,7 +7,6 @@ During refactoring of the wispera_framework widget structure, we encountered the
 ### **The Tension**
 - **Holonic Principle**: Each directory should be a complete, cohesive whole
 - **Practical Reality**: Some behaviors are cross-cutting concerns used by multiple domains
-- **Inheritance Reality**: Classes sharing common ancestry need to be grouped together
 
 ### **Key Insights**
 
