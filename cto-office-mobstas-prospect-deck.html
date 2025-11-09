@@ -1,0 +1,1264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>CTO Office Mobstas - Revenue Engine Transformation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --turquoise: #4DD0E1;
+            --orange: #f97316;
+            --gold: #FFD54F;
+            --purple: #8b5cf6;
+            --dark: #2d3748;
+            --light-turquoise: #B2EBF2;
+            --light-gold: #FFF59D;
+            --gradient-primary: linear-gradient(135deg, #FFD54F 0%, #f97316 50%, #8b5cf6 100%);
+            --gradient-warm: linear-gradient(135deg, #FFD54F 0%, #f97316 100%);
+            --gradient-cool: linear-gradient(135deg, #4DD0E1 0%, #8b5cf6 100%);
+        }
+
+        html, body {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            font-family: 'Montserrat', sans-serif;
+            background: #1a1a1a;
+            color: var(--dark);
+        }
+
+        .presentation-container {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .slide {
+            width: 100%;
+            height: 100%;
+            display: none;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 40px 40px 140px 40px;
+            background: #fefcf7;
+            position: absolute;
+            top: 0;
+            left: 0;
+            overflow-y: auto;
+            overflow-x: hidden;
+        }
+
+        .slide.active {
+            display: flex;
+            animation: fadeIn 0.5s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .slide-content {
+            max-width: 1200px;
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 2rem;
+        }
+
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: clamp(2rem, 6vw, 4rem);
+            font-weight: 900;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: clamp(1.75rem, 4.5vw, 2.75rem);
+            font-weight: 800;
+            margin-bottom: 2rem;
+            color: var(--dark);
+            text-transform: uppercase;
+        }
+
+        h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--orange);
+        }
+
+        h4 {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: var(--dark);
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            font-size: clamp(1.1rem, 2.25vw, 1.5rem);
+            color: #718096;
+            font-weight: 500;
+            margin-bottom: 2rem;
+            line-height: 1.5;
+            font-style: italic;
+        }
+
+        p {
+            font-size: clamp(0.95rem, 1.4vw, 1.1rem);
+            line-height: 1.6;
+            color: #718096;
+            margin-bottom: 1rem;
+        }
+
+        .slide.hero-slide {
+            background: radial-gradient(ellipse at top, var(--light-gold) 0%, #fefcf7 50%);
+        }
+
+        .nav-controls {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            z-index: 9999;
+            background: white;
+            padding: 12px 20px;
+            border-radius: 2rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            border: 3px solid var(--orange);
+        }
+
+        .nav-btn {
+            background: var(--gradient-warm);
+            color: white;
+            border: none;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 24px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .nav-btn:hover:not(:disabled) {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(249, 115, 22, 0.4);
+        }
+
+        .nav-btn:disabled {
+            opacity: 0.3;
+            cursor: not-allowed;
+        }
+
+        .slide-indicator {
+            font-weight: 700;
+            color: var(--dark);
+            padding: 0 15px;
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.75rem;
+            margin-top: 2rem;
+        }
+
+        .card {
+            background: white;
+            padding: 1.75rem;
+            border-radius: 1rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+            border-left: 4px solid var(--orange);
+        }
+
+        .card:nth-child(2) { border-left-color: var(--turquoise); }
+        .card:nth-child(3) { border-left-color: var(--purple); }
+        .card:nth-child(4) { border-left-color: var(--gold); }
+        .card:nth-child(5) { border-left-color: var(--orange); }
+        .card:nth-child(6) { border-left-color: var(--turquoise); }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+        }
+
+        .stat-box {
+            background: linear-gradient(135deg, #fff7ed 0%, #fed7aa 100%);
+            padding: 2rem;
+            border-radius: 1rem;
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .stat-number {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 900;
+            background: var(--gradient-warm);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--dark);
+            margin-top: 0.5rem;
+        }
+
+        .quote-box {
+            background: rgba(139, 92, 246, 0.1);
+            border-left: 4px solid var(--purple);
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            font-style: italic;
+            margin: 1.5rem 0;
+        }
+
+        .quote-box p {
+            color: var(--dark);
+            font-weight: 500;
+            margin: 0;
+        }
+
+        .bullet-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .bullet-list li {
+            padding-left: 1.5rem;
+            position: relative;
+            margin-bottom: 0.75rem;
+            color: #718096;
+            font-size: clamp(0.95rem, 1.4vw, 1.1rem);
+            line-height: 1.6;
+        }
+
+        .bullet-list li:before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: var(--orange);
+            font-weight: bold;
+        }
+
+        .benefit-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .benefit-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 1rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            text-align: center;
+        }
+
+        .cta-button {
+            background: var(--gradient-warm);
+            color: white;
+            border: none;
+            padding: 1rem 2.5rem;
+            font-size: 1.25rem;
+            font-weight: 700;
+            border-radius: 0.75rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 20px rgba(249, 115, 22, 0.3);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 30px rgba(249, 115, 22, 0.4);
+        }
+
+        .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #fef3c7 0%, #fed7aa 100%);
+            padding: 1.5rem;
+            border-radius: 1rem;
+            margin-top: 2rem;
+        }
+
+        .highlight-box p {
+            color: var(--dark);
+            font-weight: 600;
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            .two-column {
+                grid-template-columns: 1fr;
+            }
+            
+            .card-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="presentation-container">
+        
+        <!-- Slide 1: Hero/Title -->
+        <div class="slide hero-slide active">
+            <div class="slide-content" style="justify-content: center; text-align: center;">
+                <h1 style="font-size: clamp(2.5rem, 7vw, 5rem); margin-bottom: 2rem;">
+                    Your Revenue Engine<br>Is Constrained By<br>Two Critical Bottlenecks
+                </h1>
+                <p class="subtitle" style="max-width: 900px; margin: 0 auto 3rem;">
+                    Solutions Engineering and Implementation teams are drowning.<br>
+                    Sales pipeline stalls. Customers churn. Revenue suffers.
+                </p>
+                <div style="background: white; padding: 2rem; border-radius: 1rem; box-shadow: 0 8px 30px rgba(0,0,0,0.12); max-width: 600px; margin: 0 auto;">
+                    <h3 style="margin-bottom: 1.5rem; color: var(--dark);">CTO Office Mobstas</h3>
+                    <p style="font-size: 1.2rem; color: var(--dark); margin: 0;">
+                        AI-Powered Teams for Technical Sales & Customer Success
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 2: The Problem -->
+        <div class="slide">
+            <div class="slide-content">
+                <h2>The Capacity Crisis Killing Your Revenue</h2>
+                <p class="subtitle">Your revenue isn't constrained by sales capacity. It's constrained by the teams before and after the sale.</p>
+                
+                <div class="two-column">
+                    <div class="card">
+                        <h3>Pre-Sales: SE Bottleneck</h3>
+                        <div class="stat-box" style="margin-top: 1rem;">
+                            <div class="stat-number">5-8</div>
+                            <div class="stat-label">AEs per SE (Severely Understaffed)</div>
+                        </div>
+                        <ul class="bullet-list">
+                            <li><strong>Each SE</strong> creates the same assets 50+ times (battle cards, solution briefs, architecture diagrams)</li>
+                            <li><strong>Complex deals</strong> require multiple expert perspectives: architecture + security + implementation + ROI</li>
+                            <li><strong>Hiring takes 6+ months</strong> — if you can find qualified candidates at all</li>
+                            <li><strong>SE burnout:</strong> Average tenure 18-24 months</li>
+                        </ul>
+                        <div class="quote-box" style="margin-top: 1.5rem;">
+                            <p>"We have 10 AEs with $1.5M pipeline capacity, but only 2 SEs who can handle 6 deals at once. Result: $500K+ stuck in pipeline every quarter."</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h3>Post-Sales: Implementation Crisis</h3>
+                        <div class="stat-box" style="margin-top: 1rem;">
+                            <div class="stat-number">67%</div>
+                            <div class="stat-label">of SaaS Revenue Lost to Churn</div>
+                        </div>
+                        <ul class="bullet-list">
+                            <li><strong>40-60%</strong> of implementations stall or fail completely</li>
+                            <li><strong>Sales promises</strong> don't match implementation reality — customer trust erodes</li>
+                            <li><strong>Each customer feels</strong> like custom one-off work — nothing is reusable</li>
+                            <li><strong>CS teams</strong> managing 50-200+ customers each, drowning in work</li>
+                        </ul>
+                        <div class="quote-box" style="margin-top: 1.5rem;">
+                            <p>"Incomplete implementations are easy to cancel. We spent $1M to acquire customers, then lose $1.5M to churn because we can't get them live fast enough."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="highlight-box">
+                    <p style="font-size: 1.2rem; text-align: center;">
+                        🚨 These aren't separate problems — they're connected. What SE promises, Implementation must deliver. When either fails, revenue suffers.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 3: The Cost -->
+        <div class="slide">
+            <div class="slide-content">
+                <h2>What This Crisis Actually Costs You</h2>
+                <p class="subtitle">Every quarter, your revenue engine leaks millions because your best people are stuck doing repetitive work instead of strategic work.</p>
+                
+                <div class="card-grid">
+                    <div class="card">
+                        <h3>💸 Direct SE Costs</h3>
+                        <div class="stat-number" style="font-size: 2.5rem; margin: 1rem 0;">$250K+</div>
+                        <p style="color: var(--dark); font-weight: 600; margin-bottom: 1rem;">Per SE Fully-Loaded Cost/Year</p>
+                        <ul class="bullet-list">
+                            <li>6+ months to hire (if you can find them)</li>
+                            <li>12+ months for junior SE to ramp</li>
+                            <li>18-24 month average tenure (burnout)</li>
+                            <li>Each SE reinvents the wheel 50+ times</li>
+                        </ul>
+                    </div>
+
+                    <div class="card">
+                        <h3>📉 Blocked Revenue</h3>
+                        <div class="stat-number" style="font-size: 2.5rem; margin: 1rem 0;">$500K+</div>
+                        <p style="color: var(--dark); font-weight: 600; margin-bottom: 1rem;">Pipeline Stuck Per Quarter</p>
+                        <ul class="bullet-list">
+                            <li>Sales team waiting for SE capacity</li>
+                            <li>Complex deals need solution design</li>
+                            <li>POC builds delayed weeks or months</li>
+                            <li>Competitors close deals faster</li>
+                        </ul>
+                    </div>
+
+                    <div class="card">
+                        <h3>🔥 Churn Losses</h3>
+                        <div class="stat-number" style="font-size: 2.5rem; margin: 1rem 0;">$1.5M+</div>
+                        <p style="color: var(--dark); font-weight: 600; margin-bottom: 1rem;">Annual Revenue Lost (15% churn on $10M ARR)</p>
+                        <ul class="bullet-list">
+                            <li>Incomplete implementations = easy cancellations</li>
+                            <li>8-week implementation → should be 4 weeks</li>
+                            <li>Each prevented churn = $50K-$200K in LTV saved</li>
+                            <li>5-25x cheaper to retain than acquire</li>
+                        </ul>
+                    </div>
+
+                    <div class="card">
+                        <h3>⏰ Time Waste</h3>
+                        <div class="stat-number" style="font-size: 2.5rem; margin: 1rem 0;">750+</div>
+                        <p style="color: var(--dark); font-weight: 600; margin-bottom: 1rem;">Hours Wasted Per SE Per Year</p>
+                        <ul class="bullet-list">
+                            <li>20 hours/week on repetitive asset creation</li>
+                            <li>Could be reduced to 5 hours with reusable assets</li>
+                            <li>15 hours/week × 50 weeks = 750 hours</li>
+                            <li>At $150/hour value = $112K lost productivity</li>
+                        </ul>
+                    </div>
+
+                    <div class="card">
+                        <h3>🚫 Opportunity Cost</h3>
+                        <div class="stat-number" style="font-size: 2.5rem; margin: 1rem 0;">3x</div>
+                        <p style="color: var(--dark); font-weight: 600; margin-bottom: 1rem;">Revenue Capacity You're Missing</p>
+                        <ul class="bullet-list">
+                            <li>Current: 2 SEs support 10 AEs = $1.5M capacity</li>
+                            <li>With proper tools: Same 2 SEs = $4.5M capacity</li>
+                            <li>$3M incremental revenue enabled</li>
+                            <li>Without hiring a single person</li>
+                        </ul>
+                    </div>
+
+                    <div class="card">
+                        <h3>📊 Board Pressure</h3>
+                        <div class="stat-number" style="font-size: 2.5rem; margin: 1rem 0;">85%</div>
+                        <p style="color: var(--dark); font-weight: 600; margin-bottom: 1rem;">Net Revenue Retention (Should Be 110%+)</p>
+                        <ul class="bullet-list">
+                            <li>"Why did we miss revenue targets when pipeline was healthy?"</li>
+                            <li>"Why is churn trending upward?"</li>
+                            <li>Next funding round requires 110%+ NRR</li>
+                            <li>Can't scale if you're filling a leaky bucket</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="highlight-box">
+                    <p style="font-size: 1.3rem; text-align: center;">
+                        <strong>Total Annual Impact:</strong> $3M+ in blocked revenue, lost productivity, and preventable churn
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 4: Why This Happens -->
+        <div class="slide">
+            <div class="slide-content">
+                <h2>Why This Crisis Exists</h2>
+                <p class="subtitle">It's not a people problem. It's a structural problem with how technical work gets done.</p>
+                
+                <div class="card-grid">
+                    <div class="card">
+                        <h3>🎯 Complex Work Requires Multiple Expert Perspectives</h3>
+                        <p><strong>Example: Solution Design for Enterprise Deal</strong></p>
+                        <ul class="bullet-list" style="margin-top: 1rem;">
+                            <li><strong>Architect:</strong> "Here's how to integrate with their Oracle stack"</li>
+                            <li><strong>Security Expert:</strong> "Wait, their CISO will reject that approach"</li>
+                            <li><strong>Implementation Lead:</strong> "That design takes 6 months — here's a 6-week path"</li>
+                            <li><strong>Sales Engineer:</strong> "Frame it this way to justify $500K budget"</li>
+                        </ul>
+                        <p style="margin-top: 1rem; color: var(--dark); font-weight: 600;">One person can't hold all these perspectives simultaneously. But you need all four for a great solution.</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>♻️ Every Customer Feels Like Custom Work</h3>
+                        <p><strong>The Wheel-Reinvention Problem</strong></p>
+                        <ul class="bullet-list" style="margin-top: 1rem;">
+                            <li>SE creates battle card for healthcare vertical → next SE recreates it</li>
+                            <li>Implementation plan for enterprise customer → next customer starts from scratch</li>
+                            <li>Security compliance doc for SOC 2 customer → recreated 10 times</li>
+                            <li>80% of work should be reusable templates, but isn't</li>
+                        </ul>
+                        <p style="margin-top: 1rem; color: var(--dark); font-weight: 600;">Your best people spend 70% of their time on work that's already been done before.</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>🔌 Handoff Failures</h3>
+                        <p><strong>What Sales Promises ≠ What Implementation Delivers</strong></p>
+                        <ul class="bullet-list" style="margin-top: 1rem;">
+                            <li>POC used test data — production needs 5 additional steps</li>
+                            <li>"We'll integrate with Salesforce" — but SE didn't document the approach</li>
+                            <li>Customer expectations set in sales don't match product capabilities</li>
+                            <li>Implementation team discovers gaps 3 weeks into project</li>
+                        </ul>
+                        <p style="margin-top: 1rem; color: var(--dark); font-weight: 600;">Poor handoffs destroy customer trust and make churn inevitable.</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>🧠 Knowledge Lives in People's Heads</h3>
+                        <p><strong>Tribal Knowledge Problem</strong></p>
+                        <ul class="bullet-list" style="margin-top: 1rem;">
+                            <li>Senior SE knows "healthcare customers always need X, Y, Z"</li>
+                            <li>Junior SE discovers this after 3 failed deals</li>
+                            <li>Best practices aren't documented — they're learned through pain</li>
+                            <li>When senior SE leaves, knowledge leaves with them</li>
+                        </ul>
+                        <p style="margin-top: 1rem; color: var(--dark); font-weight: 600;">Junior team members take 12+ months to ramp because there's no institutional knowledge to learn from.</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>⚖️ Scale Requires Sacrificing Quality</h3>
+                        <p><strong>The Impossible Choice</strong></p>
+                        <ul class="bullet-list" style="margin-top: 1rem;">
+                            <li><strong>Option A:</strong> White-glove service for each customer → Can't scale</li>
+                            <li><strong>Option B:</strong> Templates and automation → Feels generic, customers complain</li>
+                            <li><strong>Reality:</strong> You need personalization at scale, but humans can't deliver both</li>
+                        </ul>
+                        <p style="margin-top: 1rem; color: var(--dark); font-weight: 600;">The only way to scale has been to hire more people, but you can't hire fast enough.</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>🔥 Your Best People Are Burning Out</h3>
+                        <p><strong>The Burnout Cycle</strong></p>
+                        <ul class="bullet-list" style="margin-top: 1rem;">
+                            <li>SE spends 60% of time on repetitive work → gets frustrated</li>
+                            <li>CS manager handles 150 customers → can't give anyone real attention</li>
+                            <li>Working nights and weekends → tenure drops to 18-24 months</li>
+                            <li>When they leave, you're back to square one</li>
+                        </ul>
+                        <p style="margin-top: 1rem; color: var(--dark); font-weight: 600;">You're not retaining institutional knowledge because people don't stay long enough.</p>
+                    </div>
+                </div>
+
+                <div class="quote-box" style="margin-top: 2rem;">
+                    <p style="font-size: 1.2rem; text-align: center;">
+                        "We keep hiring, but the work grows faster than the team. By the time someone ramps up, we've already lost 2 people to burnout."
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 5: Traditional Solutions Don't Work -->
+        <div class="slide">
+            <div class="slide-content">
+                <h2>Why Traditional "Solutions" Don't Fix This</h2>
+                <p class="subtitle">You've already tried the obvious answers. They don't work. Here's why.</p>
+                
+                <div class="card-grid">
+                    <div class="card">
+                        <h3>❌ "Just Hire More People"</h3>
+                        <div style="background: rgba(239, 68, 68, 0.1); padding: 1rem; border-radius: 0.5rem; margin: 1rem 0;">
+                            <p style="color: var(--dark); font-weight: 600;">Why It Fails:</p>
+                        </div>
+                        <ul class="bullet-list">
+                            <li><strong>Talent shortage:</strong> 4M+ unfilled tech positions globally</li>
+                            <li><strong>Takes 6+ months</strong> to hire qualified SE or implementation engineer</li>
+                            <li><strong>12+ months</strong> for them to become productive</li>
+                            <li><strong>18-24 month tenure</strong> due to burnout — you're on a hiring treadmill</li>
+                            <li><strong>Cost:</strong> $250K+ per SE, $150K+ per implementation engineer</li>
+                        </ul>
+                        <p style="margin-top: 1rem; color: var(--dark); font-style: italic;">You can't hire fast enough to keep up with growth.</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>❌ "Use ChatGPT / AI Tools"</h3>
+                        <div style="background: rgba(239, 68, 68, 0.1); padding: 1rem; border-radius: 0.5rem; margin: 1rem 0;">
+                            <p style="color: var(--dark); font-weight: 600;">Why It Fails:</p>
+                        </div>
+                        <ul class="bullet-list">
+                            <li><strong>Single perspective:</strong> ChatGPT gives you ONE viewpoint, not a team debate</li>
+                            <li><strong>Generic output:</strong> "Good enough" drafts that still need hours of refinement</li>
+                            <li><strong>Misses critical issues:</strong> Architecture might be sound but security approach is wrong</li>
+                            <li><strong>No validation:</strong> Who checks if the AI's technical recommendations are actually correct?</li>
+                            <li><strong>No context:</strong> Doesn't know your product, customers, or what's worked before</li>
+                        </ul>
+                        <p style="margin-top: 1rem; color: var(--dark); font-style: italic;">Simple tasks? Sure. Complex multi-perspective work? ChatGPT falls short.</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>❌ "Create Templates and Playbooks"</h3>
+                        <div style="background: rgba(239, 68, 68, 0.1); padding: 1rem; border-radius: 0.5rem; margin: 1rem 0;">
+                            <p style="color: var(--dark); font-weight: 600;">Why It Fails:</p>
+                        </div>
+                        <ul class="bullet-list">
+                            <li><strong>Too generic:</strong> Customers complain it feels cookie-cutter</li>
+                            <li><strong>Quickly outdated:</strong> Product changes, templates don't get updated</li>
+                            <li><strong>Nobody uses them:</strong> SEs and CS teams prefer starting from scratch</li>
+                            <li><strong>Still takes hours:</strong> Customizing a template still requires deep expertise</li>
+                            <li><strong>No validation:</strong> Template might be wrong but nobody reviews it</li>
+                        </ul>
+                        <p style="margin-top: 1rem; color: var(--dark); font-style: italic;">Static documents can't replace expert judgment and collaboration.</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>❌ "Offshore or Outsource"</h3>
+                        <div style="background: rgba(239, 68, 68, 0.1); padding: 1rem; border-radius: 0.5rem; margin: 1rem 0;">
+                            <p style="color: var(--dark); font-weight: 600;">Why It Fails:</p>
+                        </div>
+                        <ul class="bullet-list">
+                            <li><strong>Quality suffers:</strong> Offshore teams don't understand your product deeply</li>
+                            <li><strong>Communication gaps:</strong> Time zones, language barriers, cultural differences</li>
+                            <li><strong>Customers notice:</strong> "Why am I talking to someone who doesn't understand my needs?"</li>
+                            <li><strong>Still expensive:</strong> Quality offshore talent costs almost as much as domestic</li>
+                            <li><strong>Training burden:</strong> Constant turnover means constant re-training</li>
+                        </ul>
+                        <p style="margin-top: 1rem; color: var(--dark); font-style: italic;">You traded one problem (capacity) for another (quality).</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>❌ "Reduce Customization"</h3>
+                        <div style="background: rgba(239, 68, 68, 0.1); padding: 1rem; border-radius: 0.5rem; margin: 1rem 0;">
+                            <p style="color: var(--dark); font-weight: 600;">Why It Fails:</p>
+                        </div>
+                        <ul class="bullet-list">
+                            <li><strong>Lose deals:</strong> Enterprise customers expect custom solutions</li>
+                            <li><strong>Competitor advantage:</strong> They offer customization, you don't</li>
+                            <li><strong>Lower ACV:</strong> Standardized solutions command lower prices</li>
+                            <li><strong>Market pressure:</strong> B2B SaaS is moving toward more customization, not less</li>
+                            <li><strong>Team frustration:</strong> Your best people leave because they can't do their best work</li>
+                        </ul>
+                        <p style="margin-top: 1rem; color: var(--dark); font-style: italic;">You're competing on capability. Reducing customization means losing deals.</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>❌ "Work Harder, Work Smarter"</h3>
+                        <div style="background: rgba(239, 68, 68, 0.1); padding: 1rem; border-radius: 0.5rem; margin: 1rem 0;">
+                            <p style="color: var(--dark); font-weight: 600;">Why It Fails:</p>
+                        </div>
+                        <ul class="bullet-list">
+                            <li><strong>Already at limit:</strong> Your team is working nights and weekends</li>
+                            <li><strong>Burnout epidemic:</strong> 18-24 month average tenure in these roles</li>
+                            <li><strong>Quality suffers:</strong> Rushing leads to mistakes, which creates more work</li>
+                            <li><strong>Not sustainable:</strong> Can't scale a business on hero effort</li>
+                            <li><strong>Morale crisis:</strong> Your best people are actively looking for new jobs</li>
+                        </ul>
+                        <p style="margin-top: 1rem; color: var(--dark); font-style: italic;">You can't optimize your way out of a capacity crisis.</p>
+                    </div>
+                </div>
+
+                <div class="highlight-box">
+                    <p style="font-size: 1.25rem; text-align: center;">
+                        <strong>The Core Problem:</strong> Complex technical work requires multiple expert perspectives collaborating together. Humans can't scale this. Single-agent AI can't replicate this. You need something fundamentally different.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 6: A Different Approach -->
+        <div class="slide">
+            <div class="slide-content">
+                <h2>What If You Had a Team of AI Specialists?</h2>
+                <p class="subtitle">Not one AI assistant. A full team of specialized AI experts that collaborate like your best people do.</p>
+                
+                <div class="quote-box" style="margin-bottom: 2rem;">
+                    <p style="font-size: 1.3rem; text-align: center;">
+                        "When you need to design a solution for a complex enterprise deal, you don't just need one perspective — you need your architect, security expert, implementation lead, and sales engineer all collaborating. What if AI could replicate that entire team?"
+                    </p>
+                </div>
+
+                <div class="card-grid">
+                    <div class="card">
+                        <h3>🧠 How Expert Teams Actually Work</h3>
+                        <p style="color: var(--dark); font-weight: 600; margin-bottom: 1rem;">Real Scenario: Enterprise Healthcare Deal</p>
+                        <ul class="bullet-list">
+                            <li><strong>Solutions Architect:</strong> "Integrate via HL7 FHIR API"</li>
+                            <li><strong>Security Engineer:</strong> "Wait — their CISO requires on-premise data. Cloud integration won't work."</li>
+                            <li><strong>Implementation Lead:</strong> "On-premise integration takes 6 months. Here's a hybrid approach that takes 6 weeks."</li>
+                            <li><strong>ROI Specialist:</strong> "Frame 6-week timeline as '$200K faster time-to-value' for budget approval."</li>
+                        </ul>
+                        <p style="margin-top: 1rem; color: var(--dark); font-style: italic;">This is how great solutions happen — multiple experts debating, challenging, and refining together.</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>⚡ The Multi-Specialist AI Approach</h3>
+                        <p style="color: var(--dark); font-weight: 600; margin-bottom: 1rem;">CTO Office Mobstas Creates Digital Expert Teams</p>
+                        <ul class="bullet-list">
+                            <li><strong>Not one AI:</strong> A team of specialized AI agents, each with deep expertise</li>
+                            <li><strong>They collaborate:</strong> Architect designs → Security validates → Implementation refines → Sales optimizes</li>
+                            <li><strong>They debate:</strong> Catch issues BEFORE customers see them</li>
+                            <li><strong>They learn:</strong> Every engagement improves the system for next time</li>
+                            <li><strong>They scale:</strong> Handle 50 simultaneous projects, 24/7</li>
+                        </ul>
+                        <p style="margin-top: 1rem; color: var(--dark); font-style: italic;">This is what makes complex technical work excellent — multiple perspectives working together.</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>🎯 Pre-Sales Use Case: Solution Design</h3>
+                        <p style="color: var(--dark); font-weight: 600; margin-bottom: 1rem;">Enterprise deal needs technical solution brief</p>
+                        <div style="background: rgba(77, 208, 225, 0.1); padding: 1rem; border-radius: 0.5rem; margin: 1rem 0;">
+                            <p style="font-weight: 600; color: var(--dark);">AI Team Workflow:</p>
+                        </div>
+                        <ul class="bullet-list">
+                            <li><strong>Technical Writer AI:</strong> Creates initial solution brief</li>
+                            <li><strong>Solutions Architect AI:</strong> Validates technical approach, adds integration details</li>
+                            <li><strong>Security Expert AI:</strong> Reviews for compliance (SOC 2, HIPAA), flags risks</li>
+                            <li><strong>Implementation Engineer AI:</strong> "That design takes 6 months — here's a 6-week alternative"</li>
+                            <li><strong>ROI Specialist AI:</strong> Builds business case with timeline + cost savings</li>
+                        </ul>
+                        <p style="margin-top: 1rem; color: var(--dark); font-weight: 600;">Output: Production-ready solution brief in 2 hours instead of 2 days, validated by 5 expert perspectives.</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>🚀 Post-Sales Use Case: Implementation Planning</h3>
+                        <p style="color: var(--dark); font-weight: 600; margin-bottom: 1rem;">New enterprise customer needs implementation plan</p>
+                        <div style="background: rgba(77, 208, 225, 0.1); padding: 1rem; border-radius: 0.5rem; margin: 1rem 0;">
+                            <p style="font-weight: 600; color: var(--dark);">AI Team Workflow:</p>
+                        </div>
+                        <ul class="bullet-list">
+                            <li><strong>Technical PM AI:</strong> Creates project plan from requirements</li>
+                            <li><strong>Integration Engineer AI:</strong> "That API approach will cause data sync issues — use webhooks"</li>
+                            <li><strong>Customer Success AI:</strong> "Customer will get frustrated at step 4 — add training checkpoint"</li>
+                            <li><strong>Product Specialist AI:</strong> "You're using a feature we're deprecating next quarter — switch to new approach"</li>
+                            <li><strong>QA Engineer AI:</strong> Identifies testing requirements, edge cases</li>
+                        </ul>
+                        <p style="margin-top: 1rem; color: var(--dark); font-weight: 600;">Output: Implementation plan that actually works, catches issues before they happen, aligns with product roadmap.</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>🔗 Critical Handoff: Sales → Implementation</h3>
+                        <p style="color: var(--dark); font-weight: 600; margin-bottom: 1rem;">Preventing the handoff disaster</p>
+                        <div style="background: rgba(77, 208, 225, 0.1); padding: 1rem; border-radius: 0.5rem; margin: 1rem 0;">
+                            <p style="font-weight: 600; color: var(--dark);">AI Team Workflow:</p>
+                        </div>
+                        <ul class="bullet-list">
+                            <li><strong>Sales Context AI:</strong> Reviews what was promised during sales cycle</li>
+                            <li><strong>Technical Reality AI:</strong> Validates what's actually possible with current product</li>
+                            <li><strong>Gap Analysis AI:</strong> Identifies where promises diverge from reality</li>
+                            <li><strong>Solution Bridge AI:</strong> Creates plan to deliver on promises without breaking things</li>
+                            <li><strong>Customer Comm AI:</strong> Drafts messaging for any needed expectation resets</li>
+                        </ul>
+                        <p style="margin-top: 1rem; color: var(--dark); font-weight: 600;">Output: No surprises, smooth handoff, customer trust maintained from day one.</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>📚 Asset Library: Build Once, Use 50 Times</h3>
+                        <p style="color: var(--dark); font-weight: 600; margin-bottom: 1rem;">Stop reinventing the wheel</p>
+                        <div style="background: rgba(77, 208, 225, 0.1); padding: 1rem; border-radius: 0.5rem; margin: 1rem 0;">
+                            <p style="font-weight: 600; color: var(--dark);">AI Team Creates Reusable Assets:</p>
+                        </div>
+                        <ul class="bullet-list">
+                            <li><strong>Battle cards</strong> by competitor, validated by sales + product + marketing AI</li>
+                            <li><strong>Solution briefs</strong> by industry, reviewed by technical + business + compliance AI</li>
+                            <li><strong>Implementation playbooks</strong> by customer segment, validated by CS + engineering + product AI</li>
+                            <li><strong>Training modules</strong> by user role, created by instructional design + product + support AI</li>
+                            <li><strong>Continuously improved:</strong> Every use makes the asset better</li>
+                        </ul>
+                        <p style="margin-top: 1rem; color: var(--dark); font-weight: 600;">Output: Junior team members ramp in 3 months instead of 12 months, using battle-tested assets.</p>
+                    </div>
+                </div>
+
+                <div class="highlight-box">
+                    <p style="font-size: 1.25rem; text-align: center;">
+                        <strong>The Key Insight:</strong> Your ChatGPT drafts documents. CTO Office Mobstas simulates your entire expert team collaborating — catching issues, validating approaches, and creating production-ready outputs.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 7: How It Works -->
+        <div class="slide">
+            <div class="slide-content">
+                <h2>How CTO Office Mobstas Works</h2>
+                <p class="subtitle">Think of it as your always-on expert team that never sleeps, never burns out, and handles 50 projects simultaneously.</p>
+                
+                <div class="card-grid">
+                    <div class="card">
+                        <div style="font-size: 3rem; margin-bottom: 1rem;">1️⃣</div>
+                        <h3>You Describe The Work</h3>
+                        <p>Natural language input — no training required:</p>
+                        <ul class="bullet-list" style="margin-top: 1rem;">
+                            <li>"Enterprise healthcare customer needs solution brief for Epic EHR integration"</li>
+                            <li>"New customer starting implementation — need project plan for 6-week timeline"</li>
+                            <li>"Create battle card for competitor X in financial services vertical"</li>
+                        </ul>
+                        <p style="margin-top: 1rem; font-style: italic; color: var(--dark);">Just like assigning work to your best team members.</p>
+                    </div>
+
+                    <div class="card">
+                        <div style="font-size: 3rem; margin-bottom: 1rem;">2️⃣</div>
+                        <h3>AI Specialists Collaborate</h3>
+                        <p>Multiple AI agents work together:</p>
+                        <ul class="bullet-list" style="margin-top: 1rem;">
+                            <li><strong>First pass:</strong> Technical writer creates initial draft</li>
+                            <li><strong>Review cycle:</strong> Architect validates technical approach</li>
+                            <li><strong>Security review:</strong> Compliance checks for regulatory issues</li>
+                            <li><strong>Implementation check:</strong> Engineer validates feasibility</li>
+                            <li><strong>Business review:</strong> ROI specialist adds value justification</li>
+                        </ul>
+                        <p style="margin-top: 1rem; font-style: italic; color: var(--dark);">Just like your team huddles, but happening in minutes not days.</p>
+                    </div>
+
+                    <div class="card">
+                        <div style="font-size: 3rem; margin-bottom: 1rem;">3️⃣</div>
+                        <h3>Debate & Refinement</h3>
+                        <p>AI specialists challenge each other:</p>
+                        <ul class="bullet-list" style="margin-top: 1rem;">
+                            <li><strong>Architect AI:</strong> "Propose cloud integration"</li>
+                            <li><strong>Security AI:</strong> "CISO will reject — customer requires on-premise"</li>
+                            <li><strong>Implementation AI:</strong> "On-premise takes 6 months — try hybrid approach"</li>
+                            <li><strong>Consensus:</strong> Team agrees on best path forward</li>
+                        </ul>
+                        <p style="margin-top: 1rem; font-style: italic; color: var(--dark);">Issues get caught BEFORE customers see them.</p>
+                    </div>
+
+                    <div class="card">
+                        <div style="font-size: 3rem; margin-bottom: 1rem;">4️⃣</div>
+                        <h3>Production-Ready Output</h3>
+                        <p>Not a draft — a validated deliverable:</p>
+                        <ul class="bullet-list" style="margin-top: 1rem;">
+                            <li><strong>Technical accuracy:</strong> Validated by architect + engineer AI</li>
+                            <li><strong>Security compliance:</strong> Reviewed by security + compliance AI</li>
+                            <li><strong>Implementation feasibility:</strong> Confirmed by implementation AI</li>
+                            <li><strong>Business value:</strong> ROI calculated by business AI</li>
+                            <li><strong>Customer-ready:</strong> Ready to send, not a rough draft</li>
+                        </ul>
+                        <p style="margin-top: 1rem; font-style: italic; color: var(--dark);">Your team reviews and ships, instead of creating from scratch.</p>
+                    </div>
+
+                    <div class="card">
+                        <div style="font-size: 3rem; margin-bottom: 1rem;">5️⃣</div>
+                        <h3>Continuous Learning</h3>
+                        <p>System gets smarter with every use:</p>
+                        <ul class="bullet-list" style="margin-top: 1rem;">
+                            <li><strong>Learns patterns:</strong> "Healthcare customers always need HIPAA details"</li>
+                            <li><strong>Captures feedback:</strong> Human edits improve future outputs</li>
+                            <li><strong>Builds library:</strong> Best approaches become reusable templates</li>
+                            <li><strong>Adapts to changes:</strong> Product updates automatically reflected</li>
+                        </ul>
+                        <p style="margin-top: 1rem; font-style: italic; color: var(--dark);">Institutional knowledge that doesn't leave when people do.</p>
+                    </div>
+
+                    <div class="card">
+                        <div style="font-size: 3rem; margin-bottom: 1rem;">6️⃣</div>
+                        <h3>Your Team Focuses on Strategy</h3>
+                        <p>Humans do what humans do best:</p>
+                        <ul class="bullet-list" style="margin-top: 1rem;">
+                            <li><strong>Review & refine:</strong> 30 minutes instead of 8 hours</li>
+                            <li><strong>Customer relationships:</strong> More time for strategic conversations</li>
+                            <li><strong>Complex problem-solving:</strong> AI handles repetitive, human handles novel</li>
+                            <li><strong>Innovation:</strong> Time to think strategically, not tactically</li>
+                        </ul>
+                        <p style="margin-top: 1rem; font-style: italic; color: var(--dark);">Your best people finally have time to do their best work.</p>
+                    </div>
+                </div>
+
+                <div class="quote-box" style="margin-top: 2rem;">
+                    <p style="font-size: 1.2rem; text-align: center;">
+                        <strong>Real Example:</strong> "Our senior SE used to spend 2 days creating solution briefs. Now the AI team creates the first 90% in 2 hours. He reviews and refines in 30 minutes. Same quality, 8x faster, and he can focus on the truly complex deals."
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 8: The Impact -->
+        <div class="slide">
+            <div class="slide-content">
+                <h2>The Business Impact</h2>
+                <p class="subtitle">What happens when you multiply your team's capacity by 3-5x without hiring a single person.</p>
+                
+                <div class="card-grid" style="margin-bottom: 2rem;">
+                    <div class="stat-box">
+                        <div class="stat-number">3-5x</div>
+                        <div class="stat-label">SE Productivity Multiplier</div>
+                        <p style="margin-top: 1rem; color: var(--dark);">Your 2 SEs operate like 6-10 SEs. Same people, exponentially more output.</p>
+                    </div>
+
+                    <div class="stat-box">
+                        <div class="stat-number">$3M+</div>
+                        <div class="stat-label">Incremental Revenue Enabled</div>
+                        <p style="margin-top: 1rem; color: var(--dark);">Handle 3x more deals with same SE team. Pipeline doesn't sit idle anymore.</p>
+                    </div>
+
+                    <div class="stat-box">
+                        <div class="stat-number">50%</div>
+                        <div class="stat-label">Churn Reduction</div>
+                        <p style="margin-top: 1rem; color: var(--dark);">Faster, smoother implementations = customers go live in 4 weeks instead of 8 weeks.</p>
+                    </div>
+                </div>
+
+                <div class="two-column">
+                    <div class="card">
+                        <h3>Pre-Sales Impact</h3>
+                        <ul class="bullet-list">
+                            <li><strong>75% time savings:</strong> 20 hours/week on asset creation → 5 hours</li>
+                            <li><strong>Faster deal velocity:</strong> Solution briefs in hours, not days</li>
+                            <li><strong>Higher quality:</strong> Multiple expert perspectives = fewer customer objections</li>
+                            <li><strong>Reusable assets:</strong> Create once, use 50 times across team</li>
+                            <li><strong>Junior SE ramp:</strong> 12 months → 3 months with asset library</li>
+                            <li><strong>Scale without hiring:</strong> 2 SEs handle 15 AEs instead of 10</li>
+                        </ul>
+                        <div style="background: rgba(77, 208, 225, 0.1); padding: 1rem; border-radius: 0.5rem; margin-top: 1rem;">
+                            <p style="font-weight: 600; color: var(--dark);">ROI: $500K+ in year 1 from unlocked pipeline and avoided SE hiring costs</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h3>Post-Sales Impact</h3>
+                        <ul class="bullet-list">
+                            <li><strong>2x faster implementations:</strong> 8 weeks → 4 weeks average</li>
+                            <li><strong>Churn reduction:</strong> 25% → 10% annual (on $10M ARR = $1.5M saved)</li>
+                            <li><strong>CS capacity doubled:</strong> Handle 2x customers with same team</li>
+                            <li><strong>Smoother handoffs:</strong> No more "sales promised what?" disasters</li>
+                            <li><strong>Better expansion:</strong> Fully implemented customers expand 3x more</li>
+                            <li><strong>Avoid CS hiring:</strong> Don't need to hire 3 more CS managers ($450K saved)</li>
+                        </ul>
+                        <div style="background: rgba(77, 208, 225, 0.1); padding: 1rem; border-radius: 0.5rem; margin-top: 1rem;">
+                            <p style="font-weight: 600; color: var(--dark);">ROI: $2M+ in year 1 from churn reduction and CS cost avoidance</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" style="margin-top: 2rem;">
+                    <h3>Strategic Advantages</h3>
+                    <div class="benefit-grid" style="margin-top: 1rem;">
+                        <div style="text-align: center;">
+                            <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">🚀</div>
+                            <h4>Competitive Edge</h4>
+                            <p>Close deals 2-3x faster than competitors still relying on manual processes</p>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">📈</div>
+                            <h4>Revenue Quality</h4>
+                            <p>Better retention (lower churn) means more predictable, valuable revenue</p>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">👥</div>
+                            <h4>Team Morale</h4>
+                            <p>Your best people stop burning out, tenure increases, knowledge compounds</p>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">💰</div>
+                            <h4>Capital Efficiency</h4>
+                            <p>Scale revenue without proportional headcount growth — better unit economics</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="highlight-box" style="margin-top: 2rem;">
+                    <p style="font-size: 1.3rem; text-align: center;">
+                        <strong>Total First-Year Impact:</strong> $2.5M+ in incremental value from unlocked revenue, prevented churn, and avoided hiring costs
+                    </p>
+                </div>
+
+                <div class="quote-box" style="margin-top: 2rem;">
+                    <p style="font-size: 1.1rem; text-align: center;">
+                        "We went from missing revenue targets because of SE capacity constraints to having SE bandwidth to pursue deals we used to decline. Our pipeline grew 40% but our SE team stayed the same size."
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 9: Why Now -->
+        <div class="slide">
+            <div class="slide-content">
+                <h2>Why This Matters Now</h2>
+                <p class="subtitle">The forcing functions creating urgency for companies to solve this immediately.</p>
+                
+                <div class="card-grid">
+                    <div class="card">
+                        <h3>💰 Board Pressure on Revenue Efficiency</h3>
+                        <div style="background: rgba(239, 68, 68, 0.1); padding: 1rem; border-radius: 0.5rem; margin: 1rem 0;">
+                            <p style="font-weight: 600; color: var(--dark);">What Boards Are Asking:</p>
+                        </div>
+                        <ul class="bullet-list">
+                            <li>"Why did we miss revenue targets when pipeline was healthy?"</li>
+                            <li>"Why is our sales cycle 60 days when competitors do 30?"</li>
+                            <li>"Why is churn trending upward quarter over quarter?"</li>
+                            <li>"Why do we need to hire 5 more people to grow 30%?"</li>
+                        </ul>
+                        <p style="margin-top: 1rem; color: var(--dark); font-weight: 600;">Answer: SE and Implementation capacity constraints. Boards want solutions now.</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>📊 Next Funding Round Requirements</h3>
+                        <div style="background: rgba(239, 68, 68, 0.1); padding: 1rem; border-radius: 0.5rem; margin: 1rem 0;">
+                            <p style="font-weight: 600; color: var(--dark);">Investors Want to See:</p>
+                        </div>
+                        <ul class="bullet-list">
+                            <li><strong>110%+ Net Revenue Retention:</strong> You're at 85% due to churn</li>
+                            <li><strong>Improving unit economics:</strong> Revenue growing faster than headcount</li>
+                            <li><strong>Predictable revenue:</strong> Low churn = high predictability</li>
+                            <li><strong>Capital efficiency:</strong> AI-augmented teams = better metrics</li>
+                        </ul>
+                        <p style="margin-top: 1rem; color: var(--dark); font-weight: 600;">Can't raise Series B/C with a leaky bucket. Fix retention first.</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>🎯 Q4 Revenue Crunch</h3>
+                        <div style="background: rgba(239, 68, 68, 0.1); padding: 1rem; border-radius: 0.5rem; margin: 1rem 0;">
+                            <p style="font-weight: 600; color: var(--dark);">Right Now:</p>
+                        </div>
+                        <ul class="bullet-list">
+                            <li><strong>$2M+ in pipeline</strong> sitting idle waiting for SE capacity</li>
+                            <li><strong>30% of ARR</strong> up for renewal in Q1 — implementations must finish</li>
+                            <li><strong>Holiday hiring freeze:</strong> Can't add headcount for 3+ months</li>
+                            <li><strong>Competitors moving faster:</strong> Losing deals to faster-moving companies</li>
+                        </ul>
+                        <p style="margin-top: 1rem; color: var(--dark); font-weight: 600;">Can't wait 6 months to hire. Need capacity multiplication now.</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>🔥 Talent Crisis Accelerating</h3>
+                        <div style="background: rgba(239, 68, 68, 0.1); padding: 1rem; border-radius: 0.5rem; margin: 1rem 0;">
+                            <p style="font-weight: 600; color: var(--dark);">The Reality:</p>
+                        </div>
+                        <ul class="bullet-list">
+                            <li><strong>Just lost 2 senior SEs</strong> to burnout — can't replace them</li>
+                            <li><strong>6+ months to hire</strong> qualified SE in current market</li>
+                            <li><strong>$250K+ fully loaded cost</strong> per SE if you can find them</li>
+                            <li><strong>12+ months to ramp</strong> new hires without proper assets</li>
+                            <li><strong>18-24 month tenure average</strong> means constant hiring treadmill</li>
+                        </ul>
+                        <p style="margin-top: 1rem; color: var(--dark); font-weight: 600;">You can't hire your way out of this crisis. Need force multipliers.</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>🏃 Competitive Disadvantage</h3>
+                        <div style="background: rgba(239, 68, 68, 0.1); padding: 1rem; border-radius: 0.5rem; margin: 1rem 0;">
+                            <p style="font-weight: 600; color: var(--dark);">What's Happening:</p>
+                        </div>
+                        <ul class="bullet-list">
+                            <li><strong>Competitors using AI</strong> responding to RFPs 3x faster</li>
+                            <li><strong>Lost 3 deals this quarter</strong> because your solution design took 2 weeks vs. their 3 days</li>
+                            <li><strong>Customer expectations rising:</strong> "Why does this take so long?"</li>
+                            <li><strong>First-mover advantage:</strong> Companies adopting AI now building sustainable leads</li>
+                        </ul>
+                        <p style="margin-top: 1rem; color: var(--dark); font-weight: 600;">Waiting = losing ground to faster competitors every day.</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>⚡ The AI Inflection Point</h3>
+                        <div style="background: rgba(139, 92, 246, 0.1); padding: 1rem; border-radius: 0.5rem; margin: 1rem 0;">
+                            <p style="font-weight: 600; color: var(--dark);">Why Now is Different:</p>
+                        </div>
+                        <ul class="bullet-list">
+                            <li><strong>Multi-agent AI</strong> is finally mature enough for production use</li>
+                            <li><strong>Cost has plummeted:</strong> 1/10th the price of 2 years ago</li>
+                            <li><strong>Quality threshold crossed:</strong> Output is now production-ready, not just drafts</li>
+                            <li><strong>Adoption accelerating:</strong> Your competitors are deploying now</li>
+                            <li><strong>Window of opportunity:</strong> Early adopters gaining 12-18 month lead</li>
+                        </ul>
+                        <p style="margin-top: 1rem; color: var(--dark); font-weight: 600;">This technology exists today. Question isn't "if" but "when" — and later means losing competitive ground.</p>
+                    </div>
+                </div>
+
+                <div class="highlight-box" style="margin-top: 2rem;">
+                    <p style="font-size: 1.3rem; text-align: center;">
+                        <strong>The Perfect Storm:</strong> You can't hire fast enough, your team is burning out, competitors are moving faster, and the board wants better metrics. AI force multiplication isn't optional — it's the only path forward.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 10: Next Steps -->
+        <div class="slide hero-slide">
+            <div class="slide-content">
+                <h2 style="text-align: center;">Let's Solve This Together</h2>
+                <p class="subtitle" style="text-align: center;">You don't need another sales pitch. You need to see if this actually solves your specific capacity crisis.</p>
+                
+                <div class="card" style="max-width: 800px; margin: 2rem auto; padding: 2rem;">
+                    <h3 style="text-align: center; margin-bottom: 1.5rem;">What Happens in a Discovery Call</h3>
+                    <ul class="bullet-list" style="font-size: 1.1rem;">
+                        <li><strong>30-45 minutes:</strong> We dig into your specific bottlenecks</li>
+                        <li><strong>No generic demo:</strong> We'll talk about your actual use cases</li>
+                        <li><strong>Honest assessment:</strong> Is multi-agent AI the right fit for your problem?</li>
+                        <li><strong>Clear next steps:</strong> If it makes sense, we'll propose a focused pilot</li>
+                        <li><strong>No pressure:</strong> This is problem validation, not a sales close</li>
+                    </ul>
+                </div>
+
+                <div class="two-column" style="margin-top: 3rem;">
+                    <div class="card">
+                        <h3>Discovery Questions We'll Explore</h3>
+                        <ul class="bullet-list">
+                            <li>What took your SE team the most time last week?</li>
+                            <li>How many times do you recreate the same technical content?</li>
+                            <li>What assets do you wish existed when onboarding new SEs?</li>
+                            <li>What's your current churn rate and why are customers leaving?</li>
+                            <li>How long does implementation take and where do things go wrong?</li>
+                            <li>What would 3x capacity enable for your revenue targets?</li>
+                        </ul>
+                    </div>
+
+                    <div class="card">
+                        <h3>Potential Pilot Options</h3>
+                        <ul class="bullet-list">
+                            <li><strong>SE Asset Factory:</strong> Create 10 core assets (battle cards, solution briefs) in 30 days</li>
+                            <li><strong>Solution Design Accelerator:</strong> 10 enterprise solution designs with multi-expert validation</li>
+                            <li><strong>Implementation Playbooks:</strong> Build reusable implementation plans by customer segment</li>
+                            <li><strong>Handoff Bridge:</strong> Smooth sales → implementation transitions for 10 deals</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="quote-box" style="margin-top: 3rem; max-width: 900px; margin-left: auto; margin-right: auto;">
+                    <p style="font-size: 1.2rem; text-align: center; color: var(--dark);">
+                        "We're not trying to sell you a platform. We're trying to understand if our multi-agent AI approach can genuinely multiply your team's capacity. If it can't, we'll tell you. If it can, we'll prove it with a focused pilot on your actual work."
+                    </p>
+                </div>
+
+                <div style="text-align: center; margin-top: 3rem;">
+                    <h3 style="margin-bottom: 1.5rem; color: var(--dark);">Ready to Explore?</h3>
+                    <button class="cta-button" style="font-size: 1.5rem; padding: 1.25rem 3rem;">Schedule Discovery Call</button>
+                    <p style="margin-top: 1.5rem; font-size: 1.1rem; color: #718096;">
+                        <strong>CTO Office Mobstas</strong><br>
+                        AI-Powered Teams for Technical Sales & Customer Success
+                    </p>
+                </div>
+
+                <div class="benefit-grid" style="margin-top: 3rem;">
+                    <div style="text-align: center;">
+                        <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">💡</div>
+                        <h4>Problem First</h4>
+                        <p>We start with your pain, not our product</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">🎯</div>
+                        <h4>Focused Pilot</h4>
+                        <p>Prove value on 1-2 specific use cases</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">📊</div>
+                        <h4>Clear Metrics</h4>
+                        <p>Measure time saved, quality improved, revenue enabled</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">🤝</div>
+                        <h4>True Partnership</h4>
+                        <p>We succeed when your team multiplies their capacity</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Navigation Controls -->
+    <div class="nav-controls">
+        <button class="nav-btn" id="prevBtn" onclick="changeSlide(-1)" aria-label="Previous slide">‹</button>
+        <div class="slide-indicator">
+            <span id="slideNumber">1</span> / <span id="totalSlides">10</span>
+        </div>
+        <button class="nav-btn" id="nextBtn" onclick="changeSlide(1)" aria-label="Next slide">›</button>
+    </div>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const totalSlides = slides.length;
+        
+        document.getElementById('totalSlides').textContent = totalSlides;
+        
+        function goToSlide(n) {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = n;
+            slides[currentSlide].classList.add('active');
+            document.getElementById('slideNumber').textContent = currentSlide + 1;
+            
+            document.getElementById('prevBtn').disabled = currentSlide === 0;
+            document.getElementById('nextBtn').disabled = currentSlide === totalSlides - 1;
+        }
+
+        function changeSlide(direction) {
+            const newSlide = currentSlide + direction;
+            if (newSlide >= 0 && newSlide < totalSlides) {
+                goToSlide(newSlide);
+            }
+        }
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowLeft' && currentSlide > 0) {
+                changeSlide(-1);
+            } else if (e.key === 'ArrowRight' && currentSlide < totalSlides - 1) {
+                changeSlide(1);
+            } else if ((e.key === ' ' || e.key === 'Enter') && currentSlide < totalSlides - 1) {
+                e.preventDefault();
+                changeSlide(1);
+            } else if (e.key === 'Escape') {
+                goToSlide(0);
+            } else if (e.key >= '1' && e.key <= '9') {
+                const slideNum = parseInt(e.key) - 1;
+                if (slideNum < totalSlides) {
+                    goToSlide(slideNum);
+                }
+            }
+        });
+
+        let touchStartX = 0;
+        let touchEndX = 0;
+
+        document.addEventListener('touchstart', (e) => {
+            touchStartX = e.changedTouches[0].screenX;
+        }, { passive: true });
+
+        document.addEventListener('touchend', (e) => {
+            touchEndX = e.changedTouches[0].screenX;
+            handleSwipe();
+        }, { passive: true });
+
+        function handleSwipe() {
+            const swipeThreshold = 50;
+            if (touchEndX < touchStartX - swipeThreshold && currentSlide < totalSlides - 1) {
+                changeSlide(1);
+            } else if (touchEndX > touchStartX + swipeThreshold && currentSlide > 0) {
+                changeSlide(-1);
+            }
+        }
+
+        goToSlide(0);
+    </script>
+</body>
+</html>
