@@ -234,4 +234,4 @@ No additional meta-instructions should be needed if plan follows this protocol.
 - `/elastic-mob/ANTHRO_CONTEXT_BRIEFING.md` - System overview
 - `/elastic-mob/HOLONIC_ARCHITECTURE_OBSERVATIONS.md` - Architectural patterns
 - `/in-concert/docs/coding_idioms.md` - Rails patterns
-- `/wispera_framework/MANDATORY_FRAMEWORK_ANALYSIS_PROTOCOL.md` - Flutter patterns
+- `/wispera_framework/docs/MANDATORY_FRAMEWORK_ANALYSIS_PROTOCOL.md` - Flutter patterns

@@ -48,7 +48,7 @@ Key Context: 8-repo anthro super-project building conversational programming pla
 
 Current focus: Building mobsta app as thin orchestration layer over components.
 Reference: wispera-mobsta/README.md for current implementation status.
-Reference: wispera-mobsta/ARCHITECTURE_REFERENCE.md for established patterns.
+Reference: wispera-mobsta/docs/ARCHITECTURE_REFERENCE.md for established patterns.
 ```
 
 ---
@@ -215,7 +215,7 @@ Full Tier 1 + 2 + ARCHITECTURE_REFERENCE.md + codebase verification
 
 ### **Key File Locations**
 - **Current Implementation**: `wispera-mobsta/README.md`
-- **Architecture Patterns**: `wispera-mobsta/ARCHITECTURE_REFERENCE.md`
+- **Architecture Patterns**: `wispera-mobsta/docs/ARCHITECTURE_REFERENCE.md`
 - **System Overview**: `elastic-mob/README.md`
 
 ---

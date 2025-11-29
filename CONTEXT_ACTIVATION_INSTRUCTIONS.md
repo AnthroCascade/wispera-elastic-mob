@@ -35,7 +35,7 @@ Key Context: 8-repo anthro super-project building conversational programming pla
 
 Current focus: Building mobsta app as thin orchestration layer over components.
 Reference: wispera-mobsta/README.md for current implementation status.
-Reference: wispera-mobsta/ARCHITECTURE_REFERENCE.md for established patterns.
+Reference: wispera-mobsta/docs/ARCHITECTURE_REFERENCE.md for established patterns.
 
 Apply context transfer strategy from elastic-mob/CONTEXT_TRANSFER_STRATEGY.md
 ```
@@ -60,7 +60,7 @@ ANTHRO COMPREHENSIVE CONTEXT ACTIVATION:
 
 3. Required Reading:
    - Read wispera-mobsta/README.md for current implementation status
-   - Consult wispera-mobsta/ARCHITECTURE_REFERENCE.md for established patterns
+   - Consult wispera-mobsta/docs/ARCHITECTURE_REFERENCE.md for established patterns
    - Reference elastic-mob/CONTEXT_TRANSFER_STRATEGY.md for methodology
 
 4. Key Principles:
@@ -90,7 +90,7 @@ DEVELOPMENT SESSION ACTIVATION:
 Apply anthro context (Memory ID 7663956) + HEXACO optimization.
 Focus: Building mobsta app following established patterns.
 Read: wispera-mobsta/README.md
-Consult: wispera-mobsta/ARCHITECTURE_REFERENCE.md
+Consult: wispera-mobsta/docs/ARCHITECTURE_REFERENCE.md
 Priority: Fix component violations while maintaining framework patterns.
 ```
 
@@ -187,7 +187,7 @@ Ask these to confirm proper activation:
 ### **Key Documents**
 - **Current Implementation**: `wispera-mobsta/README.md`
 - **Transfer Strategy**: `elastic-mob/CONTEXT_TRANSFER_STRATEGY.md`
-- **Architecture Patterns**: `wispera-mobsta/ARCHITECTURE_REFERENCE.md`
+- **Architecture Patterns**: `wispera-mobsta/docs/ARCHITECTURE_REFERENCE.md`
 
 ### **Memory References**
 - **ID 7663950**: Complete architecture overview
