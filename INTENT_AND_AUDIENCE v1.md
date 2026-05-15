@@ -23,6 +23,7 @@ The product targets:
 1. Users who need expert collaboration: individuals or teams tackling complex, multi-expertise challenges who want natural language interaction with AI expert teams.
 
 2. Knowledge-intensive industries: any domain requiring specialized expertise and coordinated decision-making:
+   - Any endeavour where the capturing of expertise and generational knowledge could enhance the endeavour's ability to analyse, government, guide elastic mob intyeractions
    - Software development (Architecture, Backend, Frontend, DevOps experts)
    - Legal practice (Corporate Law, Antitrust, Tax, Regulatory experts)
    - Medical practice (Cardiology, Neurology, Radiology, Pharmacology experts)
