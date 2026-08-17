@@ -49,7 +49,6 @@ In-concert is a collaborative platform for designing, building, testing, sharing
 **Purpose**: Manages conversation threads with messages, runs, and participants
 **Key Attributes**:
 - `assistant_id`: Links to specific assistant
-- `playground_id`: Links to playground environment
 - `request_instructions_id`: Links to prompt instructions
 - `seed_id`: Links to previous conversation for continuity
 - `tool_resources`: Inherited from assistant
@@ -94,10 +93,6 @@ In-concert is a collaborative platform for designing, building, testing, sharing
 #### **Run Model**
 - **Purpose**: Represents a single request/response with an LLM
 - **Integration**: Can represent elastic-mob execution cycles
-
-#### **Playground Model**
-- **Purpose**: Environment for content experimentation
-- **Integration**: May or may not be appropriate for elastic-caper containers (reserved judgment)
 
 #### **Pack Model**
 - **Purpose**: Groups related assets (assistants, personas, prompts)
